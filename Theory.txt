@@ -64,6 +64,23 @@ Source Map can be disabled at runtime to reduce the size of the code
 Also, Gzipping code to compress and reduce the size
 
 ===================================================================
+DIFFERENCE BETWEEN ASYNC AND DEFER -
 
+async and defer both are boolean attributes that are used with scrip tags to load the external scripts efficiently into our webpage.
+
+When we load a web page - two main things happen - 1. HTML parsing   2. Loading of scripts - which is further divided into two things - 
+a. Fetching the script from network  and  b. executing the script line by line.
+
+We know, in normal script tags, when we load our web page, browser is parsing HTML and when it encounters a script tag it stops the parsing there only and starts fetching the scipt, after fetching it executes the script. Only after,
+the execution of script is completed it resumes or continues the HTML parsing.
+
+But in async scipts, when the browser encounters the script tag while HTML parsing , it doesn't stop the HTML parsing rather it fetches the script asynchronously but to execute the script it stops the HTML parsing and ,
+continues the parse HTML after the execution of script.
+
+In defer scripts, when browser encounters the scipt tag while parsing HTML, it doesn't stop the parsing rather it fetches the script along with HTML parsing but,
+it executes the script only after the HTML parsing is completed.
+
+In most cases, it is best to use defer scripts as it maintains the order of execution of scripts (in case we're having multiple dependent scripts) and not async script as it doesn't maintain the order of execution.
+But, async scripts might be used when we've to load some external scripts (some modular and independent scripts like google analytics and other).
 
 
