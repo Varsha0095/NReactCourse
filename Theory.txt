@@ -1,0 +1,69 @@
+Emmet - Emmet is a free add-on for your text editor. It allows you to type shortcuts that are then expanded into full pieces of code. By using Emmet, developers type less, they save both on keystrokes and time. Also relying on Emmet's auto completion means fewer typos and missing tags, leading to more robust and valid files. Emmet is a set of plug-ins for text editors that allow for high-speed coding and editing in HTML, XML, XSLT, and other structured code formats via content assist.
+
+====================================================================
+
+Difference between Library and Framework - 
+ Library- The term library simply refers to a collection of code that is reused repeatedly.
+
+ A library is a collection of prewritten code that can be used to simplify tasks. Libraries provide developers with predefined functions and classes to make their work easier and boost the development process.
+While using libraries, we can control the flow of the application and call the library i.e. there's no inversion of control.
+ Libraries are a collection of helper modules, objects, classes, functions, message templates, pre-written code, etc.
+It is possible to call a library out of context.
+Good code quality, reusability, and control, enhanced speed and performance of the program, etc.
+Less code is required to build libraries, which leads to faster loading times and better performance.
+JQuery, React JS, etc.
+
+
+Framework - 
+
+Framework is like the foundation upon which developers build applications for specific platforms. 
+While using framework, the control is inverted, i.e., the framework controls the flow and calls your code.
+Frameworks consist of a lot of APIs, compilers, toolsets, support programs, libraries, etc.
+We can only call and use what belongs to a framework within the same framework. 
+Developing a framework requires a lot of coding, which increases loading times and decreases performance.
+Faster programming, support from the community, great support for MVC (Model View Controller) pattern, etc.
+Spring, NodeJS, AngularJS, Vue JS, etc.
+
+===================================================================
+
+CDN links - A CDN is a network of servers that distributes content from an “origin” server throughout the world by caching content close to where each end user is accessing the internet via a web-enabled device.
+            A content delivery network (CDN) is a geographically distributed group of servers that caches content close to end users. A CDN allows for the quick transfer of assets needed for loading Internet content, including HTML pages, JavaScript files, stylesheets, images, and videos.
+
+===================================================================
+
+React is called "React" because of its core feature, which is its ability to "react" or respond dynamically to changes in data.
+
+===================================================================
+
+A cross-origin request is a request for a resource (e.g. style sheets, iframes, images, fonts, or scripts) from another domain.
+CORS stands for Cross-Origin Resource Sharing, and is a mechanism that allows resources on a web page to be requested from another domain outside their own domain. It defines a way of how a browser and server can interact to determine whether it is safe to allow the cross-origin request. CORS allows servers to specify who can access the assets on the server, among many other things.
+
+===================================================================
+
+DIFFERENCE BETWEEN REACT AND REACT-DOM
+React is the core library i.e. React contains functionality utilised in web and mobile apps. ReactDOM functionality is utilised only in web apps.
+
+===================================================================
+
+DIFFERENCE BETWEEN DEVELOPMENT BUILD AND PRODUCTION BUILD-
+Development build runs the code as a Development environment and it is very slow. The production environment executes the code and is used by developers and QA people It Development, supports
+
+Generating Source Maps files for CSS, and helping developers to debug the code about original files
+Hot reloading enables you to reload changes without restarting the server
+Debugger available to debug the code in the browser console
+It creates a single bundle.js file
+Enable React Developer tools
+React DevTools Profiler
+
+Production build is for running the code on client browsers with more performance improvements.
+The production environment executes the code and is used by end users or customers
+
+It has separate bundle files for app and vendor instead of a single bundle file
+Minification and compression of javascript and HTML resources to reduce the size of a file.
+Source Map can be disabled at runtime to reduce the size of the code
+Also, Gzipping code to compress and reduce the size
+
+===================================================================
+
+
+
