@@ -1,8 +1,9 @@
 const Shimmer = () => {
     return(
-        <>
-        <h1>Content is Loading.......</h1>
-        </>
+        <div className="restaurant-list">
+            
+            {Array(15).fill("").map((e , index) => <div key={index} className="shimmer-card"></div>)}
+        </div>
     )
 }
 

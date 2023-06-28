@@ -1,12 +1,14 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import Logo from '../assests/img/foodvilla.png';
 
 const Title = () => {
     return (
       <a href="/">
         <img
-          className="logo"
+          className="h-28 p-2"
           alt="logo"
-          src="https://lh5.googleusercontent.com/p/AF1QipOhHeCaQ6Xb6RVf3R_ZBTbDK4FIug_203rKsHLT"
+          src={Logo}
         />
       </a>
     );
@@ -15,14 +17,15 @@ const Title = () => {
   const Header = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     return (
-      <div id="header" className="header">
+      <div id="header" className="flex justify-between bg-amber-200 shadow-lg">
         <Title />
         <div className="nav-items">
-          <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Contact</li>
-            <li>Cart</li>
+          <ul className="flex py-10">
+            <li className="px-3 text-lg"><Link to="/">Home</Link></li>
+            <li className="px-3 text-lg"><Link to="/about">About Us</Link></li>
+            <li className="px-3 text-lg"><Link to="/contact">Contact</Link></li>
+            <li className="px-3 text-lg"><Link to="/instamart">Instamart</Link></li>
+            <li className="px-3 text-lg">Cart</li>
           </ul>
         </div>
         {isLoggedIn ? <button onClick={() => setIsLoggedIn(false)}>Logout</button> : <button onClick={() => setIsLoggedIn(true)}>Login</button>}
