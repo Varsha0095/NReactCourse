@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 // import { restaurantList } from "../config";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import { filterData } from "./utils/helper";
 import useOnline from "./utils/useOnline";
+import UserContext from "./utils/UserContext";
 
 
 const Body = () => {
@@ -12,7 +13,7 @@ const Body = () => {
     const [allRestaurants, setAllRestaurants] = useState([]);
     const [filteredRestaurants, setFilteredRestaurants] = useState([]);
     const [searchInput, setSearchInput] = useState("");
-    
+    const {user, setUser} = useContext(UserContext);
 
     useEffect(() => {
      //API Call
@@ -44,11 +45,15 @@ const Body = () => {
     return (allRestaurants.length === 0) ? <Shimmer /> : (
         <>
         <div className="flex p-2 m-2 bg-gray-200 shadow-xl">
-            <input type="text" className="placeholder:text-slate-400 block bg-white w-4/5 border border-slate-300 rounded-md p-3 m-2 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="🔍Search for anything..." name="search" value={searchInput} onChange={(e) => setSearchInput(e.target.value)} />
+            <input type="text" className="placeholder:text-slate-400 block bg-white w-4/5 border border-slate-300 rounded-md p-3 m-2 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1" placeholder="🔍   Search for anything..." name="search" value={searchInput} onChange={(e) => setSearchInput(e.target.value)} />
             <button className="text-lg font-semibold border-2 bg-zinc-400 rounded-md p-3 m-2 w-36 shadow-sm focus:outline-none hover:bg-amber-200 text-neutral-700" onClick={() => {
                 let data = filterData(searchInput, allRestaurants)
                 setFilteredRestaurants(data);
             }}>Search</button>
+            <input value={user.name} onChange={e => setUser({
+              name: e.target.value,
+              email: "abcd@gmail.com"
+            })} />
         </div>
       <div className="flex flex-wrap">
         {filteredRestaurants.map((restaurant) => {

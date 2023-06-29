@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useContext, useState} from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./Components/Header";
 import Body from "./Components/Body";
@@ -11,14 +11,24 @@ import RestaurantMenu from "./Components/RestaurantMenu";
 // import Profile from "./Components/Profile";
 import Profile from "./Components/ProfileClass";
 import Instamart from "./Components/Instamart";
+import UserContext from "./Components/utils/UserContext";
 
 
 const AppLayout = () => {
+  const [user, setUser] = useState({
+      name: "Varsha Prajapati",
+      email: "prajapati@gmail.com"
+  })
   return (
     <>
+    <UserContext.Provider value={{
+      user: user,
+      setUser: setUser
+    }}>
       <Header />
       <Outlet />
       <Footer />
+      </UserContext.Provider>
     </>
   );
 };
