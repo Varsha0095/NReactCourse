@@ -1,35 +1,32 @@
-import React, {useContext, useState} from "react";
+import React, { useState, lazy, Suspense} from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./Components/Header";
 import Body from "./Components/Body";
 import Footer from "./Components/Footer";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import About from "./Components/About";
+// import About from "./Components/About";
 import Contact from "./Components/Contact";
 import Error from "./Components/Error";
 import RestaurantMenu from "./Components/RestaurantMenu";
 // import Profile from "./Components/Profile";
 import Profile from "./Components/ProfileClass";
-import Instamart from "./Components/Instamart";
-import UserContext from "./Components/utils/UserContext";
+import Shimmer from "./Components/Shimmer";
+// import Instamart from "./Components/Instamart";
+import { Provider } from "react-redux";
+import store from "./Components/utils/store";
+
+const About = lazy(() => import("./Components/About"));
+const Instamart = lazy(() => import("./Components/Instamart"));
+const Cart = lazy(() => import("./Components/Cart"));
 
 
 const AppLayout = () => {
-  const [user, setUser] = useState({
-      name: "Varsha Prajapati",
-      email: "prajapati@gmail.com"
-  })
   return (
-    <>
-    <UserContext.Provider value={{
-      user: user,
-      setUser: setUser
-    }}>
+    <Provider store={store}>
       <Header />
       <Outlet />
       <Footer />
-      </UserContext.Provider>
-    </>
+    </Provider>
   );
 };
 
@@ -45,7 +42,11 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <About />,
+        element: (
+          <Suspense>
+        <About />
+        </Suspense>
+        ),
         children: [
           {
             path: "profile",
@@ -63,7 +64,19 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/instamart",
-        element: <Instamart />
+        element: (
+          <Suspense fallback={<Shimmer />}>
+            <Instamart />
+          </Suspense>
+        )
+      },
+      {
+        path: "/cart",
+        element: (
+          <Suspense fallback={<Shimmer />}>
+            <Cart />
+          </Suspense>
+        )
       }
     ]
   },

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Logo from '../assests/img/foodvilla.png';
 import { useContext } from "react";
 import UserContext from "./utils/UserContext";
+import { useSelector } from "react-redux/es/hooks/useSelector";
 
 const Title = () => {
     return (
@@ -21,6 +22,9 @@ const Title = () => {
 
     const {user} = useContext(UserContext);
 
+    const cartItems = useSelector(store => store.cart.items);
+    console.log(cartItems);
+
     return (
       <div id="header" className="flex justify-between bg-amber-200 shadow-lg">
         <Title />
@@ -30,7 +34,7 @@ const Title = () => {
             <li className="px-3 text-lg"><Link to="/about">About Us</Link></li>
             <li className="px-3 text-lg"><Link to="/contact">Contact</Link></li>
             <li className="px-3 text-lg"><Link to="/instamart">Instamart</Link></li>
-            <li className="px-3 text-lg">Cart</li>
+            <li className="px-3 text-lg"><Link to="/cart">Cart ({cartItems.length})</Link></li>
           </ul>
         </div>
         <span>

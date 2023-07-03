@@ -1,19 +1,16 @@
-import { useEffect, useState, useContext } from "react";
+import { useEffect, useState } from "react";
 // import { restaurantList } from "../config";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import { filterData } from "./utils/helper";
 import useOnline from "./utils/useOnline";
-import UserContext from "./utils/UserContext";
-
 
 const Body = () => {
     // creating two copies of restaurants one for the whole UI other for the filtered UI
     const [allRestaurants, setAllRestaurants] = useState([]);
     const [filteredRestaurants, setFilteredRestaurants] = useState([]);
     const [searchInput, setSearchInput] = useState("");
-    const {user, setUser} = useContext(UserContext);
 
     useEffect(() => {
      //API Call
@@ -50,10 +47,6 @@ const Body = () => {
                 let data = filterData(searchInput, allRestaurants)
                 setFilteredRestaurants(data);
             }}>Search</button>
-            <input value={user.name} onChange={e => setUser({
-              name: e.target.value,
-              email: "abcd@gmail.com"
-            })} />
         </div>
       <div className="flex flex-wrap">
         {filteredRestaurants.map((restaurant) => {
