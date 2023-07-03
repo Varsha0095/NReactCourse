@@ -4,6 +4,7 @@ import Logo from '../assests/img/foodvilla.png';
 import { useContext } from "react";
 import UserContext from "./utils/UserContext";
 import { useSelector } from "react-redux/es/hooks/useSelector";
+import useOnline from "./utils/useOnline";
 
 const Title = () => {
     return (
@@ -19,6 +20,8 @@ const Title = () => {
   
   const Header = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+    const isOnline = useOnline();
 
     const {user} = useContext(UserContext);
 
@@ -36,6 +39,9 @@ const Title = () => {
             <li className="px-3 text-lg"><Link to="/instamart">Instamart</Link></li>
             <li className="px-3 text-lg"><Link to="/cart">Cart ({cartItems.length})</Link></li>
           </ul>
+        </div>
+        <div>
+          <h1>{isOnline? "Online✅" : "Offline🔴"}</h1>
         </div>
         <span>
           {user.name} - {user.email}
