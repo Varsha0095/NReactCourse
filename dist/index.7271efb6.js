@@ -2941,1020 +2941,136 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$f00f.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _client = require("react-dom/client");
-var _clientDefault = parcelHelpers.interopDefault(_client);
-var _header = require("./Components/Header");
-var _headerDefault = parcelHelpers.interopDefault(_header);
-var _body = require("./Components/Body");
-var _bodyDefault = parcelHelpers.interopDefault(_body);
-var _footer = require("./Components/Footer");
-var _footerDefault = parcelHelpers.interopDefault(_footer);
-var _reactRouterDom = require("react-router-dom");
-// import About from "./Components/About";
-var _contact = require("./Components/Contact");
-var _contactDefault = parcelHelpers.interopDefault(_contact);
-var _error = require("./Components/Error");
-var _errorDefault = parcelHelpers.interopDefault(_error);
-var _restaurantMenu = require("./Components/RestaurantMenu");
-var _restaurantMenuDefault = parcelHelpers.interopDefault(_restaurantMenu);
+"use strict";
+var _react = _interopRequireWildcard(require("45e8193f4240b0ee"));
+var _client = _interopRequireDefault(require("486ffccad3562ae"));
+var _Header = _interopRequireDefault(require("3b6e29c95f7f0b1a"));
+var _Body = _interopRequireDefault(require("7ddadb7cc7ae0314"));
+var _Footer = _interopRequireDefault(require("1038d504bbe7463a"));
+var _reactRouterDom = require("5bb39b9c63338f66");
+var _Contact = _interopRequireDefault(require("4007d77312fe2c81"));
+var _Error = _interopRequireDefault(require("521fbd0fa40711be"));
+var _RestaurantMenu = _interopRequireDefault(require("d37d6aec091095da"));
+var _ProfileClass = _interopRequireDefault(require("5e58c8386dea10a7"));
+var _Shimmer = _interopRequireDefault(require("cf6dabeed6794aea"));
+var _reactRedux = require("af7b562d990d12b1");
+var _store = _interopRequireDefault(require("775ed370a46ca7b"));
+var _jsxRuntime = require("81b1698b765d4cf3");
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+function _getRequireWildcardCache(nodeInterop) {
+    if (typeof WeakMap !== "function") return null;
+    var cacheBabelInterop = new WeakMap();
+    var cacheNodeInterop = new WeakMap();
+    return (_getRequireWildcardCache = function(nodeInterop) {
+        return nodeInterop ? cacheNodeInterop : cacheBabelInterop;
+    })(nodeInterop);
+}
+function _interopRequireWildcard(obj, nodeInterop) {
+    if (!nodeInterop && obj && obj.__esModule) return obj;
+    if (obj === null || typeof obj !== "object" && typeof obj !== "function") return {
+        default: obj
+    };
+    var cache = _getRequireWildcardCache(nodeInterop);
+    if (cache && cache.has(obj)) return cache.get(obj);
+    var newObj = {};
+    var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+    for(var key in obj)if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {
+        var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+        if (desc && (desc.get || desc.set)) Object.defineProperty(newObj, key, desc);
+        else newObj[key] = obj[key];
+    }
+    newObj.default = obj;
+    if (cache) cache.set(obj, newObj);
+    return newObj;
+} // import About from "./Components/About";
 // import Profile from "./Components/Profile";
-var _profileClass = require("./Components/ProfileClass");
-var _profileClassDefault = parcelHelpers.interopDefault(_profileClass);
-var _shimmer = require("./Components/Shimmer");
-var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
 // import Instamart from "./Components/Instamart";
-var _reactRedux = require("react-redux");
-var _store = require("./Components/utils/store");
-var _storeDefault = parcelHelpers.interopDefault(_store);
-const About = /*#__PURE__*/ (0, _react.lazy)(()=>require("f17417b241bb5a36"));
-_c = About;
-const Instamart = /*#__PURE__*/ (0, _react.lazy)(()=>require("17d045fe8f1ef2bf"));
-_c1 = Instamart;
-const Cart = /*#__PURE__*/ (0, _react.lazy)(()=>require("801fe4a39cadd7fd"));
-_c2 = Cart;
+const About = /*#__PURE__*/ (0, _react.lazy)(()=>Promise.resolve().then(function() {
+        return require("f17417b241bb5a36");
+    }).then((res)=>_interopRequireWildcard(res)));
+const Instamart = /*#__PURE__*/ (0, _react.lazy)(()=>Promise.resolve().then(function() {
+        return require("17d045fe8f1ef2bf");
+    }).then((res)=>_interopRequireWildcard(res)));
+const Cart = /*#__PURE__*/ (0, _react.lazy)(()=>Promise.resolve().then(function() {
+        return require("801fe4a39cadd7fd");
+    }).then((res)=>_interopRequireWildcard(res)));
 const AppLayout = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRedux.Provider), {
-        store: (0, _storeDefault.default),
+    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)(_reactRedux.Provider, {
+        store: _store.default,
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 22,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 23,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 24,
-                columnNumber: 7
-            }, undefined)
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Header.default, {}),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Outlet, {}),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Footer.default, {})
         ]
-    }, void 0, true, {
-        fileName: "src/App.js",
-        lineNumber: 21,
-        columnNumber: 10
-    }, undefined);
+    });
 };
-_c3 = AppLayout;
+_c = AppLayout;
 const appRouter = (0, _reactRouterDom.createBrowserRouter)([
     {
         path: "/",
-        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
-            fileName: "src/App.js",
-            lineNumber: 29,
-            columnNumber: 12
-        }, undefined),
-        errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
-            fileName: "src/App.js",
-            lineNumber: 30,
-            columnNumber: 17
-        }, undefined),
+        element: /*#__PURE__*/ (0, _jsxRuntime.jsx)(AppLayout, {}),
+        errorElement: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Error.default, {}),
         children: [
             {
                 path: "/",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 33,
-                    columnNumber: 14
-                }, undefined)
+                element: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Body.default, {})
             },
             {
                 path: "/about",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Suspense), {
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(About, {}, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 37,
-                        columnNumber: 9
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 36,
-                    columnNumber: 14
-                }, undefined),
+                element: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_react.Suspense, {
+                    children: /*#__PURE__*/ (0, _jsxRuntime.jsx)(About, {})
+                }),
                 children: [
                     {
                         path: "profile",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileClassDefault.default), {
+                        element: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_ProfileClass.default, {
                             name: "Varsha"
-                        }, void 0, false, {
-                            fileName: "src/App.js",
-                            lineNumber: 41,
-                            columnNumber: 16
-                        }, undefined)
+                        })
                     }
                 ]
             },
             {
                 path: "/contact",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 45,
-                    columnNumber: 14
-                }, undefined)
+                element: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Contact.default, {})
             },
             {
                 path: "/restaurant/:id",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantMenuDefault.default), {}, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 48,
-                    columnNumber: 14
-                }, undefined)
+                element: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_RestaurantMenu.default, {})
             },
             {
                 path: "/instamart",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Suspense), {
-                    fallback: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, void 0, void 0),
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Instamart, {}, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 52,
-                        columnNumber: 13
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 51,
-                    columnNumber: 14
-                }, undefined)
+                element: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_react.Suspense, {
+                    fallback: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Shimmer.default, {}),
+                    children: /*#__PURE__*/ (0, _jsxRuntime.jsx)(Instamart, {})
+                })
             },
             {
                 path: "/cart",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Suspense), {
-                    fallback: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, void 0, void 0),
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cart, {}, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 57,
-                        columnNumber: 13
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 56,
-                    columnNumber: 14
-                }, undefined)
+                element: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_react.Suspense, {
+                    fallback: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Shimmer.default, {}),
+                    children: /*#__PURE__*/ (0, _jsxRuntime.jsx)(Cart, {})
+                })
             }
         ]
     }
 ]);
-const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterProvider), {
+const root = _client.default.createRoot(document.getElementById("root"));
+root.render(/*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.RouterProvider, {
     router: appRouter
-}, void 0, false, {
-    fileName: "src/App.js",
-    lineNumber: 62,
-    columnNumber: 13
-}, undefined));
-var _c, _c1, _c2, _c3;
-$RefreshReg$(_c, "About");
-$RefreshReg$(_c1, "Instamart");
-$RefreshReg$(_c2, "Cart");
-$RefreshReg$(_c3, "AppLayout");
+}));
+var _c;
+$RefreshReg$(_c, "AppLayout");
 
   $parcel$ReactRefreshHelpers$f00f.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./Components/Header":"fNIx6","./Components/Body":"6J35F","./Components/Footer":"eUZ6J","react-router-dom":"9xmpe","./Components/Contact":"66EYZ","./Components/Error":"iQH4s","./Components/RestaurantMenu":"7pgwL","./Components/ProfileClass":"5mE2z","./Components/Shimmer":"c7s09","react-redux":"bdVon","./Components/utils/store":"csQGs","f17417b241bb5a36":"Yn6sE","17d045fe8f1ef2bf":"cGtEz","801fe4a39cadd7fd":"ap3Go","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
-"use strict";
-module.exports = require("ee51401569654d91");
-
-},{"ee51401569654d91":"48uCM"}],"48uCM":[function(require,module,exports) {
-/**
- * @license React
- * react-jsx-dev-runtime.development.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ "use strict";
-(function() {
-    "use strict";
-    var React = require("58362d9d82be395f");
-    // ATTENTION
-    // When adding new symbols to this file,
-    // Please consider also adding to 'react-devtools-shared/src/backend/ReactSymbols'
-    // The Symbol used to tag the ReactElement-like types.
-    var REACT_ELEMENT_TYPE = Symbol.for("react.element");
-    var REACT_PORTAL_TYPE = Symbol.for("react.portal");
-    var REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
-    var REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode");
-    var REACT_PROFILER_TYPE = Symbol.for("react.profiler");
-    var REACT_PROVIDER_TYPE = Symbol.for("react.provider");
-    var REACT_CONTEXT_TYPE = Symbol.for("react.context");
-    var REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref");
-    var REACT_SUSPENSE_TYPE = Symbol.for("react.suspense");
-    var REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list");
-    var REACT_MEMO_TYPE = Symbol.for("react.memo");
-    var REACT_LAZY_TYPE = Symbol.for("react.lazy");
-    var REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen");
-    var MAYBE_ITERATOR_SYMBOL = Symbol.iterator;
-    var FAUX_ITERATOR_SYMBOL = "@@iterator";
-    function getIteratorFn(maybeIterable) {
-        if (maybeIterable === null || typeof maybeIterable !== "object") return null;
-        var maybeIterator = MAYBE_ITERATOR_SYMBOL && maybeIterable[MAYBE_ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL];
-        if (typeof maybeIterator === "function") return maybeIterator;
-        return null;
-    }
-    var ReactSharedInternals = React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
-    function error(format) {
-        for(var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++)args[_key2 - 1] = arguments[_key2];
-        printWarning("error", format, args);
-    }
-    function printWarning(level, format, args) {
-        var ReactDebugCurrentFrame = ReactSharedInternals.ReactDebugCurrentFrame;
-        var stack = ReactDebugCurrentFrame.getStackAddendum();
-        if (stack !== "") {
-            format += "%s";
-            args = args.concat([
-                stack
-            ]);
-        } // eslint-disable-next-line react-internal/safe-string-coercion
-        var argsWithFormat = args.map(function(item) {
-            return String(item);
-        }); // Careful: RN currently depends on this prefix
-        argsWithFormat.unshift("Warning: " + format); // We intentionally don't use spread (or .apply) directly because it
-        // breaks IE9: https://github.com/facebook/react/issues/13610
-        // eslint-disable-next-line react-internal/no-production-logging
-        Function.prototype.apply.call(console[level], console, argsWithFormat);
-    }
-    // -----------------------------------------------------------------------------
-    var enableScopeAPI = false; // Experimental Create Event Handle API.
-    var enableCacheElement = false;
-    var enableTransitionTracing = false; // No known bugs, but needs performance testing
-    var enableLegacyHidden = false; // Enables unstable_avoidThisFallback feature in Fiber
-    // stuff. Intended to enable React core members to more easily debug scheduling
-    // issues in DEV builds.
-    var enableDebugTracing = false; // Track which Fiber(s) schedule render work.
-    var REACT_MODULE_REFERENCE;
-    REACT_MODULE_REFERENCE = Symbol.for("react.module.reference");
-    function isValidElementType(type) {
-        if (typeof type === "string" || typeof type === "function") return true;
-         // Note: typeof might be other than 'symbol' or 'number' (e.g. if it's a polyfill).
-        if (type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || enableDebugTracing || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || enableLegacyHidden || type === REACT_OFFSCREEN_TYPE || enableScopeAPI || enableCacheElement || enableTransitionTracing) return true;
-        if (typeof type === "object" && type !== null) {
-            if (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || // This needs to include all possible module reference object
-            // types supported by any Flight configuration anywhere since
-            // we don't know which Flight build this will end up being used
-            // with.
-            type.$$typeof === REACT_MODULE_REFERENCE || type.getModuleId !== undefined) return true;
-        }
-        return false;
-    }
-    function getWrappedName(outerType, innerType, wrapperName) {
-        var displayName = outerType.displayName;
-        if (displayName) return displayName;
-        var functionName = innerType.displayName || innerType.name || "";
-        return functionName !== "" ? wrapperName + "(" + functionName + ")" : wrapperName;
-    } // Keep in sync with react-reconciler/getComponentNameFromFiber
-    function getContextName(type) {
-        return type.displayName || "Context";
-    } // Note that the reconciler package should generally prefer to use getComponentNameFromFiber() instead.
-    function getComponentNameFromType(type) {
-        if (type == null) // Host root, text node or just invalid type.
-        return null;
-        if (typeof type.tag === "number") error("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue.");
-        if (typeof type === "function") return type.displayName || type.name || null;
-        if (typeof type === "string") return type;
-        switch(type){
-            case REACT_FRAGMENT_TYPE:
-                return "Fragment";
-            case REACT_PORTAL_TYPE:
-                return "Portal";
-            case REACT_PROFILER_TYPE:
-                return "Profiler";
-            case REACT_STRICT_MODE_TYPE:
-                return "StrictMode";
-            case REACT_SUSPENSE_TYPE:
-                return "Suspense";
-            case REACT_SUSPENSE_LIST_TYPE:
-                return "SuspenseList";
-        }
-        if (typeof type === "object") switch(type.$$typeof){
-            case REACT_CONTEXT_TYPE:
-                var context = type;
-                return getContextName(context) + ".Consumer";
-            case REACT_PROVIDER_TYPE:
-                var provider = type;
-                return getContextName(provider._context) + ".Provider";
-            case REACT_FORWARD_REF_TYPE:
-                return getWrappedName(type, type.render, "ForwardRef");
-            case REACT_MEMO_TYPE:
-                var outerName = type.displayName || null;
-                if (outerName !== null) return outerName;
-                return getComponentNameFromType(type.type) || "Memo";
-            case REACT_LAZY_TYPE:
-                var lazyComponent = type;
-                var payload = lazyComponent._payload;
-                var init = lazyComponent._init;
-                try {
-                    return getComponentNameFromType(init(payload));
-                } catch (x) {
-                    return null;
-                }
-        }
-        return null;
-    }
-    var assign = Object.assign;
-    // Helpers to patch console.logs to avoid logging during side-effect free
-    // replaying on render function. This currently only patches the object
-    // lazily which won't cover if the log function was extracted eagerly.
-    // We could also eagerly patch the method.
-    var disabledDepth = 0;
-    var prevLog;
-    var prevInfo;
-    var prevWarn;
-    var prevError;
-    var prevGroup;
-    var prevGroupCollapsed;
-    var prevGroupEnd;
-    function disabledLog() {}
-    disabledLog.__reactDisabledLog = true;
-    function disableLogs() {
-        if (disabledDepth === 0) {
-            /* eslint-disable react-internal/no-production-logging */ prevLog = console.log;
-            prevInfo = console.info;
-            prevWarn = console.warn;
-            prevError = console.error;
-            prevGroup = console.group;
-            prevGroupCollapsed = console.groupCollapsed;
-            prevGroupEnd = console.groupEnd; // https://github.com/facebook/react/issues/19099
-            var props = {
-                configurable: true,
-                enumerable: true,
-                value: disabledLog,
-                writable: true
-            }; // $FlowFixMe Flow thinks console is immutable.
-            Object.defineProperties(console, {
-                info: props,
-                log: props,
-                warn: props,
-                error: props,
-                group: props,
-                groupCollapsed: props,
-                groupEnd: props
-            });
-        /* eslint-enable react-internal/no-production-logging */ }
-        disabledDepth++;
-    }
-    function reenableLogs() {
-        disabledDepth--;
-        if (disabledDepth === 0) {
-            /* eslint-disable react-internal/no-production-logging */ var props = {
-                configurable: true,
-                enumerable: true,
-                writable: true
-            }; // $FlowFixMe Flow thinks console is immutable.
-            Object.defineProperties(console, {
-                log: assign({}, props, {
-                    value: prevLog
-                }),
-                info: assign({}, props, {
-                    value: prevInfo
-                }),
-                warn: assign({}, props, {
-                    value: prevWarn
-                }),
-                error: assign({}, props, {
-                    value: prevError
-                }),
-                group: assign({}, props, {
-                    value: prevGroup
-                }),
-                groupCollapsed: assign({}, props, {
-                    value: prevGroupCollapsed
-                }),
-                groupEnd: assign({}, props, {
-                    value: prevGroupEnd
-                })
-            });
-        /* eslint-enable react-internal/no-production-logging */ }
-        if (disabledDepth < 0) error("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
-    }
-    var ReactCurrentDispatcher = ReactSharedInternals.ReactCurrentDispatcher;
-    var prefix;
-    function describeBuiltInComponentFrame(name, source, ownerFn) {
-        if (prefix === undefined) // Extract the VM specific prefix used by each line.
-        try {
-            throw Error();
-        } catch (x) {
-            var match = x.stack.trim().match(/\n( *(at )?)/);
-            prefix = match && match[1] || "";
-        }
-         // We use the prefix to ensure our stacks line up with native stack frames.
-        return "\n" + prefix + name;
-    }
-    var reentry = false;
-    var componentFrameCache;
-    var PossiblyWeakMap = typeof WeakMap === "function" ? WeakMap : Map;
-    componentFrameCache = new PossiblyWeakMap();
-    function describeNativeComponentFrame(fn, construct) {
-        // If something asked for a stack inside a fake render, it should get ignored.
-        if (!fn || reentry) return "";
-        var frame = componentFrameCache.get(fn);
-        if (frame !== undefined) return frame;
-        var control;
-        reentry = true;
-        var previousPrepareStackTrace = Error.prepareStackTrace; // $FlowFixMe It does accept undefined.
-        Error.prepareStackTrace = undefined;
-        var previousDispatcher;
-        previousDispatcher = ReactCurrentDispatcher.current; // Set the dispatcher in DEV because this might be call in the render function
-        // for warnings.
-        ReactCurrentDispatcher.current = null;
-        disableLogs();
-        try {
-            // This should throw.
-            if (construct) {
-                // Something should be setting the props in the constructor.
-                var Fake = function() {
-                    throw Error();
-                }; // $FlowFixMe
-                Object.defineProperty(Fake.prototype, "props", {
-                    set: function() {
-                        // We use a throwing setter instead of frozen or non-writable props
-                        // because that won't throw in a non-strict mode function.
-                        throw Error();
-                    }
-                });
-                if (typeof Reflect === "object" && Reflect.construct) {
-                    // We construct a different control for this case to include any extra
-                    // frames added by the construct call.
-                    try {
-                        Reflect.construct(Fake, []);
-                    } catch (x) {
-                        control = x;
-                    }
-                    Reflect.construct(fn, [], Fake);
-                } else {
-                    try {
-                        Fake.call();
-                    } catch (x) {
-                        control = x;
-                    }
-                    fn.call(Fake.prototype);
-                }
-            } else {
-                try {
-                    throw Error();
-                } catch (x) {
-                    control = x;
-                }
-                fn();
-            }
-        } catch (sample) {
-            // This is inlined manually because closure doesn't do it for us.
-            if (sample && control && typeof sample.stack === "string") {
-                // This extracts the first frame from the sample that isn't also in the control.
-                // Skipping one frame that we assume is the frame that calls the two.
-                var sampleLines = sample.stack.split("\n");
-                var controlLines = control.stack.split("\n");
-                var s = sampleLines.length - 1;
-                var c = controlLines.length - 1;
-                while(s >= 1 && c >= 0 && sampleLines[s] !== controlLines[c])// We expect at least one stack frame to be shared.
-                // Typically this will be the root most one. However, stack frames may be
-                // cut off due to maximum stack limits. In this case, one maybe cut off
-                // earlier than the other. We assume that the sample is longer or the same
-                // and there for cut off earlier. So we should find the root most frame in
-                // the sample somewhere in the control.
-                c--;
-                for(; s >= 1 && c >= 0; s--, c--)// Next we find the first one that isn't the same which should be the
-                // frame that called our sample function and the control.
-                if (sampleLines[s] !== controlLines[c]) {
-                    // In V8, the first line is describing the message but other VMs don't.
-                    // If we're about to return the first line, and the control is also on the same
-                    // line, that's a pretty good indicator that our sample threw at same line as
-                    // the control. I.e. before we entered the sample frame. So we ignore this result.
-                    // This can happen if you passed a class to function component, or non-function.
-                    if (s !== 1 || c !== 1) do {
-                        s--;
-                        c--; // We may still have similar intermediate frames from the construct call.
-                        // The next one that isn't the same should be our match though.
-                        if (c < 0 || sampleLines[s] !== controlLines[c]) {
-                            // V8 adds a "new" prefix for native classes. Let's remove it to make it prettier.
-                            var _frame = "\n" + sampleLines[s].replace(" at new ", " at "); // If our component frame is labeled "<anonymous>"
-                            // but we have a user-provided "displayName"
-                            // splice it in to make the stack more readable.
-                            if (fn.displayName && _frame.includes("<anonymous>")) _frame = _frame.replace("<anonymous>", fn.displayName);
-                            if (typeof fn === "function") componentFrameCache.set(fn, _frame);
-                            return _frame;
-                        }
-                    }while (s >= 1 && c >= 0);
-                    break;
-                }
-            }
-        } finally{
-            reentry = false;
-            ReactCurrentDispatcher.current = previousDispatcher;
-            reenableLogs();
-            Error.prepareStackTrace = previousPrepareStackTrace;
-        } // Fallback to just using the name if we couldn't make it throw.
-        var name = fn ? fn.displayName || fn.name : "";
-        var syntheticFrame = name ? describeBuiltInComponentFrame(name) : "";
-        if (typeof fn === "function") componentFrameCache.set(fn, syntheticFrame);
-        return syntheticFrame;
-    }
-    function describeFunctionComponentFrame(fn, source, ownerFn) {
-        return describeNativeComponentFrame(fn, false);
-    }
-    function shouldConstruct(Component) {
-        var prototype = Component.prototype;
-        return !!(prototype && prototype.isReactComponent);
-    }
-    function describeUnknownElementTypeFrameInDEV(type, source, ownerFn) {
-        if (type == null) return "";
-        if (typeof type === "function") return describeNativeComponentFrame(type, shouldConstruct(type));
-        if (typeof type === "string") return describeBuiltInComponentFrame(type);
-        switch(type){
-            case REACT_SUSPENSE_TYPE:
-                return describeBuiltInComponentFrame("Suspense");
-            case REACT_SUSPENSE_LIST_TYPE:
-                return describeBuiltInComponentFrame("SuspenseList");
-        }
-        if (typeof type === "object") switch(type.$$typeof){
-            case REACT_FORWARD_REF_TYPE:
-                return describeFunctionComponentFrame(type.render);
-            case REACT_MEMO_TYPE:
-                // Memo may contain any component type so we recursively resolve it.
-                return describeUnknownElementTypeFrameInDEV(type.type, source, ownerFn);
-            case REACT_LAZY_TYPE:
-                var lazyComponent = type;
-                var payload = lazyComponent._payload;
-                var init = lazyComponent._init;
-                try {
-                    // Lazy may contain any component type so we recursively resolve it.
-                    return describeUnknownElementTypeFrameInDEV(init(payload), source, ownerFn);
-                } catch (x) {}
-        }
-        return "";
-    }
-    var hasOwnProperty = Object.prototype.hasOwnProperty;
-    var loggedTypeFailures = {};
-    var ReactDebugCurrentFrame = ReactSharedInternals.ReactDebugCurrentFrame;
-    function setCurrentlyValidatingElement(element) {
-        if (element) {
-            var owner = element._owner;
-            var stack = describeUnknownElementTypeFrameInDEV(element.type, element._source, owner ? owner.type : null);
-            ReactDebugCurrentFrame.setExtraStackFrame(stack);
-        } else ReactDebugCurrentFrame.setExtraStackFrame(null);
-    }
-    function checkPropTypes(typeSpecs, values, location, componentName, element) {
-        // $FlowFixMe This is okay but Flow doesn't know it.
-        var has = Function.call.bind(hasOwnProperty);
-        for(var typeSpecName in typeSpecs)if (has(typeSpecs, typeSpecName)) {
-            var error$1 = void 0; // Prop type validation may throw. In case they do, we don't want to
-            // fail the render phase where it didn't fail before. So we log it.
-            // After these have been cleaned up, we'll let them throw.
-            try {
-                // This is intentionally an invariant that gets caught. It's the same
-                // behavior as without this statement except with a better message.
-                if (typeof typeSpecs[typeSpecName] !== "function") {
-                    // eslint-disable-next-line react-internal/prod-error-codes
-                    var err = Error((componentName || "React class") + ": " + location + " type `" + typeSpecName + "` is invalid; " + "it must be a function, usually from the `prop-types` package, but received `" + typeof typeSpecs[typeSpecName] + "`." + "This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
-                    err.name = "Invariant Violation";
-                    throw err;
-                }
-                error$1 = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
-            } catch (ex) {
-                error$1 = ex;
-            }
-            if (error$1 && !(error$1 instanceof Error)) {
-                setCurrentlyValidatingElement(element);
-                error("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", componentName || "React class", location, typeSpecName, typeof error$1);
-                setCurrentlyValidatingElement(null);
-            }
-            if (error$1 instanceof Error && !(error$1.message in loggedTypeFailures)) {
-                // Only monitor this failure once because there tends to be a lot of the
-                // same error.
-                loggedTypeFailures[error$1.message] = true;
-                setCurrentlyValidatingElement(element);
-                error("Failed %s type: %s", location, error$1.message);
-                setCurrentlyValidatingElement(null);
-            }
-        }
-    }
-    var isArrayImpl = Array.isArray; // eslint-disable-next-line no-redeclare
-    function isArray(a) {
-        return isArrayImpl(a);
-    }
-    /*
- * The `'' + value` pattern (used in in perf-sensitive code) throws for Symbol
- * and Temporal.* types. See https://github.com/facebook/react/pull/22064.
- *
- * The functions in this module will throw an easier-to-understand,
- * easier-to-debug exception with a clear errors message message explaining the
- * problem. (Instead of a confusing exception thrown inside the implementation
- * of the `value` object).
- */ // $FlowFixMe only called in DEV, so void return is not possible.
-    function typeName(value) {
-        // toStringTag is needed for namespaced types like Temporal.Instant
-        var hasToStringTag = typeof Symbol === "function" && Symbol.toStringTag;
-        var type = hasToStringTag && value[Symbol.toStringTag] || value.constructor.name || "Object";
-        return type;
-    } // $FlowFixMe only called in DEV, so void return is not possible.
-    function willCoercionThrow(value) {
-        try {
-            testStringCoercion(value);
-            return false;
-        } catch (e) {
-            return true;
-        }
-    }
-    function testStringCoercion(value) {
-        // If you ended up here by following an exception call stack, here's what's
-        // happened: you supplied an object or symbol value to React (as a prop, key,
-        // DOM attribute, CSS property, string ref, etc.) and when React tried to
-        // coerce it to a string using `'' + value`, an exception was thrown.
-        //
-        // The most common types that will cause this exception are `Symbol` instances
-        // and Temporal objects like `Temporal.Instant`. But any object that has a
-        // `valueOf` or `[Symbol.toPrimitive]` method that throws will also cause this
-        // exception. (Library authors do this to prevent users from using built-in
-        // numeric operators like `+` or comparison operators like `>=` because custom
-        // methods are needed to perform accurate arithmetic or comparison.)
-        //
-        // To fix the problem, coerce this object or symbol value to a string before
-        // passing it to React. The most reliable way is usually `String(value)`.
-        //
-        // To find which value is throwing, check the browser or debugger console.
-        // Before this exception was thrown, there should be `console.error` output
-        // that shows the type (Symbol, Temporal.PlainDate, etc.) that caused the
-        // problem and how that type was used: key, atrribute, input value prop, etc.
-        // In most cases, this console output also shows the component and its
-        // ancestor components where the exception happened.
-        //
-        // eslint-disable-next-line react-internal/safe-string-coercion
-        return "" + value;
-    }
-    function checkKeyStringCoercion(value) {
-        if (willCoercionThrow(value)) {
-            error("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", typeName(value));
-            return testStringCoercion(value); // throw (to help callers find troubleshooting comments)
-        }
-    }
-    var ReactCurrentOwner = ReactSharedInternals.ReactCurrentOwner;
-    var RESERVED_PROPS = {
-        key: true,
-        ref: true,
-        __self: true,
-        __source: true
-    };
-    var specialPropKeyWarningShown;
-    var specialPropRefWarningShown;
-    var didWarnAboutStringRefs;
-    didWarnAboutStringRefs = {};
-    function hasValidRef(config) {
-        if (hasOwnProperty.call(config, "ref")) {
-            var getter = Object.getOwnPropertyDescriptor(config, "ref").get;
-            if (getter && getter.isReactWarning) return false;
-        }
-        return config.ref !== undefined;
-    }
-    function hasValidKey(config) {
-        if (hasOwnProperty.call(config, "key")) {
-            var getter = Object.getOwnPropertyDescriptor(config, "key").get;
-            if (getter && getter.isReactWarning) return false;
-        }
-        return config.key !== undefined;
-    }
-    function warnIfStringRefCannotBeAutoConverted(config, self) {
-        if (typeof config.ref === "string" && ReactCurrentOwner.current && self && ReactCurrentOwner.current.stateNode !== self) {
-            var componentName = getComponentNameFromType(ReactCurrentOwner.current.type);
-            if (!didWarnAboutStringRefs[componentName]) {
-                error('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', getComponentNameFromType(ReactCurrentOwner.current.type), config.ref);
-                didWarnAboutStringRefs[componentName] = true;
-            }
-        }
-    }
-    function defineKeyPropWarningGetter(props, displayName) {
-        var warnAboutAccessingKey = function() {
-            if (!specialPropKeyWarningShown) {
-                specialPropKeyWarningShown = true;
-                error("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", displayName);
-            }
-        };
-        warnAboutAccessingKey.isReactWarning = true;
-        Object.defineProperty(props, "key", {
-            get: warnAboutAccessingKey,
-            configurable: true
-        });
-    }
-    function defineRefPropWarningGetter(props, displayName) {
-        var warnAboutAccessingRef = function() {
-            if (!specialPropRefWarningShown) {
-                specialPropRefWarningShown = true;
-                error("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", displayName);
-            }
-        };
-        warnAboutAccessingRef.isReactWarning = true;
-        Object.defineProperty(props, "ref", {
-            get: warnAboutAccessingRef,
-            configurable: true
-        });
-    }
-    /**
- * Factory method to create a new React element. This no longer adheres to
- * the class pattern, so do not use new to call it. Also, instanceof check
- * will not work. Instead test $$typeof field against Symbol.for('react.element') to check
- * if something is a React Element.
- *
- * @param {*} type
- * @param {*} props
- * @param {*} key
- * @param {string|object} ref
- * @param {*} owner
- * @param {*} self A *temporary* helper to detect places where `this` is
- * different from the `owner` when React.createElement is called, so that we
- * can warn. We want to get rid of owner and replace string `ref`s with arrow
- * functions, and as long as `this` and owner are the same, there will be no
- * change in behavior.
- * @param {*} source An annotation object (added by a transpiler or otherwise)
- * indicating filename, line number, and/or other information.
- * @internal
- */ var ReactElement = function(type, key, ref, self, source, owner, props) {
-        var element = {
-            // This tag allows us to uniquely identify this as a React Element
-            $$typeof: REACT_ELEMENT_TYPE,
-            // Built-in properties that belong on the element
-            type: type,
-            key: key,
-            ref: ref,
-            props: props,
-            // Record the component responsible for creating this element.
-            _owner: owner
-        };
-        // The validation flag is currently mutative. We put it on
-        // an external backing store so that we can freeze the whole object.
-        // This can be replaced with a WeakMap once they are implemented in
-        // commonly used development environments.
-        element._store = {}; // To make comparing ReactElements easier for testing purposes, we make
-        // the validation flag non-enumerable (where possible, which should
-        // include every environment we run tests in), so the test framework
-        // ignores it.
-        Object.defineProperty(element._store, "validated", {
-            configurable: false,
-            enumerable: false,
-            writable: true,
-            value: false
-        }); // self and source are DEV only properties.
-        Object.defineProperty(element, "_self", {
-            configurable: false,
-            enumerable: false,
-            writable: false,
-            value: self
-        }); // Two elements created in two different places should be considered
-        // equal for testing purposes and therefore we hide it from enumeration.
-        Object.defineProperty(element, "_source", {
-            configurable: false,
-            enumerable: false,
-            writable: false,
-            value: source
-        });
-        if (Object.freeze) {
-            Object.freeze(element.props);
-            Object.freeze(element);
-        }
-        return element;
-    };
-    /**
- * https://github.com/reactjs/rfcs/pull/107
- * @param {*} type
- * @param {object} props
- * @param {string} key
- */ function jsxDEV(type, config, maybeKey, source, self) {
-        var propName; // Reserved names are extracted
-        var props = {};
-        var key = null;
-        var ref = null; // Currently, key can be spread in as a prop. This causes a potential
-        // issue if key is also explicitly declared (ie. <div {...props} key="Hi" />
-        // or <div key="Hi" {...props} /> ). We want to deprecate key spread,
-        // but as an intermediary step, we will use jsxDEV for everything except
-        // <div {...props} key="Hi" />, because we aren't currently able to tell if
-        // key is explicitly declared to be undefined or not.
-        if (maybeKey !== undefined) {
-            checkKeyStringCoercion(maybeKey);
-            key = "" + maybeKey;
-        }
-        if (hasValidKey(config)) {
-            checkKeyStringCoercion(config.key);
-            key = "" + config.key;
-        }
-        if (hasValidRef(config)) {
-            ref = config.ref;
-            warnIfStringRefCannotBeAutoConverted(config, self);
-        } // Remaining properties are added to a new props object
-        for(propName in config)if (hasOwnProperty.call(config, propName) && !RESERVED_PROPS.hasOwnProperty(propName)) props[propName] = config[propName];
-         // Resolve default props
-        if (type && type.defaultProps) {
-            var defaultProps = type.defaultProps;
-            for(propName in defaultProps)if (props[propName] === undefined) props[propName] = defaultProps[propName];
-        }
-        if (key || ref) {
-            var displayName = typeof type === "function" ? type.displayName || type.name || "Unknown" : type;
-            if (key) defineKeyPropWarningGetter(props, displayName);
-            if (ref) defineRefPropWarningGetter(props, displayName);
-        }
-        return ReactElement(type, key, ref, self, source, ReactCurrentOwner.current, props);
-    }
-    var ReactCurrentOwner$1 = ReactSharedInternals.ReactCurrentOwner;
-    var ReactDebugCurrentFrame$1 = ReactSharedInternals.ReactDebugCurrentFrame;
-    function setCurrentlyValidatingElement$1(element) {
-        if (element) {
-            var owner = element._owner;
-            var stack = describeUnknownElementTypeFrameInDEV(element.type, element._source, owner ? owner.type : null);
-            ReactDebugCurrentFrame$1.setExtraStackFrame(stack);
-        } else ReactDebugCurrentFrame$1.setExtraStackFrame(null);
-    }
-    var propTypesMisspellWarningShown;
-    propTypesMisspellWarningShown = false;
-    /**
- * Verifies the object is a ReactElement.
- * See https://reactjs.org/docs/react-api.html#isvalidelement
- * @param {?object} object
- * @return {boolean} True if `object` is a ReactElement.
- * @final
- */ function isValidElement(object) {
-        return typeof object === "object" && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
-    }
-    function getDeclarationErrorAddendum() {
-        if (ReactCurrentOwner$1.current) {
-            var name = getComponentNameFromType(ReactCurrentOwner$1.current.type);
-            if (name) return "\n\nCheck the render method of `" + name + "`.";
-        }
-        return "";
-    }
-    function getSourceInfoErrorAddendum(source) {
-        if (source !== undefined) {
-            var fileName = source.fileName.replace(/^.*[\\\/]/, "");
-            var lineNumber = source.lineNumber;
-            return "\n\nCheck your code at " + fileName + ":" + lineNumber + ".";
-        }
-        return "";
-    }
-    /**
- * Warn if there's no key explicitly set on dynamic arrays of children or
- * object keys are not valid. This allows us to keep track of children between
- * updates.
- */ var ownerHasKeyUseWarning = {};
-    function getCurrentComponentErrorInfo(parentType) {
-        var info = getDeclarationErrorAddendum();
-        if (!info) {
-            var parentName = typeof parentType === "string" ? parentType : parentType.displayName || parentType.name;
-            if (parentName) info = "\n\nCheck the top-level render call using <" + parentName + ">.";
-        }
-        return info;
-    }
-    /**
- * Warn if the element doesn't have an explicit key assigned to it.
- * This element is in an array. The array could grow and shrink or be
- * reordered. All children that haven't already been validated are required to
- * have a "key" property assigned to it. Error statuses are cached so a warning
- * will only be shown once.
- *
- * @internal
- * @param {ReactElement} element Element that requires a key.
- * @param {*} parentType element's parent's type.
- */ function validateExplicitKey(element, parentType) {
-        if (!element._store || element._store.validated || element.key != null) return;
-        element._store.validated = true;
-        var currentComponentErrorInfo = getCurrentComponentErrorInfo(parentType);
-        if (ownerHasKeyUseWarning[currentComponentErrorInfo]) return;
-        ownerHasKeyUseWarning[currentComponentErrorInfo] = true; // Usually the current owner is the offender, but if it accepts children as a
-        // property, it may be the creator of the child that's responsible for
-        // assigning it a key.
-        var childOwner = "";
-        if (element && element._owner && element._owner !== ReactCurrentOwner$1.current) // Give the component that originally created this child.
-        childOwner = " It was passed a child from " + getComponentNameFromType(element._owner.type) + ".";
-        setCurrentlyValidatingElement$1(element);
-        error('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', currentComponentErrorInfo, childOwner);
-        setCurrentlyValidatingElement$1(null);
-    }
-    /**
- * Ensure that every element either is passed in a static location, in an
- * array with an explicit keys property defined, or in an object literal
- * with valid key property.
- *
- * @internal
- * @param {ReactNode} node Statically passed child of any type.
- * @param {*} parentType node's parent's type.
- */ function validateChildKeys(node, parentType) {
-        if (typeof node !== "object") return;
-        if (isArray(node)) for(var i = 0; i < node.length; i++){
-            var child = node[i];
-            if (isValidElement(child)) validateExplicitKey(child, parentType);
-        }
-        else if (isValidElement(node)) // This element was passed in a valid location.
-        {
-            if (node._store) node._store.validated = true;
-        } else if (node) {
-            var iteratorFn = getIteratorFn(node);
-            if (typeof iteratorFn === "function") // Entry iterators used to provide implicit keys,
-            // but now we print a separate warning for them later.
-            {
-                if (iteratorFn !== node.entries) {
-                    var iterator = iteratorFn.call(node);
-                    var step;
-                    while(!(step = iterator.next()).done)if (isValidElement(step.value)) validateExplicitKey(step.value, parentType);
-                }
-            }
-        }
-    }
-    /**
- * Given an element, validate that its props follow the propTypes definition,
- * provided by the type.
- *
- * @param {ReactElement} element
- */ function validatePropTypes(element) {
-        var type = element.type;
-        if (type === null || type === undefined || typeof type === "string") return;
-        var propTypes;
-        if (typeof type === "function") propTypes = type.propTypes;
-        else if (typeof type === "object" && (type.$$typeof === REACT_FORWARD_REF_TYPE || // Note: Memo only checks outer props here.
-        // Inner props are checked in the reconciler.
-        type.$$typeof === REACT_MEMO_TYPE)) propTypes = type.propTypes;
-        else return;
-        if (propTypes) {
-            // Intentionally inside to avoid triggering lazy initializers:
-            var name = getComponentNameFromType(type);
-            checkPropTypes(propTypes, element.props, "prop", name, element);
-        } else if (type.PropTypes !== undefined && !propTypesMisspellWarningShown) {
-            propTypesMisspellWarningShown = true; // Intentionally inside to avoid triggering lazy initializers:
-            var _name = getComponentNameFromType(type);
-            error("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", _name || "Unknown");
-        }
-        if (typeof type.getDefaultProps === "function" && !type.getDefaultProps.isReactClassApproved) error("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
-    }
-    /**
- * Given a fragment, validate that it can only be provided with fragment props
- * @param {ReactElement} fragment
- */ function validateFragmentProps(fragment) {
-        var keys = Object.keys(fragment.props);
-        for(var i = 0; i < keys.length; i++){
-            var key = keys[i];
-            if (key !== "children" && key !== "key") {
-                setCurrentlyValidatingElement$1(fragment);
-                error("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", key);
-                setCurrentlyValidatingElement$1(null);
-                break;
-            }
-        }
-        if (fragment.ref !== null) {
-            setCurrentlyValidatingElement$1(fragment);
-            error("Invalid attribute `ref` supplied to `React.Fragment`.");
-            setCurrentlyValidatingElement$1(null);
-        }
-    }
-    function jsxWithValidation(type, props, key, isStaticChildren, source, self) {
-        var validType = isValidElementType(type); // We warn in this case but don't throw. We expect the element creation to
-        // succeed and there will likely be errors in render.
-        if (!validType) {
-            var info = "";
-            if (type === undefined || typeof type === "object" && type !== null && Object.keys(type).length === 0) info += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.";
-            var sourceInfo = getSourceInfoErrorAddendum(source);
-            if (sourceInfo) info += sourceInfo;
-            else info += getDeclarationErrorAddendum();
-            var typeString;
-            if (type === null) typeString = "null";
-            else if (isArray(type)) typeString = "array";
-            else if (type !== undefined && type.$$typeof === REACT_ELEMENT_TYPE) {
-                typeString = "<" + (getComponentNameFromType(type.type) || "Unknown") + " />";
-                info = " Did you accidentally export a JSX literal instead of a component?";
-            } else typeString = typeof type;
-            error("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", typeString, info);
-        }
-        var element = jsxDEV(type, props, key, source, self); // The result can be nullish if a mock or a custom function is used.
-        // TODO: Drop this when these are no longer allowed as the type argument.
-        if (element == null) return element;
-         // Skip key warning if the type isn't valid since our key validation logic
-        // doesn't expect a non-string/function type and can throw confusing errors.
-        // We don't want exception behavior to differ between dev and prod.
-        // (Rendering will throw with a helpful message and as soon as the type is
-        // fixed, the key warnings will appear.)
-        if (validType) {
-            var children = props.children;
-            if (children !== undefined) {
-                if (isStaticChildren) {
-                    if (isArray(children)) {
-                        for(var i = 0; i < children.length; i++)validateChildKeys(children[i], type);
-                        if (Object.freeze) Object.freeze(children);
-                    } else error("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
-                } else validateChildKeys(children, type);
-            }
-        }
-        if (type === REACT_FRAGMENT_TYPE) validateFragmentProps(element);
-        else validatePropTypes(element);
-        return element;
-    } // These two functions exist to still get child warnings in dev
-    var jsxDEV$1 = jsxWithValidation;
-    exports.Fragment = REACT_FRAGMENT_TYPE;
-    exports.jsxDEV = jsxDEV$1;
-})();
-
-},{"58362d9d82be395f":"21dqq"}],"21dqq":[function(require,module,exports) {
+},{"45e8193f4240b0ee":"21dqq","486ffccad3562ae":"lOjBx","3b6e29c95f7f0b1a":"fNIx6","7ddadb7cc7ae0314":"6J35F","1038d504bbe7463a":"eUZ6J","5bb39b9c63338f66":"9xmpe","4007d77312fe2c81":"66EYZ","521fbd0fa40711be":"iQH4s","d37d6aec091095da":"7pgwL","5e58c8386dea10a7":"5mE2z","cf6dabeed6794aea":"c7s09","af7b562d990d12b1":"bdVon","775ed370a46ca7b":"csQGs","81b1698b765d4cf3":"6AEwr","f17417b241bb5a36":"Yn6sE","17d045fe8f1ef2bf":"cGtEz","801fe4a39cadd7fd":"ap3Go","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"21dqq":[function(require,module,exports) {
 "use strict";
 module.exports = require("a569817e6ea559f6");
 
@@ -27311,203 +26427,121 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$2257.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactRouterDom = require("react-router-dom");
-var _foodvillaPng = require("../assests/img/foodvilla.png");
-var _foodvillaPngDefault = parcelHelpers.interopDefault(_foodvillaPng);
-var _userContext = require("./utils/UserContext");
-var _userContextDefault = parcelHelpers.interopDefault(_userContext);
-var _useSelector = require("react-redux/es/hooks/useSelector");
-var _useOnline = require("./utils/useOnline");
-var _useOnlineDefault = parcelHelpers.interopDefault(_useOnline);
-var _s = $RefreshSig$();
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = require("2f6140fb87124869");
+var _reactRouterDom = require("a57d7725a9ef5745");
+var _foodvilla = _interopRequireDefault(require("70b1d875c8170e41"));
+var _UserContext = _interopRequireDefault(require("866fd23f61ccb426"));
+var _reactRedux = require("968399bd88303de");
+var _useOnline = _interopRequireDefault(require("99c045018ea3e092"));
+var _jsxRuntime = require("49bfccc48b50902d");
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+// import { useSelector } from "react-redux/es/hooks/useSelector";
 const Title = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+    return /*#__PURE__*/ (0, _jsxRuntime.jsx)("a", {
         href: "/",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+        children: /*#__PURE__*/ (0, _jsxRuntime.jsx)("img", {
+            "data-testid": "logo",
             className: "h-28 p-2",
             alt: "logo",
-            src: (0, _foodvillaPngDefault.default)
-        }, void 0, false, {
-            fileName: "src/Components/Header.js",
-            lineNumber: 10,
-            columnNumber: 9
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/Components/Header.js",
-        lineNumber: 9,
-        columnNumber: 10
-    }, undefined);
+            src: _foodvilla.default
+        })
+    });
 };
 _c = Title;
 const Header = ()=>{
-    _s();
     const [isLoggedIn, setIsLoggedIn] = (0, _react.useState)(false);
-    const isOnline = (0, _useOnlineDefault.default)();
-    const { user  } = (0, _react.useContext)((0, _userContextDefault.default));
-    const cartItems = (0, _useSelector.useSelector)((store)=>store.cart.items);
+    const isOnline = (0, _useOnline.default)();
+    const { user  } = (0, _react.useContext)(_UserContext.default);
+    const cartItems = (0, _reactRedux.useSelector)((store)=>store.cart.items);
     console.log(cartItems);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
         id: "header",
         className: "flex justify-between bg-amber-200 shadow-lg",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
-                fileName: "src/Components/Header.js",
-                lineNumber: 22,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)(Title, {}),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
                 className: "nav-items",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                children: /*#__PURE__*/ (0, _jsxRuntime.jsxs)("ul", {
                     className: "flex py-10",
                     children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            className: "px-3 text-lg",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/",
+                        /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
+                            to: "/",
+                            children: /*#__PURE__*/ (0, _jsxRuntime.jsx)("li", {
+                                className: "px-3 text-lg",
                                 children: "Home"
-                            }, void 0, false, {
-                                fileName: "src/Components/Header.js",
-                                lineNumber: 25,
-                                columnNumber: 42
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/Components/Header.js",
-                            lineNumber: 25,
-                            columnNumber: 13
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            className: "px-3 text-lg",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/about",
+                            })
+                        }),
+                        /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
+                            to: "/about",
+                            children: /*#__PURE__*/ (0, _jsxRuntime.jsx)("li", {
+                                className: "px-3 text-lg",
                                 children: "About Us"
-                            }, void 0, false, {
-                                fileName: "src/Components/Header.js",
-                                lineNumber: 26,
-                                columnNumber: 42
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/Components/Header.js",
-                            lineNumber: 26,
-                            columnNumber: 13
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            className: "px-3 text-lg",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/contact",
+                            })
+                        }),
+                        /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
+                            to: "/contact",
+                            children: /*#__PURE__*/ (0, _jsxRuntime.jsx)("li", {
+                                className: "px-3 text-lg",
                                 children: "Contact"
-                            }, void 0, false, {
-                                fileName: "src/Components/Header.js",
-                                lineNumber: 27,
-                                columnNumber: 42
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/Components/Header.js",
-                            lineNumber: 27,
-                            columnNumber: 13
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            className: "px-3 text-lg",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/instamart",
+                            })
+                        }),
+                        /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
+                            to: "/instamart",
+                            children: /*#__PURE__*/ (0, _jsxRuntime.jsx)("li", {
+                                className: "px-3 text-lg",
                                 children: "Instamart"
-                            }, void 0, false, {
-                                fileName: "src/Components/Header.js",
-                                lineNumber: 28,
-                                columnNumber: 42
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/Components/Header.js",
-                            lineNumber: 28,
-                            columnNumber: 13
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            className: "px-3 text-lg",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/cart",
+                            })
+                        }),
+                        /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
+                            to: "/cart",
+                            children: /*#__PURE__*/ (0, _jsxRuntime.jsxs)("li", {
+                                "data-testid": "cart",
+                                className: "px-3 text-lg",
                                 children: [
                                     "Cart (",
                                     cartItems.length,
                                     ")"
                                 ]
-                            }, void 0, true, {
-                                fileName: "src/Components/Header.js",
-                                lineNumber: 29,
-                                columnNumber: 42
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/Components/Header.js",
-                            lineNumber: 29,
-                            columnNumber: 13
-                        }, undefined)
+                            })
+                        })
                     ]
-                }, void 0, true, {
-                    fileName: "src/Components/Header.js",
-                    lineNumber: 24,
-                    columnNumber: 11
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/Components/Header.js",
-                lineNumber: 23,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                })
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+                children: /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
+                    "data-testid": "online-status",
                     children: isOnline ? "Online✅" : "Offline\uD83D\uDD34"
-                }, void 0, false, {
-                    fileName: "src/Components/Header.js",
-                    lineNumber: 33,
-                    columnNumber: 11
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/Components/Header.js",
-                lineNumber: 32,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                })
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsxs)("span", {
                 children: [
                     user.name,
                     " - ",
                     user.email
                 ]
-            }, void 0, true, {
-                fileName: "src/Components/Header.js",
-                lineNumber: 35,
-                columnNumber: 9
-            }, undefined),
-            isLoggedIn ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+            }),
+            isLoggedIn ? /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
                 onClick: ()=>setIsLoggedIn(false),
                 children: "Logout"
-            }, void 0, false, {
-                fileName: "src/Components/Header.js",
-                lineNumber: 38,
-                columnNumber: 23
-            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+            }) : /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
                 onClick: ()=>setIsLoggedIn(true),
                 children: "Login"
-            }, void 0, false, {
-                fileName: "src/Components/Header.js",
-                lineNumber: 38,
-                columnNumber: 86
-            }, undefined)
+            })
         ]
-    }, void 0, true, {
-        fileName: "src/Components/Header.js",
-        lineNumber: 21,
-        columnNumber: 10
-    }, undefined);
+    });
 };
-_s(Header, "j/uDf/f16A+GZEbmSw8Sogcrhnc=", false, function() {
-    return [
-        (0, _useOnlineDefault.default),
-        (0, _useSelector.useSelector)
-    ];
-});
 _c1 = Header;
-exports.default = Header;
+var _default = Header;
+exports.default = _default;
 var _c, _c1;
 $RefreshReg$(_c, "Title");
 $RefreshReg$(_c1, "Header");
@@ -27517,7 +26551,7 @@ $RefreshReg$(_c1, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../assests/img/foodvilla.png":"KHb4N","./utils/UserContext":"62dPy","react-redux/es/hooks/useSelector":"l3rFI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./utils/useOnline":"3QNXc"}],"9xmpe":[function(require,module,exports) {
+},{"2f6140fb87124869":"21dqq","a57d7725a9ef5745":"9xmpe","70b1d875c8170e41":"KHb4N","866fd23f61ccb426":"62dPy","968399bd88303de":"bdVon","99c045018ea3e092":"3QNXc","49bfccc48b50902d":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.14.0
  *
@@ -33336,23 +32370,27 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$00c8.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = require("8f6004e1eb7fb44b");
 const UserContext = /*#__PURE__*/ (0, _react.createContext)({
     user: {
         name: "Varsha",
         email: "varsha@gmail.com"
     }
 });
-exports.default = UserContext;
+var _default = UserContext;
+exports.default = _default;
 
   $parcel$ReactRefreshHelpers$00c8.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"km3Ru":[function(require,module,exports) {
+},{"8f6004e1eb7fb44b":"21dqq","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"km3Ru":[function(require,module,exports) {
 "use strict";
 var Refresh = require("7422ead32dcc1e6b");
 function debounce(func, delay) {
@@ -33490,1823 +32528,7 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"l3rFI":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "initializeUseSelector", ()=>initializeUseSelector);
-/**
- * Hook factory, which creates a `useSelector` hook bound to a given context.
- *
- * @param {React.Context} [context=ReactReduxContext] Context passed to your `<Provider>`.
- * @returns {Function} A `useSelector` hook bound to the specified context.
- */ parcelHelpers.export(exports, "createSelectorHook", ()=>createSelectorHook);
-parcelHelpers.export(exports, "useSelector", ()=>useSelector);
-var _react = require("react");
-var _useReduxContext = require("./useReduxContext");
-var _context = require("../components/Context");
-var _useSyncExternalStore = require("../utils/useSyncExternalStore");
-let useSyncExternalStoreWithSelector = (0, _useSyncExternalStore.notInitialized);
-const initializeUseSelector = (fn)=>{
-    useSyncExternalStoreWithSelector = fn;
-};
-const refEquality = (a, b)=>a === b;
-function createSelectorHook(context = (0, _context.ReactReduxContext)) {
-    const useReduxContext = context === (0, _context.ReactReduxContext) ? (0, _useReduxContext.useReduxContext) : (0, _useReduxContext.createReduxContextHook)(context);
-    return function useSelector(selector, equalityFnOrOptions = {}) {
-        const { equalityFn =refEquality , stabilityCheck , noopCheck  } = typeof equalityFnOrOptions === "function" ? {
-            equalityFn: equalityFnOrOptions
-        } : equalityFnOrOptions;
-        if (!selector) throw new Error(`You must pass a selector to useSelector`);
-        if (typeof selector !== "function") throw new Error(`You must pass a function as a selector to useSelector`);
-        if (typeof equalityFn !== "function") throw new Error(`You must pass a function as an equality function to useSelector`);
-        const { store , subscription , getServerState , stabilityCheck: globalStabilityCheck , noopCheck: globalNoopCheck  } = useReduxContext();
-        const firstRun = (0, _react.useRef)(true);
-        const wrappedSelector = (0, _react.useCallback)({
-            [selector.name] (state) {
-                const selected = selector(state);
-                {
-                    const finalStabilityCheck = typeof stabilityCheck === "undefined" ? globalStabilityCheck : stabilityCheck;
-                    if (finalStabilityCheck === "always" || finalStabilityCheck === "once" && firstRun.current) {
-                        const toCompare = selector(state);
-                        if (!equalityFn(selected, toCompare)) console.warn("Selector " + (selector.name || "unknown") + " returned a different result when called with the same parameters. This can lead to unnecessary rerenders." + "\nSelectors that return a new reference (such as an object or an array) should be memoized: https://redux.js.org/usage/deriving-data-selectors#optimizing-selectors-with-memoization", {
-                            state,
-                            selected,
-                            selected2: toCompare
-                        });
-                    }
-                    const finalNoopCheck = typeof noopCheck === "undefined" ? globalNoopCheck : noopCheck;
-                    if (finalNoopCheck === "always" || finalNoopCheck === "once" && firstRun.current) // @ts-ignore
-                    {
-                        if (selected === state) console.warn("Selector " + (selector.name || "unknown") + " returned the root state when called. This can lead to unnecessary rerenders." + "\nSelectors that return the entire state are almost certainly a mistake, as they will cause a rerender whenever *anything* in state changes.");
-                    }
-                    if (firstRun.current) firstRun.current = false;
-                }
-                return selected;
-            }
-        }[selector.name], [
-            selector,
-            globalStabilityCheck,
-            stabilityCheck
-        ]);
-        const selectedState = useSyncExternalStoreWithSelector(subscription.addNestedSub, store.getState, getServerState || store.getState, wrappedSelector, equalityFn);
-        (0, _react.useDebugValue)(selectedState);
-        return selectedState;
-    };
-}
-const useSelector = /*#__PURE__*/ createSelectorHook();
-
-},{"react":"21dqq","./useReduxContext":"3828k","../components/Context":"ji81o","../utils/useSyncExternalStore":"dSsKl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3828k":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-/**
- * Hook factory, which creates a `useReduxContext` hook bound to a given context. This is a low-level
- * hook that you should usually not need to call directly.
- *
- * @param {React.Context} [context=ReactReduxContext] Context passed to your `<Provider>`.
- * @returns {Function} A `useReduxContext` hook bound to the specified context.
- */ parcelHelpers.export(exports, "createReduxContextHook", ()=>createReduxContextHook);
-parcelHelpers.export(exports, "useReduxContext", ()=>useReduxContext);
-var _react = require("react");
-var _context = require("../components/Context");
-function createReduxContextHook(context = (0, _context.ReactReduxContext)) {
-    return function useReduxContext() {
-        const contextValue = (0, _react.useContext)(context);
-        if (!contextValue) throw new Error("could not find react-redux context value; please ensure the component is wrapped in a <Provider>");
-        return contextValue;
-    };
-}
-const useReduxContext = /*#__PURE__*/ createReduxContextHook();
-
-},{"react":"21dqq","../components/Context":"ji81o","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ji81o":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "ReactReduxContext", ()=>ReactReduxContext);
-var _react = require("react");
-const ContextKey = Symbol.for(`react-redux-context-${(0, _react.version)}`);
-const gT = globalThis;
-function getContext() {
-    let realContext = gT[ContextKey];
-    if (!realContext) {
-        realContext = (0, _react.createContext)(null);
-        realContext.displayName = "ReactRedux";
-        gT[ContextKey] = realContext;
-    }
-    return realContext;
-}
-const ReactReduxContext = /*#__PURE__*/ new Proxy({}, /*#__PURE__*/ new Proxy({}, {
-    get (_, handler) {
-        const target = getContext(); // @ts-ignore
-        return (_target, ...args)=>Reflect[handler](target, ...args);
-    }
-}));
-exports.default = ReactReduxContext;
-
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dSsKl":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "notInitialized", ()=>notInitialized);
-const notInitialized = ()=>{
-    throw new Error("uSES not initialized!");
-};
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3QNXc":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$d259 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$d259.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _s = $RefreshSig$();
-const useOnline = ()=>{
-    _s();
-    const [isOnline, setIsOnline] = (0, _react.useState)(true);
-    (0, _react.useEffect)(()=>{
-        const handleOnline = ()=>{
-            setIsOnline(true);
-        };
-        const handleOffline = ()=>{
-            setIsOnline(false);
-        };
-        window.addEventListener("online", handleOnline);
-        window.addEventListener("offline", handleOffline);
-        //cleanup function
-        return ()=>{
-            window.removeEventListener("online", handleOnline);
-            window.removeEventListener("offline", handleOffline);
-        };
-    }, []);
-    return isOnline;
-};
-_s(useOnline, "mRBquyBAMh60D2Q5WI/A8/L/7j4=");
-exports.default = useOnline;
-
-  $parcel$ReactRefreshHelpers$d259.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6J35F":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$4f14 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$4f14.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-// import { restaurantList } from "../config";
-var _restaurantCard = require("./RestaurantCard");
-var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
-var _shimmer = require("./Shimmer");
-var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
-var _reactRouterDom = require("react-router-dom");
-var _helper = require("./utils/helper");
-var _useOnline = require("./utils/useOnline");
-var _useOnlineDefault = parcelHelpers.interopDefault(_useOnline);
-var _s = $RefreshSig$();
-const Body = ()=>{
-    _s();
-    // creating two copies of restaurants one for the whole UI other for the filtered UI
-    const [allRestaurants, setAllRestaurants] = (0, _react.useState)([]);
-    const [filteredRestaurants, setFilteredRestaurants] = (0, _react.useState)([]);
-    const [searchInput, setSearchInput] = (0, _react.useState)("");
-    (0, _react.useEffect)(()=>{
-        //API Call
-        getRestaurants();
-    }, []);
-    async function getRestaurants() {
-        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=31.3068925&lng=75.5793361&page_type=DESKTOP_WEB_LISTING");
-        const json = await data.json();
-        setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
-        setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
-    }
-    //using custom hook for offline msg
-    const isOnline = (0, _useOnlineDefault.default)();
-    if (!isOnline) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-        children: "\uD83D\uDD34Uh-Oh!! Please Check Your Internet Connection...❗❗"
-    }, void 0, false, {
-        fileName: "src/Components/Body.js",
-        lineNumber: 27,
-        columnNumber: 12
-    }, undefined);
-    //Conditional Rendering
-    // if restaurants has no data or its length is 0 => render Shimmer UI
-    // if restaurants has data => render the normal UI
-    //avoid rendering a component (Early return)
-    if (!allRestaurants) return null;
-    return allRestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
-        fileName: "src/Components/Body.js",
-        lineNumber: 36,
-        columnNumber: 40
-    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex p-2 m-2 bg-gray-200 shadow-xl",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "text",
-                        className: "placeholder:text-slate-400 block bg-white w-4/5 border border-slate-300 rounded-md p-3 m-2 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1",
-                        placeholder: "\uD83D\uDD0D   Search for anything...",
-                        name: "search",
-                        value: searchInput,
-                        onChange: (e)=>setSearchInput(e.target.value)
-                    }, void 0, false, {
-                        fileName: "src/Components/Body.js",
-                        lineNumber: 38,
-                        columnNumber: 13
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: "text-lg font-semibold border-2 bg-zinc-400 rounded-md p-3 m-2 w-36 shadow-sm focus:outline-none hover:bg-amber-200 text-neutral-700",
-                        onClick: ()=>{
-                            let data = (0, _helper.filterData)(searchInput, allRestaurants);
-                            setFilteredRestaurants(data);
-                        },
-                        children: "Search"
-                    }, void 0, false, {
-                        fileName: "src/Components/Body.js",
-                        lineNumber: 39,
-                        columnNumber: 13
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/Body.js",
-                lineNumber: 37,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex flex-wrap",
-                children: filteredRestaurants.map((restaurant)=>{
-                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/restaurant/" + restaurant.data.id,
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
-                            name: restaurant.data.name,
-                            cuisines: restaurant.data.cuisines,
-                            cloudinaryImageId: restaurant.data.cloudinaryImageId,
-                            lastMileTravelString: restaurant.data.lastMileTravelString
-                        }, void 0, false, {
-                            fileName: "src/Components/Body.js",
-                            lineNumber: 47,
-                            columnNumber: 13
-                        }, undefined)
-                    }, restaurant.data.id, false, {
-                        fileName: "src/Components/Body.js",
-                        lineNumber: 46,
-                        columnNumber: 16
-                    }, undefined);
-                })
-            }, void 0, false, {
-                fileName: "src/Components/Body.js",
-                lineNumber: 44,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true);
-};
-_s(Body, "lJAVeQv3Hm2gPp9L1ytKRgt2lzo=", false, function() {
-    return [
-        (0, _useOnlineDefault.default)
-    ];
-});
-_c = Body;
-exports.default = Body;
-var _c;
-$RefreshReg$(_c, "Body");
-
-  $parcel$ReactRefreshHelpers$4f14.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./RestaurantCard":"kZnAN","./Shimmer":"c7s09","react-router-dom":"9xmpe","./utils/helper":"lweWK","./utils/useOnline":"3QNXc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kZnAN":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$bb0d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$bb0d.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _config = require("../config");
-const RestaurantCard = ({ name , cuisines , cloudinaryImageId , lastMileTravelString  })=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "w-56 p-2 m-2 shadow-lg bg-amber-100 border-2 border-amber-200",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                src: (0, _config.IMG_CND_URL) + cloudinaryImageId
-            }, void 0, false, {
-                fileName: "src/Components/RestaurantCard.js",
-                lineNumber: 9,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                className: "font-bold text-lg",
-                children: name
-            }, void 0, false, {
-                fileName: "src/Components/RestaurantCard.js",
-                lineNumber: 10,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: cuisines.join(", ")
-            }, void 0, false, {
-                fileName: "src/Components/RestaurantCard.js",
-                lineNumber: 11,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
-                children: lastMileTravelString
-            }, void 0, false, {
-                fileName: "src/Components/RestaurantCard.js",
-                lineNumber: 12,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Components/RestaurantCard.js",
-        lineNumber: 8,
-        columnNumber: 10
-    }, undefined);
-};
-_c = RestaurantCard;
-exports.default = RestaurantCard;
-var _c;
-$RefreshReg$(_c, "RestaurantCard");
-
-  $parcel$ReactRefreshHelpers$bb0d.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","../config":"jtCLN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jtCLN":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "FETCH_MENU_URL", ()=>FETCH_MENU_URL);
-parcelHelpers.export(exports, "IMG_CND_URL", ()=>IMG_CND_URL);
-parcelHelpers.export(exports, "restaurantList", ()=>restaurantList);
-const FETCH_MENU_URL = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9715987&lng=77.5945627&restaurantId=";
-const IMG_CND_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
-const restaurantList = [
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "588891",
-            name: "The Pizza Bunker",
-            uuid: "17a806bc-d406-4fb8-86fc-5e0a4c515a1c",
-            city: "47",
-            area: "New Amar Nagar",
-            totalRatingsString: "500+ ratings",
-            cloudinaryImageId: "wnteh4cpcctz7needphz",
-            cuisines: [
-                "Pizzas",
-                "Italian",
-                "Fast Food"
-            ],
-            tags: [],
-            costForTwo: 15000,
-            costForTwoString: "₹150 FOR TWO",
-            deliveryTime: 24,
-            minDeliveryTime: 24,
-            maxDeliveryTime: 24,
-            slaString: "24 MINS",
-            lastMileTravel: 0.800000011920929,
-            slugs: {
-                restaurant: "the-pizza-bunker-north_jalandhar-north_jalandhar",
-                city: "jalandhar"
-            },
-            cityState: "47",
-            address: "Shaheed babu labh singh nagar Gali no 10, near, Durga Mandir Rd, New Amar Nagar, Jalandhar, Punjab 144001, India",
-            locality: "Shaheed Babu Labh Singh Nagar",
-            parentId: 352272,
-            unserviceable: false,
-            veg: true,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            chain: [],
-            feeDetails: {
-                fees: [
-                    {
-                        name: "distance",
-                        fee: 1900,
-                        message: ""
-                    },
-                    {
-                        name: "time",
-                        fee: 0,
-                        message: ""
-                    },
-                    {
-                        name: "special",
-                        fee: 0,
-                        message: ""
-                    }
-                ],
-                totalFees: 1900,
-                message: "",
-                title: "Delivery Charge",
-                amount: "1900",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "0.8 kms",
-            hasSurge: false,
-            aggregatedDiscountInfoV3: {
-                header: "60% OFF",
-                subHeader: "UPTO ₹120",
-                discountTag: "",
-                headerTypeV2: 0
-            },
-            sla: {
-                restaurantId: "588891",
-                deliveryTime: 24,
-                minDeliveryTime: 24,
-                maxDeliveryTime: 24,
-                lastMileTravel: 0.800000011920929,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.1",
-            totalRatings: 500,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "112607",
-            name: "New Aar Kay Vaishno Dhaba (Kapurthala Road)",
-            uuid: "1dfaa9d0-3b54-410b-a1f0-1712e3c3171a",
-            city: "47",
-            area: "Basti Bawa Khel",
-            totalRatingsString: "10000+ ratings",
-            cloudinaryImageId: "hrjpqey3zgbkhvn0ajba",
-            cuisines: [
-                "North Indian",
-                "Chinese",
-                "Thalis"
-            ],
-            tags: [],
-            costForTwo: 25000,
-            costForTwoString: "₹250 FOR TWO",
-            deliveryTime: 25,
-            minDeliveryTime: 25,
-            maxDeliveryTime: 25,
-            slaString: "25 MINS",
-            lastMileTravel: 1.7000000476837158,
-            slugs: {
-                restaurant: "aar-kay-vaishno-dhaba-basti-bawa-khel-jalandhar_central",
-                city: "jalandhar"
-            },
-            cityState: "47",
-            address: "kapurthala road near surgical complex basti bawa khel",
-            locality: "Kapurthala Road",
-            parentId: 145670,
-            unserviceable: false,
-            veg: true,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            chain: [],
-            feeDetails: {
-                fees: [
-                    {
-                        name: "distance",
-                        fee: 1900,
-                        message: ""
-                    },
-                    {
-                        name: "time",
-                        fee: 0,
-                        message: ""
-                    },
-                    {
-                        name: "special",
-                        fee: 0,
-                        message: ""
-                    }
-                ],
-                totalFees: 1900,
-                message: "",
-                title: "Delivery Charge",
-                amount: "1900",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "1.7 kms",
-            hasSurge: false,
-            aggregatedDiscountInfoV3: {
-                header: "60% OFF",
-                subHeader: "UPTO ₹120",
-                discountTag: "",
-                headerTypeV2: 0
-            },
-            sla: {
-                restaurantId: "112607",
-                deliveryTime: 25,
-                minDeliveryTime: 25,
-                maxDeliveryTime: 25,
-                lastMileTravel: 1.7000000476837158,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.1",
-            totalRatings: 10000,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "347917",
-            name: "KFC",
-            uuid: "55717eec-669d-4b3e-b2f4-5a8d103360cb",
-            city: "47",
-            area: "Shastri Nagar",
-            totalRatingsString: "1000+ ratings",
-            cloudinaryImageId: "56c9ab92bd79745fd152a30fa2525426",
-            cuisines: [
-                "Burgers",
-                "Biryani",
-                "American",
-                "Snacks",
-                "Fast Food"
-            ],
-            tags: [],
-            costForTwo: 40000,
-            costForTwoString: "₹400 FOR TWO",
-            deliveryTime: 39,
-            minDeliveryTime: 39,
-            maxDeliveryTime: 39,
-            slaString: "39 MINS",
-            lastMileTravel: 5.900000095367432,
-            slugs: {
-                restaurant: "kfc-mkc-mall-south_jalandhar",
-                city: "jalandhar"
-            },
-            cityState: "47",
-            address: "KFC Restaurant, MKC mall shop no- 1 , new jawahar nagar jalandhar - 144001",
-            locality: "Mahavir Marg",
-            parentId: 547,
-            unserviceable: false,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            ribbon: [
-                {
-                    type: "PROMOTED"
-                }
-            ],
-            chain: [],
-            feeDetails: {
-                fees: [
-                    {
-                        name: "distance",
-                        fee: 2900,
-                        message: ""
-                    },
-                    {
-                        name: "time",
-                        fee: 0,
-                        message: ""
-                    },
-                    {
-                        name: "special",
-                        fee: 0,
-                        message: ""
-                    }
-                ],
-                totalFees: 2900,
-                message: "",
-                title: "Delivery Charge",
-                amount: "2900",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "cid=7116663~p=4~eid=00000188-dc95-7bc8-04e9-40a8000f0475~srvts=1687327964104",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "5.9 kms",
-            hasSurge: false,
-            aggregatedDiscountInfoV3: {
-                header: "20% OFF",
-                subHeader: "UPTO ₹50",
-                discountTag: "",
-                headerTypeV2: 0
-            },
-            sla: {
-                restaurantId: "347917",
-                deliveryTime: 39,
-                minDeliveryTime: 39,
-                maxDeliveryTime: 39,
-                lastMileTravel: 5.900000095367432,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: true,
-            avgRating: "4.2",
-            totalRatings: 1000,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "349175",
-            name: "Pizza Roberto",
-            uuid: "1c70f216-b943-4d2d-852f-88e66bdd2684",
-            city: "47",
-            area: "Adarsh Nagar",
-            totalRatingsString: "1000+ ratings",
-            cloudinaryImageId: "b5pzn1fayfuqklftrjfi",
-            cuisines: [
-                "Continental",
-                "Italian",
-                "Pizzas",
-                "American",
-                "Beverages",
-                "Chinese"
-            ],
-            tags: [],
-            costForTwo: 30000,
-            costForTwoString: "₹300 FOR TWO",
-            deliveryTime: 26,
-            minDeliveryTime: 26,
-            maxDeliveryTime: 26,
-            slaString: "26 MINS",
-            lastMileTravel: 0.8999999761581421,
-            slugs: {
-                restaurant: "pizza-roberto-north_jalandhar-north_jalandhar",
-                city: "jalandhar"
-            },
-            cityState: "47",
-            address: "Gali No. 10, Shaheed Babu Labh Singh Nagar, Jalandhar., Jalandhar-1 (P/S 1,2,3,4,5, Sub Division Jalandhar-1), Jalandhar, Punjab",
-            locality: "Babu Labh Singh Nagar",
-            parentId: 158916,
-            unserviceable: false,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            chain: [],
-            feeDetails: {
-                fees: [
-                    {
-                        name: "distance",
-                        fee: 1900,
-                        message: ""
-                    },
-                    {
-                        name: "time",
-                        fee: 0,
-                        message: ""
-                    },
-                    {
-                        name: "special",
-                        fee: 0,
-                        message: ""
-                    }
-                ],
-                totalFees: 1900,
-                message: "",
-                title: "Delivery Charge",
-                amount: "1900",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "0.8 kms",
-            hasSurge: false,
-            aggregatedDiscountInfoV3: {
-                header: "60% OFF",
-                subHeader: "UPTO ₹120",
-                discountTag: "",
-                headerTypeV2: 0
-            },
-            sla: {
-                restaurantId: "349175",
-                deliveryTime: 26,
-                minDeliveryTime: 26,
-                maxDeliveryTime: 26,
-                lastMileTravel: 0.8999999761581421,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.0",
-            totalRatings: 1000,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "98907",
-            name: "Maddi Refreshments",
-            uuid: "ad3ef067-50d3-494f-9e45-136408887ed3",
-            city: "47",
-            area: "Burlton Park",
-            totalRatingsString: "10000+ ratings",
-            cloudinaryImageId: "eabespjc5tudmnjedl5b",
-            cuisines: [
-                "Snacks",
-                "North Indian"
-            ],
-            tags: [],
-            costForTwo: 20000,
-            costForTwoString: "₹200 FOR TWO",
-            deliveryTime: 26,
-            minDeliveryTime: 26,
-            maxDeliveryTime: 26,
-            slaString: "26 MINS",
-            lastMileTravel: 2.0999999046325684,
-            slugs: {
-                restaurant: "maddi-refreshments-shastri-nagar-jalandhar_central",
-                city: "jalandhar"
-            },
-            cityState: "47",
-            address: "Shop 3, Main Road, Kabir Nagar, Shastri Nagar, Jalandhar",
-            locality: "Kabir Nagar",
-            parentId: 128425,
-            unserviceable: false,
-            veg: true,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            chain: [],
-            feeDetails: {
-                fees: [
-                    {
-                        name: "distance",
-                        fee: 1900,
-                        message: ""
-                    },
-                    {
-                        name: "time",
-                        fee: 0,
-                        message: ""
-                    },
-                    {
-                        name: "special",
-                        fee: 0,
-                        message: ""
-                    }
-                ],
-                totalFees: 1900,
-                message: "",
-                title: "Delivery Charge",
-                amount: "1900",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "2 kms",
-            hasSurge: false,
-            aggregatedDiscountInfoV3: {
-                header: "20% OFF",
-                subHeader: "UPTO ₹50",
-                discountTag: "",
-                headerTypeV2: 0
-            },
-            sla: {
-                restaurantId: "98907",
-                deliveryTime: 26,
-                minDeliveryTime: 26,
-                maxDeliveryTime: 26,
-                lastMileTravel: 2.0999999046325684,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.5",
-            totalRatings: 10000,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "283810",
-            name: "Yummy Delicious Till Last Bite",
-            uuid: "5ba943fb-b9d1-4996-8aa6-6a5f769b6960",
-            city: "47",
-            area: "Model Town",
-            totalRatingsString: "10000+ ratings",
-            cloudinaryImageId: "wwgslew60sfsdtfy2ijz",
-            cuisines: [
-                "Chinese",
-                "Continental",
-                "Italian"
-            ],
-            tags: [],
-            costForTwo: 30000,
-            costForTwoString: "₹300 FOR TWO",
-            deliveryTime: 44,
-            minDeliveryTime: 44,
-            maxDeliveryTime: 44,
-            slaString: "44 MINS",
-            lastMileTravel: 6,
-            slugs: {
-                restaurant: "yummy-delicious-till-last-bite-jalandhar_central-jalandhar_central",
-                city: "jalandhar"
-            },
-            cityState: "47",
-            address: "Shop No. 6, G.T.B. Opp. Ghai Hospital, GTB Nagar, Jalandhar, Punjab",
-            locality: "Guru Teg Bahadur Nagar",
-            parentId: 228634,
-            unserviceable: false,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            ribbon: [
-                {
-                    type: "PROMOTED"
-                }
-            ],
-            chain: [],
-            feeDetails: {
-                fees: [
-                    {
-                        name: "distance",
-                        fee: 4200,
-                        message: ""
-                    },
-                    {
-                        name: "time",
-                        fee: 0,
-                        message: ""
-                    },
-                    {
-                        name: "special",
-                        fee: 0,
-                        message: ""
-                    }
-                ],
-                totalFees: 4200,
-                message: "",
-                title: "Delivery Charge",
-                amount: "4200",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "cid=7131316~p=7~eid=00000188-dc95-7bc8-04e9-40a9000f0754~srvts=1687327964104",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "6 kms",
-            hasSurge: false,
-            aggregatedDiscountInfoV3: {
-                header: "₹175 OFF",
-                subHeader: "ABOVE ₹400",
-                discountTag: "FLAT DEAL",
-                headerTypeV2: 0
-            },
-            sla: {
-                restaurantId: "283810",
-                deliveryTime: 44,
-                minDeliveryTime: 44,
-                maxDeliveryTime: 44,
-                lastMileTravel: 6,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: true,
-            avgRating: "4.2",
-            totalRatings: 10000,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "382596",
-            name: "The fusion bite",
-            uuid: "589dc65f-7260-47cf-9239-86cc162426dc",
-            city: "47",
-            area: "Adarsh Nagar",
-            totalRatingsString: "500+ ratings",
-            cloudinaryImageId: "fx1ctjkuumq2wnkqigot",
-            cuisines: [
-                "Pizzas",
-                "Italian-American",
-                "Chinese",
-                "Beverages",
-                "Snacks"
-            ],
-            tags: [],
-            costForTwo: 15000,
-            costForTwoString: "₹150 FOR TWO",
-            deliveryTime: 28,
-            minDeliveryTime: 28,
-            maxDeliveryTime: 28,
-            slaString: "28 MINS",
-            lastMileTravel: 0.8999999761581421,
-            slugs: {
-                restaurant: "the-fusion-bite-north_jalandhar-north_jalandhar",
-                city: "jalandhar"
-            },
-            cityState: "47",
-            address: "Gali No. 10, Shaheed Babu Labh Singh Nagar, Jalandhar., Jalandhar-1 (P/S 1,2,3,4,5, Sub Division Jalandhar-1), Jalandhar, , Punjab, 144001",
-            locality: "Shaheed Babu Labh Singh Nagar",
-            parentId: 257498,
-            unserviceable: false,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            chain: [],
-            feeDetails: {
-                fees: [
-                    {
-                        name: "distance",
-                        fee: 1900,
-                        message: ""
-                    },
-                    {
-                        name: "time",
-                        fee: 0,
-                        message: ""
-                    },
-                    {
-                        name: "special",
-                        fee: 0,
-                        message: ""
-                    }
-                ],
-                totalFees: 1900,
-                message: "",
-                title: "Delivery Charge",
-                amount: "1900",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "0.8 kms",
-            hasSurge: false,
-            aggregatedDiscountInfoV3: {
-                header: "60% OFF",
-                subHeader: "UPTO ₹120",
-                discountTag: "",
-                headerTypeV2: 0
-            },
-            sla: {
-                restaurantId: "382596",
-                deliveryTime: 28,
-                minDeliveryTime: 28,
-                maxDeliveryTime: 28,
-                lastMileTravel: 0.8999999761581421,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.2",
-            totalRatings: 500,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "263164",
-            name: "Hari Burger",
-            uuid: "083aa264-1b3e-4f14-aa17-0f578631b1ab",
-            city: "47",
-            area: "North_Jalandhar",
-            totalRatingsString: "10000+ ratings",
-            cloudinaryImageId: "ynarnd0haqjsbgrzeasx",
-            cuisines: [
-                "Burgers",
-                "Chinese",
-                "Pizzas",
-                "Pastas",
-                "Italian-American"
-            ],
-            tags: [],
-            costForTwo: 15000,
-            costForTwoString: "₹150 FOR TWO",
-            deliveryTime: 33,
-            minDeliveryTime: 33,
-            maxDeliveryTime: 33,
-            slaString: "33 MINS",
-            lastMileTravel: 2.9000000953674316,
-            slugs: {
-                restaurant: "hari-burger-jalandhar_central-jalandhar_central",
-                city: "jalandhar"
-            },
-            cityState: "47",
-            address: "8 Dilbag Nagar, Jalandhar,144001",
-            locality: "Dilbagh Nagar",
-            parentId: 21810,
-            unserviceable: false,
-            veg: true,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            chain: [],
-            feeDetails: {
-                fees: [
-                    {
-                        name: "distance",
-                        fee: 1900,
-                        message: ""
-                    },
-                    {
-                        name: "time",
-                        fee: 0,
-                        message: ""
-                    },
-                    {
-                        name: "special",
-                        fee: 0,
-                        message: ""
-                    }
-                ],
-                totalFees: 1900,
-                message: "",
-                title: "Delivery Charge",
-                amount: "1900",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "2.9 kms",
-            hasSurge: false,
-            aggregatedDiscountInfoV3: {
-                header: "60% OFF",
-                subHeader: "UPTO ₹120",
-                discountTag: "",
-                headerTypeV2: 0
-            },
-            sla: {
-                restaurantId: "263164",
-                deliveryTime: 33,
-                minDeliveryTime: 33,
-                maxDeliveryTime: 33,
-                lastMileTravel: 2.9000000953674316,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.1",
-            totalRatings: 10000,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "664191",
-            name: " Kanha Sweets (Amritsar Waale)",
-            uuid: "8cb44ab4-b35d-4ca2-897c-deb7c64f3230",
-            city: "47",
-            area: "Urban Estate",
-            totalRatingsString: "100+ ratings",
-            cloudinaryImageId: "690ec62bf8cab8de783622ac0b98cdb3",
-            cuisines: [
-                "Sweets",
-                "Snacks"
-            ],
-            tags: [],
-            costForTwo: 20000,
-            costForTwoString: "₹200 FOR TWO",
-            deliveryTime: 33,
-            minDeliveryTime: 33,
-            maxDeliveryTime: 33,
-            slaString: "33 MINS",
-            lastMileTravel: 7.800000190734863,
-            slugs: {
-                restaurant: "kanha-sweets-south_jalandhar-south_jalandhar",
-                city: "jalandhar"
-            },
-            cityState: "47",
-            address: "Kanha Sweets , Police Station 1, Jalandhar-1 (P/S 1,2,3,4,5, Sub Division Jalandhar-1), Jalandhar, Punjab, 144022",
-            locality: "Phase 2",
-            parentId: 114617,
-            unserviceable: false,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            ribbon: [
-                {
-                    type: "PROMOTED"
-                }
-            ],
-            chain: [],
-            feeDetails: {
-                fees: [
-                    {
-                        name: "distance",
-                        fee: 4200,
-                        message: ""
-                    },
-                    {
-                        name: "time",
-                        fee: 0,
-                        message: ""
-                    },
-                    {
-                        name: "special",
-                        fee: 0,
-                        message: ""
-                    }
-                ],
-                totalFees: 4200,
-                message: "",
-                title: "Delivery Charge",
-                amount: "4200",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "cid=7022465~p=10~eid=00000188-dc95-7bc8-04e9-40aa000f0a13~srvts=1687327964104",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "7.8 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "664191",
-                deliveryTime: 33,
-                minDeliveryTime: 33,
-                maxDeliveryTime: 33,
-                lastMileTravel: 7.800000190734863,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: true,
-            avgRating: "4.1",
-            totalRatings: 100,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "285860",
-            name: "Nanak Vegetarian Dhaba",
-            uuid: "f672e7a5-dc87-4e0e-8d05-11038cd3166d",
-            city: "47",
-            area: "Harnam Daspura",
-            totalRatingsString: "10000+ ratings",
-            cloudinaryImageId: "usllk61gnicqmykbiyrb",
-            cuisines: [
-                "North Indian",
-                "South Indian"
-            ],
-            tags: [],
-            costForTwo: 30000,
-            costForTwoString: "₹300 FOR TWO",
-            deliveryTime: 38,
-            minDeliveryTime: 38,
-            maxDeliveryTime: 38,
-            slaString: "38 MINS",
-            lastMileTravel: 3,
-            slugs: {
-                restaurant: "nanak-veg-dhaba-jalandhar_central-jalandhar_central",
-                city: "jalandhar"
-            },
-            cityState: "47",
-            address: "46, Kapurthala Road, Near Patel Chowk, Transport Nagar, Harnam Daspura, Jalandhar, Punjab , India",
-            locality: "Transport Nagar",
-            parentId: 143799,
-            unserviceable: false,
-            veg: true,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            chain: [],
-            feeDetails: {
-                fees: [
-                    {
-                        name: "distance",
-                        fee: 1900,
-                        message: ""
-                    },
-                    {
-                        name: "time",
-                        fee: 0,
-                        message: ""
-                    },
-                    {
-                        name: "special",
-                        fee: 0,
-                        message: ""
-                    }
-                ],
-                totalFees: 1900,
-                message: "",
-                title: "Delivery Charge",
-                amount: "1900",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "3 kms",
-            hasSurge: false,
-            aggregatedDiscountInfoV3: {
-                header: "60% OFF",
-                subHeader: "UPTO ₹120",
-                discountTag: "",
-                headerTypeV2: 0
-            },
-            sla: {
-                restaurantId: "285860",
-                deliveryTime: 38,
-                minDeliveryTime: 38,
-                maxDeliveryTime: 38,
-                lastMileTravel: 3,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.1",
-            totalRatings: 10000,
-            new: false
-        },
-        subtype: "basic"
-    }
-];
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"c7s09":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$5bd8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$5bd8.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const Shimmer = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "restaurant-list",
-        children: Array(15).fill("").map((e, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "shimmer-card"
-            }, index, false, {
-                fileName: "src/Components/Shimmer.js",
-                lineNumber: 4,
-                columnNumber: 51
-            }, undefined))
-    }, void 0, false, {
-        fileName: "src/Components/Shimmer.js",
-        lineNumber: 2,
-        columnNumber: 10
-    }, undefined);
-};
-_c = Shimmer;
-exports.default = Shimmer;
-var _c;
-$RefreshReg$(_c, "Shimmer");
-
-  $parcel$ReactRefreshHelpers$5bd8.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lweWK":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "filterData", ()=>filterData);
-const filterData = (searchInput, restaurants)=>{
-    const filteredData = restaurants.filter((res)=>res.data.name.toLowerCase().includes(searchInput.toLowerCase()));
-    return filteredData;
-};
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eUZ6J":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$fbbd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$fbbd.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const Footer = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-            children: "Footer"
-        }, void 0, false, {
-            fileName: "src/Components/Footer.js",
-            lineNumber: 3,
-            columnNumber: 9
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/Components/Footer.js",
-        lineNumber: 2,
-        columnNumber: 10
-    }, undefined);
-};
-_c = Footer;
-exports.default = Footer;
-var _c;
-$RefreshReg$(_c, "Footer");
-
-  $parcel$ReactRefreshHelpers$fbbd.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"66EYZ":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$84fc = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$84fc.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const Contact = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "Contact Us At"
-            }, void 0, false, {
-                fileName: "src/Components/Contact.js",
-                lineNumber: 3,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: "Below given links and number."
-            }, void 0, false, {
-                fileName: "src/Components/Contact.js",
-                lineNumber: 4,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h6", {
-                children: "Thanks for visiting!"
-            }, void 0, false, {
-                fileName: "src/Components/Contact.js",
-                lineNumber: 5,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Components/Contact.js",
-        lineNumber: 2,
-        columnNumber: 10
-    }, undefined);
-};
-_c = Contact;
-exports.default = Contact;
-var _c;
-$RefreshReg$(_c, "Contact");
-
-  $parcel$ReactRefreshHelpers$84fc.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iQH4s":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$24a5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$24a5.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _reactRouterDom = require("react-router-dom");
-var _s = $RefreshSig$();
-const Error = ()=>{
-    _s();
-    const err = (0, _reactRouterDom.useRouteError)();
-    console.log(err);
-    //using destructuring
-    // const {status, statusText} = err;
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "Oops!! Something went wrong..."
-            }, void 0, false, {
-                fileName: "src/Components/Error.js",
-                lineNumber: 8,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: err.status + " : " + err.statusText
-            }, void 0, false, {
-                fileName: "src/Components/Error.js",
-                lineNumber: 9,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Components/Error.js",
-        lineNumber: 7,
-        columnNumber: 10
-    }, undefined);
-};
-_s(Error, "U5GmGaAmh0j0MVy+E8WdBnjlm7s=", false, function() {
-    return [
-        (0, _reactRouterDom.useRouteError)
-    ];
-});
-_c = Error;
-exports.default = Error;
-var _c;
-$RefreshReg$(_c, "Error");
-
-  $parcel$ReactRefreshHelpers$24a5.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7pgwL":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$2fbe = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$2fbe.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactRouterDom = require("react-router-dom");
-var _config = require("../config");
-var _shimmer = require("./Shimmer");
-var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
-var _useRestaurant = require("./utils/useRestaurant");
-var _useRestaurantDefault = parcelHelpers.interopDefault(_useRestaurant);
-var _reactRedux = require("react-redux");
-var _cartSlice = require("./utils/cartSlice");
-var _s = $RefreshSig$();
-const RestaurantMenu = ()=>{
-    _s();
-    const { id  } = (0, _reactRouterDom.useParams)();
-    const restaurant = (0, _useRestaurantDefault.default)(id);
-    const dispatch = (0, _reactRedux.useDispatch)();
-    const handleCart = (item)=>{
-        dispatch((0, _cartSlice.addItem)(item));
-    };
-    return !restaurant ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
-        fileName: "src/Components/RestaurantMenu.js",
-        lineNumber: 17,
-        columnNumber: 24
-    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "flex",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "p-2 m-2",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        children: [
-                            "Restaurant id: ",
-                            id
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Components/RestaurantMenu.js",
-                        lineNumber: 19,
-                        columnNumber: 12
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                        className: "font-bold text-xl",
-                        children: restaurant?.cards[0]?.card?.card?.info?.name
-                    }, void 0, false, {
-                        fileName: "src/Components/RestaurantMenu.js",
-                        lineNumber: 20,
-                        columnNumber: 13
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        className: "border-2 border-amber-200 p-2 m-2 bg-amber-50",
-                        src: (0, _config.IMG_CND_URL) + restaurant?.cards[0]?.card?.card?.info?.cloudinaryImageId
-                    }, void 0, false, {
-                        fileName: "src/Components/RestaurantMenu.js",
-                        lineNumber: 21,
-                        columnNumber: 13
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                        children: [
-                            "Area: ",
-                            restaurant?.cards[0]?.card?.card?.info?.areaName
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Components/RestaurantMenu.js",
-                        lineNumber: 22,
-                        columnNumber: 13
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                        children: [
-                            "City: ",
-                            restaurant?.cards[0]?.card?.card?.info?.city
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Components/RestaurantMenu.js",
-                        lineNumber: 23,
-                        columnNumber: 13
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                        children: [
-                            "Cost For Two: ",
-                            restaurant?.cards[0]?.card?.card?.info?.costForTwoMessage
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Components/RestaurantMenu.js",
-                        lineNumber: 24,
-                        columnNumber: 13
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/RestaurantMenu.js",
-                lineNumber: 18,
-                columnNumber: 12
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "m-10",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        className: "p-2 m-2 font-bold text-3xl",
-                        children: "Menu"
-                    }, void 0, false, {
-                        fileName: "src/Components/RestaurantMenu.js",
-                        lineNumber: 27,
-                        columnNumber: 13
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                        children: restaurant?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card?.itemCards.map((itemCard)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                children: [
-                                    itemCard?.card?.info?.name,
-                                    " - ",
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                        className: "bg-amber-300 font-semibold p-1 m-3 w-44 border-4 rounded-lg border-amber-100",
-                                        onClick: ()=>handleCart(itemCard?.card?.info?.name),
-                                        children: "Add"
-                                    }, void 0, false, {
-                                        fileName: "src/Components/RestaurantMenu.js",
-                                        lineNumber: 29,
-                                        columnNumber: 192
-                                    }, undefined)
-                                ]
-                            }, itemCard?.card?.info?.id, true, {
-                                fileName: "src/Components/RestaurantMenu.js",
-                                lineNumber: 29,
-                                columnNumber: 126
-                            }, undefined))
-                    }, void 0, false, {
-                        fileName: "src/Components/RestaurantMenu.js",
-                        lineNumber: 29,
-                        columnNumber: 13
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/RestaurantMenu.js",
-                lineNumber: 26,
-                columnNumber: 12
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Components/RestaurantMenu.js",
-        lineNumber: 17,
-        columnNumber: 38
-    }, undefined);
-};
-_s(RestaurantMenu, "kkzVEz4/c1hddnQSjVxu4gd8pfc=", false, function() {
-    return [
-        (0, _reactRouterDom.useParams),
-        (0, _useRestaurantDefault.default),
-        (0, _reactRedux.useDispatch)
-    ];
-});
-_c = RestaurantMenu;
-exports.default = RestaurantMenu;
-var _c;
-$RefreshReg$(_c, "RestaurantMenu");
-
-  $parcel$ReactRefreshHelpers$2fbe.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../config":"jtCLN","./Shimmer":"c7s09","./utils/useRestaurant":"aAKpu","react-redux":"bdVon","./utils/cartSlice":"frMfM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aAKpu":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$f7bb = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$f7bb.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _config = require("../../config");
-var _s = $RefreshSig$();
-const useRestaurant = (id)=>{
-    _s();
-    const [restaurant, setRestaurant] = (0, _react.useState)(null);
-    (0, _react.useEffect)(()=>{
-        getRestaurantInfo();
-    }, []);
-    async function getRestaurantInfo() {
-        const data = await fetch((0, _config.FETCH_MENU_URL) + id);
-        const json = await data.json();
-        console.log(json.data);
-        setRestaurant(json.data);
-    }
-    return restaurant;
-};
-_s(useRestaurant, "xTHIp85kevrNjFQ3g5ZiTLKWCkg=");
-exports.default = useRestaurant;
-
-  $parcel$ReactRefreshHelpers$f7bb.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react":"21dqq","../../config":"jtCLN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bdVon":[function(require,module,exports) {
+},{"7422ead32dcc1e6b":"786KC"}],"bdVon":[function(require,module,exports) {
 // The primary entry point assumes we're working with standard ReactDOM/RN, but
 // older versions that do not include `useSyncExternalStore` (React 16.9 - 17.x).
 // Because of that, the useSyncExternalStore compat shim is needed.
@@ -35635,6 +32857,125 @@ function defaultNoopBatch(callback) {
 let batch = defaultNoopBatch; // Allow injecting another batching function later
 const setBatch = (newBatch)=>batch = newBatch; // Supply a getter just to skip dealing with ESM bindings
 const getBatch = ()=>batch;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"l3rFI":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "initializeUseSelector", ()=>initializeUseSelector);
+/**
+ * Hook factory, which creates a `useSelector` hook bound to a given context.
+ *
+ * @param {React.Context} [context=ReactReduxContext] Context passed to your `<Provider>`.
+ * @returns {Function} A `useSelector` hook bound to the specified context.
+ */ parcelHelpers.export(exports, "createSelectorHook", ()=>createSelectorHook);
+parcelHelpers.export(exports, "useSelector", ()=>useSelector);
+var _react = require("react");
+var _useReduxContext = require("./useReduxContext");
+var _context = require("../components/Context");
+var _useSyncExternalStore = require("../utils/useSyncExternalStore");
+let useSyncExternalStoreWithSelector = (0, _useSyncExternalStore.notInitialized);
+const initializeUseSelector = (fn)=>{
+    useSyncExternalStoreWithSelector = fn;
+};
+const refEquality = (a, b)=>a === b;
+function createSelectorHook(context = (0, _context.ReactReduxContext)) {
+    const useReduxContext = context === (0, _context.ReactReduxContext) ? (0, _useReduxContext.useReduxContext) : (0, _useReduxContext.createReduxContextHook)(context);
+    return function useSelector(selector, equalityFnOrOptions = {}) {
+        const { equalityFn =refEquality , stabilityCheck , noopCheck  } = typeof equalityFnOrOptions === "function" ? {
+            equalityFn: equalityFnOrOptions
+        } : equalityFnOrOptions;
+        if (!selector) throw new Error(`You must pass a selector to useSelector`);
+        if (typeof selector !== "function") throw new Error(`You must pass a function as a selector to useSelector`);
+        if (typeof equalityFn !== "function") throw new Error(`You must pass a function as an equality function to useSelector`);
+        const { store , subscription , getServerState , stabilityCheck: globalStabilityCheck , noopCheck: globalNoopCheck  } = useReduxContext();
+        const firstRun = (0, _react.useRef)(true);
+        const wrappedSelector = (0, _react.useCallback)({
+            [selector.name] (state) {
+                const selected = selector(state);
+                {
+                    const finalStabilityCheck = typeof stabilityCheck === "undefined" ? globalStabilityCheck : stabilityCheck;
+                    if (finalStabilityCheck === "always" || finalStabilityCheck === "once" && firstRun.current) {
+                        const toCompare = selector(state);
+                        if (!equalityFn(selected, toCompare)) console.warn("Selector " + (selector.name || "unknown") + " returned a different result when called with the same parameters. This can lead to unnecessary rerenders." + "\nSelectors that return a new reference (such as an object or an array) should be memoized: https://redux.js.org/usage/deriving-data-selectors#optimizing-selectors-with-memoization", {
+                            state,
+                            selected,
+                            selected2: toCompare
+                        });
+                    }
+                    const finalNoopCheck = typeof noopCheck === "undefined" ? globalNoopCheck : noopCheck;
+                    if (finalNoopCheck === "always" || finalNoopCheck === "once" && firstRun.current) // @ts-ignore
+                    {
+                        if (selected === state) console.warn("Selector " + (selector.name || "unknown") + " returned the root state when called. This can lead to unnecessary rerenders." + "\nSelectors that return the entire state are almost certainly a mistake, as they will cause a rerender whenever *anything* in state changes.");
+                    }
+                    if (firstRun.current) firstRun.current = false;
+                }
+                return selected;
+            }
+        }[selector.name], [
+            selector,
+            globalStabilityCheck,
+            stabilityCheck
+        ]);
+        const selectedState = useSyncExternalStoreWithSelector(subscription.addNestedSub, store.getState, getServerState || store.getState, wrappedSelector, equalityFn);
+        (0, _react.useDebugValue)(selectedState);
+        return selectedState;
+    };
+}
+const useSelector = /*#__PURE__*/ createSelectorHook();
+
+},{"react":"21dqq","./useReduxContext":"3828k","../components/Context":"ji81o","../utils/useSyncExternalStore":"dSsKl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3828k":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+/**
+ * Hook factory, which creates a `useReduxContext` hook bound to a given context. This is a low-level
+ * hook that you should usually not need to call directly.
+ *
+ * @param {React.Context} [context=ReactReduxContext] Context passed to your `<Provider>`.
+ * @returns {Function} A `useReduxContext` hook bound to the specified context.
+ */ parcelHelpers.export(exports, "createReduxContextHook", ()=>createReduxContextHook);
+parcelHelpers.export(exports, "useReduxContext", ()=>useReduxContext);
+var _react = require("react");
+var _context = require("../components/Context");
+function createReduxContextHook(context = (0, _context.ReactReduxContext)) {
+    return function useReduxContext() {
+        const contextValue = (0, _react.useContext)(context);
+        if (!contextValue) throw new Error("could not find react-redux context value; please ensure the component is wrapped in a <Provider>");
+        return contextValue;
+    };
+}
+const useReduxContext = /*#__PURE__*/ createReduxContextHook();
+
+},{"react":"21dqq","../components/Context":"ji81o","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ji81o":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "ReactReduxContext", ()=>ReactReduxContext);
+var _react = require("react");
+const ContextKey = Symbol.for(`react-redux-context-${(0, _react.version)}`);
+const gT = globalThis;
+function getContext() {
+    let realContext = gT[ContextKey];
+    if (!realContext) {
+        realContext = (0, _react.createContext)(null);
+        realContext.displayName = "ReactRedux";
+        gT[ContextKey] = realContext;
+    }
+    return realContext;
+}
+const ReactReduxContext = /*#__PURE__*/ new Proxy({}, /*#__PURE__*/ new Proxy({}, {
+    get (_, handler) {
+        const target = getContext(); // @ts-ignore
+        return (_target, ...args)=>Reflect[handler](target, ...args);
+    }
+}));
+exports.default = ReactReduxContext;
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dSsKl":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "notInitialized", ()=>notInitialized);
+const notInitialized = ()=>{
+    throw new Error("uSES not initialized!");
+};
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5gOIw":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -36997,13 +34338,2432 @@ const useStore = /*#__PURE__*/ createStoreHook();
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"frMfM":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "addItem", ()=>addItem);
-parcelHelpers.export(exports, "removeItem", ()=>removeItem);
-parcelHelpers.export(exports, "clearItem", ()=>clearItem);
-var _toolkit = require("@reduxjs/toolkit");
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3QNXc":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$d259 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$d259.prelude(module);
+
+try {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = require("5c12c3db6c1f09d4");
+const useOnline = ()=>{
+    const [isOnline, setIsOnline] = (0, _react.useState)(true);
+    (0, _react.useEffect)(()=>{
+        const handleOnline = ()=>{
+            setIsOnline(true);
+        };
+        const handleOffline = ()=>{
+            setIsOnline(false);
+        };
+        window.addEventListener("online", handleOnline);
+        window.addEventListener("offline", handleOffline);
+        //cleanup function
+        return ()=>{
+            window.removeEventListener("online", handleOnline);
+            window.removeEventListener("offline", handleOffline);
+        };
+    }, []);
+    return isOnline;
+};
+var _default = useOnline;
+exports.default = _default;
+
+  $parcel$ReactRefreshHelpers$d259.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"5c12c3db6c1f09d4":"21dqq","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6AEwr":[function(require,module,exports) {
+"use strict";
+module.exports = require("c4c10cbba9862d5f");
+
+},{"c4c10cbba9862d5f":"kujY4"}],"kujY4":[function(require,module,exports) {
+/**
+ * @license React
+ * react-jsx-runtime.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ "use strict";
+(function() {
+    "use strict";
+    var React = require("593632ccebda0d3a");
+    // ATTENTION
+    // When adding new symbols to this file,
+    // Please consider also adding to 'react-devtools-shared/src/backend/ReactSymbols'
+    // The Symbol used to tag the ReactElement-like types.
+    var REACT_ELEMENT_TYPE = Symbol.for("react.element");
+    var REACT_PORTAL_TYPE = Symbol.for("react.portal");
+    var REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
+    var REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode");
+    var REACT_PROFILER_TYPE = Symbol.for("react.profiler");
+    var REACT_PROVIDER_TYPE = Symbol.for("react.provider");
+    var REACT_CONTEXT_TYPE = Symbol.for("react.context");
+    var REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref");
+    var REACT_SUSPENSE_TYPE = Symbol.for("react.suspense");
+    var REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list");
+    var REACT_MEMO_TYPE = Symbol.for("react.memo");
+    var REACT_LAZY_TYPE = Symbol.for("react.lazy");
+    var REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen");
+    var MAYBE_ITERATOR_SYMBOL = Symbol.iterator;
+    var FAUX_ITERATOR_SYMBOL = "@@iterator";
+    function getIteratorFn(maybeIterable) {
+        if (maybeIterable === null || typeof maybeIterable !== "object") return null;
+        var maybeIterator = MAYBE_ITERATOR_SYMBOL && maybeIterable[MAYBE_ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL];
+        if (typeof maybeIterator === "function") return maybeIterator;
+        return null;
+    }
+    var ReactSharedInternals = React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+    function error(format) {
+        for(var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++)args[_key2 - 1] = arguments[_key2];
+        printWarning("error", format, args);
+    }
+    function printWarning(level, format, args) {
+        var ReactDebugCurrentFrame = ReactSharedInternals.ReactDebugCurrentFrame;
+        var stack = ReactDebugCurrentFrame.getStackAddendum();
+        if (stack !== "") {
+            format += "%s";
+            args = args.concat([
+                stack
+            ]);
+        } // eslint-disable-next-line react-internal/safe-string-coercion
+        var argsWithFormat = args.map(function(item) {
+            return String(item);
+        }); // Careful: RN currently depends on this prefix
+        argsWithFormat.unshift("Warning: " + format); // We intentionally don't use spread (or .apply) directly because it
+        // breaks IE9: https://github.com/facebook/react/issues/13610
+        // eslint-disable-next-line react-internal/no-production-logging
+        Function.prototype.apply.call(console[level], console, argsWithFormat);
+    }
+    // -----------------------------------------------------------------------------
+    var enableScopeAPI = false; // Experimental Create Event Handle API.
+    var enableCacheElement = false;
+    var enableTransitionTracing = false; // No known bugs, but needs performance testing
+    var enableLegacyHidden = false; // Enables unstable_avoidThisFallback feature in Fiber
+    // stuff. Intended to enable React core members to more easily debug scheduling
+    // issues in DEV builds.
+    var enableDebugTracing = false; // Track which Fiber(s) schedule render work.
+    var REACT_MODULE_REFERENCE;
+    REACT_MODULE_REFERENCE = Symbol.for("react.module.reference");
+    function isValidElementType(type) {
+        if (typeof type === "string" || typeof type === "function") return true;
+         // Note: typeof might be other than 'symbol' or 'number' (e.g. if it's a polyfill).
+        if (type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || enableDebugTracing || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || enableLegacyHidden || type === REACT_OFFSCREEN_TYPE || enableScopeAPI || enableCacheElement || enableTransitionTracing) return true;
+        if (typeof type === "object" && type !== null) {
+            if (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || // This needs to include all possible module reference object
+            // types supported by any Flight configuration anywhere since
+            // we don't know which Flight build this will end up being used
+            // with.
+            type.$$typeof === REACT_MODULE_REFERENCE || type.getModuleId !== undefined) return true;
+        }
+        return false;
+    }
+    function getWrappedName(outerType, innerType, wrapperName) {
+        var displayName = outerType.displayName;
+        if (displayName) return displayName;
+        var functionName = innerType.displayName || innerType.name || "";
+        return functionName !== "" ? wrapperName + "(" + functionName + ")" : wrapperName;
+    } // Keep in sync with react-reconciler/getComponentNameFromFiber
+    function getContextName(type) {
+        return type.displayName || "Context";
+    } // Note that the reconciler package should generally prefer to use getComponentNameFromFiber() instead.
+    function getComponentNameFromType(type) {
+        if (type == null) // Host root, text node or just invalid type.
+        return null;
+        if (typeof type.tag === "number") error("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue.");
+        if (typeof type === "function") return type.displayName || type.name || null;
+        if (typeof type === "string") return type;
+        switch(type){
+            case REACT_FRAGMENT_TYPE:
+                return "Fragment";
+            case REACT_PORTAL_TYPE:
+                return "Portal";
+            case REACT_PROFILER_TYPE:
+                return "Profiler";
+            case REACT_STRICT_MODE_TYPE:
+                return "StrictMode";
+            case REACT_SUSPENSE_TYPE:
+                return "Suspense";
+            case REACT_SUSPENSE_LIST_TYPE:
+                return "SuspenseList";
+        }
+        if (typeof type === "object") switch(type.$$typeof){
+            case REACT_CONTEXT_TYPE:
+                var context = type;
+                return getContextName(context) + ".Consumer";
+            case REACT_PROVIDER_TYPE:
+                var provider = type;
+                return getContextName(provider._context) + ".Provider";
+            case REACT_FORWARD_REF_TYPE:
+                return getWrappedName(type, type.render, "ForwardRef");
+            case REACT_MEMO_TYPE:
+                var outerName = type.displayName || null;
+                if (outerName !== null) return outerName;
+                return getComponentNameFromType(type.type) || "Memo";
+            case REACT_LAZY_TYPE:
+                var lazyComponent = type;
+                var payload = lazyComponent._payload;
+                var init = lazyComponent._init;
+                try {
+                    return getComponentNameFromType(init(payload));
+                } catch (x) {
+                    return null;
+                }
+        }
+        return null;
+    }
+    var assign = Object.assign;
+    // Helpers to patch console.logs to avoid logging during side-effect free
+    // replaying on render function. This currently only patches the object
+    // lazily which won't cover if the log function was extracted eagerly.
+    // We could also eagerly patch the method.
+    var disabledDepth = 0;
+    var prevLog;
+    var prevInfo;
+    var prevWarn;
+    var prevError;
+    var prevGroup;
+    var prevGroupCollapsed;
+    var prevGroupEnd;
+    function disabledLog() {}
+    disabledLog.__reactDisabledLog = true;
+    function disableLogs() {
+        if (disabledDepth === 0) {
+            /* eslint-disable react-internal/no-production-logging */ prevLog = console.log;
+            prevInfo = console.info;
+            prevWarn = console.warn;
+            prevError = console.error;
+            prevGroup = console.group;
+            prevGroupCollapsed = console.groupCollapsed;
+            prevGroupEnd = console.groupEnd; // https://github.com/facebook/react/issues/19099
+            var props = {
+                configurable: true,
+                enumerable: true,
+                value: disabledLog,
+                writable: true
+            }; // $FlowFixMe Flow thinks console is immutable.
+            Object.defineProperties(console, {
+                info: props,
+                log: props,
+                warn: props,
+                error: props,
+                group: props,
+                groupCollapsed: props,
+                groupEnd: props
+            });
+        /* eslint-enable react-internal/no-production-logging */ }
+        disabledDepth++;
+    }
+    function reenableLogs() {
+        disabledDepth--;
+        if (disabledDepth === 0) {
+            /* eslint-disable react-internal/no-production-logging */ var props = {
+                configurable: true,
+                enumerable: true,
+                writable: true
+            }; // $FlowFixMe Flow thinks console is immutable.
+            Object.defineProperties(console, {
+                log: assign({}, props, {
+                    value: prevLog
+                }),
+                info: assign({}, props, {
+                    value: prevInfo
+                }),
+                warn: assign({}, props, {
+                    value: prevWarn
+                }),
+                error: assign({}, props, {
+                    value: prevError
+                }),
+                group: assign({}, props, {
+                    value: prevGroup
+                }),
+                groupCollapsed: assign({}, props, {
+                    value: prevGroupCollapsed
+                }),
+                groupEnd: assign({}, props, {
+                    value: prevGroupEnd
+                })
+            });
+        /* eslint-enable react-internal/no-production-logging */ }
+        if (disabledDepth < 0) error("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
+    }
+    var ReactCurrentDispatcher = ReactSharedInternals.ReactCurrentDispatcher;
+    var prefix;
+    function describeBuiltInComponentFrame(name, source, ownerFn) {
+        if (prefix === undefined) // Extract the VM specific prefix used by each line.
+        try {
+            throw Error();
+        } catch (x) {
+            var match = x.stack.trim().match(/\n( *(at )?)/);
+            prefix = match && match[1] || "";
+        }
+         // We use the prefix to ensure our stacks line up with native stack frames.
+        return "\n" + prefix + name;
+    }
+    var reentry = false;
+    var componentFrameCache;
+    var PossiblyWeakMap = typeof WeakMap === "function" ? WeakMap : Map;
+    componentFrameCache = new PossiblyWeakMap();
+    function describeNativeComponentFrame(fn, construct) {
+        // If something asked for a stack inside a fake render, it should get ignored.
+        if (!fn || reentry) return "";
+        var frame = componentFrameCache.get(fn);
+        if (frame !== undefined) return frame;
+        var control;
+        reentry = true;
+        var previousPrepareStackTrace = Error.prepareStackTrace; // $FlowFixMe It does accept undefined.
+        Error.prepareStackTrace = undefined;
+        var previousDispatcher;
+        previousDispatcher = ReactCurrentDispatcher.current; // Set the dispatcher in DEV because this might be call in the render function
+        // for warnings.
+        ReactCurrentDispatcher.current = null;
+        disableLogs();
+        try {
+            // This should throw.
+            if (construct) {
+                // Something should be setting the props in the constructor.
+                var Fake = function() {
+                    throw Error();
+                }; // $FlowFixMe
+                Object.defineProperty(Fake.prototype, "props", {
+                    set: function() {
+                        // We use a throwing setter instead of frozen or non-writable props
+                        // because that won't throw in a non-strict mode function.
+                        throw Error();
+                    }
+                });
+                if (typeof Reflect === "object" && Reflect.construct) {
+                    // We construct a different control for this case to include any extra
+                    // frames added by the construct call.
+                    try {
+                        Reflect.construct(Fake, []);
+                    } catch (x) {
+                        control = x;
+                    }
+                    Reflect.construct(fn, [], Fake);
+                } else {
+                    try {
+                        Fake.call();
+                    } catch (x) {
+                        control = x;
+                    }
+                    fn.call(Fake.prototype);
+                }
+            } else {
+                try {
+                    throw Error();
+                } catch (x) {
+                    control = x;
+                }
+                fn();
+            }
+        } catch (sample) {
+            // This is inlined manually because closure doesn't do it for us.
+            if (sample && control && typeof sample.stack === "string") {
+                // This extracts the first frame from the sample that isn't also in the control.
+                // Skipping one frame that we assume is the frame that calls the two.
+                var sampleLines = sample.stack.split("\n");
+                var controlLines = control.stack.split("\n");
+                var s = sampleLines.length - 1;
+                var c = controlLines.length - 1;
+                while(s >= 1 && c >= 0 && sampleLines[s] !== controlLines[c])// We expect at least one stack frame to be shared.
+                // Typically this will be the root most one. However, stack frames may be
+                // cut off due to maximum stack limits. In this case, one maybe cut off
+                // earlier than the other. We assume that the sample is longer or the same
+                // and there for cut off earlier. So we should find the root most frame in
+                // the sample somewhere in the control.
+                c--;
+                for(; s >= 1 && c >= 0; s--, c--)// Next we find the first one that isn't the same which should be the
+                // frame that called our sample function and the control.
+                if (sampleLines[s] !== controlLines[c]) {
+                    // In V8, the first line is describing the message but other VMs don't.
+                    // If we're about to return the first line, and the control is also on the same
+                    // line, that's a pretty good indicator that our sample threw at same line as
+                    // the control. I.e. before we entered the sample frame. So we ignore this result.
+                    // This can happen if you passed a class to function component, or non-function.
+                    if (s !== 1 || c !== 1) do {
+                        s--;
+                        c--; // We may still have similar intermediate frames from the construct call.
+                        // The next one that isn't the same should be our match though.
+                        if (c < 0 || sampleLines[s] !== controlLines[c]) {
+                            // V8 adds a "new" prefix for native classes. Let's remove it to make it prettier.
+                            var _frame = "\n" + sampleLines[s].replace(" at new ", " at "); // If our component frame is labeled "<anonymous>"
+                            // but we have a user-provided "displayName"
+                            // splice it in to make the stack more readable.
+                            if (fn.displayName && _frame.includes("<anonymous>")) _frame = _frame.replace("<anonymous>", fn.displayName);
+                            if (typeof fn === "function") componentFrameCache.set(fn, _frame);
+                            return _frame;
+                        }
+                    }while (s >= 1 && c >= 0);
+                    break;
+                }
+            }
+        } finally{
+            reentry = false;
+            ReactCurrentDispatcher.current = previousDispatcher;
+            reenableLogs();
+            Error.prepareStackTrace = previousPrepareStackTrace;
+        } // Fallback to just using the name if we couldn't make it throw.
+        var name = fn ? fn.displayName || fn.name : "";
+        var syntheticFrame = name ? describeBuiltInComponentFrame(name) : "";
+        if (typeof fn === "function") componentFrameCache.set(fn, syntheticFrame);
+        return syntheticFrame;
+    }
+    function describeFunctionComponentFrame(fn, source, ownerFn) {
+        return describeNativeComponentFrame(fn, false);
+    }
+    function shouldConstruct(Component) {
+        var prototype = Component.prototype;
+        return !!(prototype && prototype.isReactComponent);
+    }
+    function describeUnknownElementTypeFrameInDEV(type, source, ownerFn) {
+        if (type == null) return "";
+        if (typeof type === "function") return describeNativeComponentFrame(type, shouldConstruct(type));
+        if (typeof type === "string") return describeBuiltInComponentFrame(type);
+        switch(type){
+            case REACT_SUSPENSE_TYPE:
+                return describeBuiltInComponentFrame("Suspense");
+            case REACT_SUSPENSE_LIST_TYPE:
+                return describeBuiltInComponentFrame("SuspenseList");
+        }
+        if (typeof type === "object") switch(type.$$typeof){
+            case REACT_FORWARD_REF_TYPE:
+                return describeFunctionComponentFrame(type.render);
+            case REACT_MEMO_TYPE:
+                // Memo may contain any component type so we recursively resolve it.
+                return describeUnknownElementTypeFrameInDEV(type.type, source, ownerFn);
+            case REACT_LAZY_TYPE:
+                var lazyComponent = type;
+                var payload = lazyComponent._payload;
+                var init = lazyComponent._init;
+                try {
+                    // Lazy may contain any component type so we recursively resolve it.
+                    return describeUnknownElementTypeFrameInDEV(init(payload), source, ownerFn);
+                } catch (x) {}
+        }
+        return "";
+    }
+    var hasOwnProperty = Object.prototype.hasOwnProperty;
+    var loggedTypeFailures = {};
+    var ReactDebugCurrentFrame = ReactSharedInternals.ReactDebugCurrentFrame;
+    function setCurrentlyValidatingElement(element) {
+        if (element) {
+            var owner = element._owner;
+            var stack = describeUnknownElementTypeFrameInDEV(element.type, element._source, owner ? owner.type : null);
+            ReactDebugCurrentFrame.setExtraStackFrame(stack);
+        } else ReactDebugCurrentFrame.setExtraStackFrame(null);
+    }
+    function checkPropTypes(typeSpecs, values, location, componentName, element) {
+        // $FlowFixMe This is okay but Flow doesn't know it.
+        var has = Function.call.bind(hasOwnProperty);
+        for(var typeSpecName in typeSpecs)if (has(typeSpecs, typeSpecName)) {
+            var error$1 = void 0; // Prop type validation may throw. In case they do, we don't want to
+            // fail the render phase where it didn't fail before. So we log it.
+            // After these have been cleaned up, we'll let them throw.
+            try {
+                // This is intentionally an invariant that gets caught. It's the same
+                // behavior as without this statement except with a better message.
+                if (typeof typeSpecs[typeSpecName] !== "function") {
+                    // eslint-disable-next-line react-internal/prod-error-codes
+                    var err = Error((componentName || "React class") + ": " + location + " type `" + typeSpecName + "` is invalid; " + "it must be a function, usually from the `prop-types` package, but received `" + typeof typeSpecs[typeSpecName] + "`." + "This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
+                    err.name = "Invariant Violation";
+                    throw err;
+                }
+                error$1 = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
+            } catch (ex) {
+                error$1 = ex;
+            }
+            if (error$1 && !(error$1 instanceof Error)) {
+                setCurrentlyValidatingElement(element);
+                error("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", componentName || "React class", location, typeSpecName, typeof error$1);
+                setCurrentlyValidatingElement(null);
+            }
+            if (error$1 instanceof Error && !(error$1.message in loggedTypeFailures)) {
+                // Only monitor this failure once because there tends to be a lot of the
+                // same error.
+                loggedTypeFailures[error$1.message] = true;
+                setCurrentlyValidatingElement(element);
+                error("Failed %s type: %s", location, error$1.message);
+                setCurrentlyValidatingElement(null);
+            }
+        }
+    }
+    var isArrayImpl = Array.isArray; // eslint-disable-next-line no-redeclare
+    function isArray(a) {
+        return isArrayImpl(a);
+    }
+    /*
+ * The `'' + value` pattern (used in in perf-sensitive code) throws for Symbol
+ * and Temporal.* types. See https://github.com/facebook/react/pull/22064.
+ *
+ * The functions in this module will throw an easier-to-understand,
+ * easier-to-debug exception with a clear errors message message explaining the
+ * problem. (Instead of a confusing exception thrown inside the implementation
+ * of the `value` object).
+ */ // $FlowFixMe only called in DEV, so void return is not possible.
+    function typeName(value) {
+        // toStringTag is needed for namespaced types like Temporal.Instant
+        var hasToStringTag = typeof Symbol === "function" && Symbol.toStringTag;
+        var type = hasToStringTag && value[Symbol.toStringTag] || value.constructor.name || "Object";
+        return type;
+    } // $FlowFixMe only called in DEV, so void return is not possible.
+    function willCoercionThrow(value) {
+        try {
+            testStringCoercion(value);
+            return false;
+        } catch (e) {
+            return true;
+        }
+    }
+    function testStringCoercion(value) {
+        // If you ended up here by following an exception call stack, here's what's
+        // happened: you supplied an object or symbol value to React (as a prop, key,
+        // DOM attribute, CSS property, string ref, etc.) and when React tried to
+        // coerce it to a string using `'' + value`, an exception was thrown.
+        //
+        // The most common types that will cause this exception are `Symbol` instances
+        // and Temporal objects like `Temporal.Instant`. But any object that has a
+        // `valueOf` or `[Symbol.toPrimitive]` method that throws will also cause this
+        // exception. (Library authors do this to prevent users from using built-in
+        // numeric operators like `+` or comparison operators like `>=` because custom
+        // methods are needed to perform accurate arithmetic or comparison.)
+        //
+        // To fix the problem, coerce this object or symbol value to a string before
+        // passing it to React. The most reliable way is usually `String(value)`.
+        //
+        // To find which value is throwing, check the browser or debugger console.
+        // Before this exception was thrown, there should be `console.error` output
+        // that shows the type (Symbol, Temporal.PlainDate, etc.) that caused the
+        // problem and how that type was used: key, atrribute, input value prop, etc.
+        // In most cases, this console output also shows the component and its
+        // ancestor components where the exception happened.
+        //
+        // eslint-disable-next-line react-internal/safe-string-coercion
+        return "" + value;
+    }
+    function checkKeyStringCoercion(value) {
+        if (willCoercionThrow(value)) {
+            error("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", typeName(value));
+            return testStringCoercion(value); // throw (to help callers find troubleshooting comments)
+        }
+    }
+    var ReactCurrentOwner = ReactSharedInternals.ReactCurrentOwner;
+    var RESERVED_PROPS = {
+        key: true,
+        ref: true,
+        __self: true,
+        __source: true
+    };
+    var specialPropKeyWarningShown;
+    var specialPropRefWarningShown;
+    var didWarnAboutStringRefs;
+    didWarnAboutStringRefs = {};
+    function hasValidRef(config) {
+        if (hasOwnProperty.call(config, "ref")) {
+            var getter = Object.getOwnPropertyDescriptor(config, "ref").get;
+            if (getter && getter.isReactWarning) return false;
+        }
+        return config.ref !== undefined;
+    }
+    function hasValidKey(config) {
+        if (hasOwnProperty.call(config, "key")) {
+            var getter = Object.getOwnPropertyDescriptor(config, "key").get;
+            if (getter && getter.isReactWarning) return false;
+        }
+        return config.key !== undefined;
+    }
+    function warnIfStringRefCannotBeAutoConverted(config, self) {
+        if (typeof config.ref === "string" && ReactCurrentOwner.current && self && ReactCurrentOwner.current.stateNode !== self) {
+            var componentName = getComponentNameFromType(ReactCurrentOwner.current.type);
+            if (!didWarnAboutStringRefs[componentName]) {
+                error('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', getComponentNameFromType(ReactCurrentOwner.current.type), config.ref);
+                didWarnAboutStringRefs[componentName] = true;
+            }
+        }
+    }
+    function defineKeyPropWarningGetter(props, displayName) {
+        var warnAboutAccessingKey = function() {
+            if (!specialPropKeyWarningShown) {
+                specialPropKeyWarningShown = true;
+                error("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", displayName);
+            }
+        };
+        warnAboutAccessingKey.isReactWarning = true;
+        Object.defineProperty(props, "key", {
+            get: warnAboutAccessingKey,
+            configurable: true
+        });
+    }
+    function defineRefPropWarningGetter(props, displayName) {
+        var warnAboutAccessingRef = function() {
+            if (!specialPropRefWarningShown) {
+                specialPropRefWarningShown = true;
+                error("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", displayName);
+            }
+        };
+        warnAboutAccessingRef.isReactWarning = true;
+        Object.defineProperty(props, "ref", {
+            get: warnAboutAccessingRef,
+            configurable: true
+        });
+    }
+    /**
+ * Factory method to create a new React element. This no longer adheres to
+ * the class pattern, so do not use new to call it. Also, instanceof check
+ * will not work. Instead test $$typeof field against Symbol.for('react.element') to check
+ * if something is a React Element.
+ *
+ * @param {*} type
+ * @param {*} props
+ * @param {*} key
+ * @param {string|object} ref
+ * @param {*} owner
+ * @param {*} self A *temporary* helper to detect places where `this` is
+ * different from the `owner` when React.createElement is called, so that we
+ * can warn. We want to get rid of owner and replace string `ref`s with arrow
+ * functions, and as long as `this` and owner are the same, there will be no
+ * change in behavior.
+ * @param {*} source An annotation object (added by a transpiler or otherwise)
+ * indicating filename, line number, and/or other information.
+ * @internal
+ */ var ReactElement = function(type, key, ref, self, source, owner, props) {
+        var element = {
+            // This tag allows us to uniquely identify this as a React Element
+            $$typeof: REACT_ELEMENT_TYPE,
+            // Built-in properties that belong on the element
+            type: type,
+            key: key,
+            ref: ref,
+            props: props,
+            // Record the component responsible for creating this element.
+            _owner: owner
+        };
+        // The validation flag is currently mutative. We put it on
+        // an external backing store so that we can freeze the whole object.
+        // This can be replaced with a WeakMap once they are implemented in
+        // commonly used development environments.
+        element._store = {}; // To make comparing ReactElements easier for testing purposes, we make
+        // the validation flag non-enumerable (where possible, which should
+        // include every environment we run tests in), so the test framework
+        // ignores it.
+        Object.defineProperty(element._store, "validated", {
+            configurable: false,
+            enumerable: false,
+            writable: true,
+            value: false
+        }); // self and source are DEV only properties.
+        Object.defineProperty(element, "_self", {
+            configurable: false,
+            enumerable: false,
+            writable: false,
+            value: self
+        }); // Two elements created in two different places should be considered
+        // equal for testing purposes and therefore we hide it from enumeration.
+        Object.defineProperty(element, "_source", {
+            configurable: false,
+            enumerable: false,
+            writable: false,
+            value: source
+        });
+        if (Object.freeze) {
+            Object.freeze(element.props);
+            Object.freeze(element);
+        }
+        return element;
+    };
+    /**
+ * https://github.com/reactjs/rfcs/pull/107
+ * @param {*} type
+ * @param {object} props
+ * @param {string} key
+ */ function jsxDEV(type, config, maybeKey, source, self) {
+        var propName; // Reserved names are extracted
+        var props = {};
+        var key = null;
+        var ref = null; // Currently, key can be spread in as a prop. This causes a potential
+        // issue if key is also explicitly declared (ie. <div {...props} key="Hi" />
+        // or <div key="Hi" {...props} /> ). We want to deprecate key spread,
+        // but as an intermediary step, we will use jsxDEV for everything except
+        // <div {...props} key="Hi" />, because we aren't currently able to tell if
+        // key is explicitly declared to be undefined or not.
+        if (maybeKey !== undefined) {
+            checkKeyStringCoercion(maybeKey);
+            key = "" + maybeKey;
+        }
+        if (hasValidKey(config)) {
+            checkKeyStringCoercion(config.key);
+            key = "" + config.key;
+        }
+        if (hasValidRef(config)) {
+            ref = config.ref;
+            warnIfStringRefCannotBeAutoConverted(config, self);
+        } // Remaining properties are added to a new props object
+        for(propName in config)if (hasOwnProperty.call(config, propName) && !RESERVED_PROPS.hasOwnProperty(propName)) props[propName] = config[propName];
+         // Resolve default props
+        if (type && type.defaultProps) {
+            var defaultProps = type.defaultProps;
+            for(propName in defaultProps)if (props[propName] === undefined) props[propName] = defaultProps[propName];
+        }
+        if (key || ref) {
+            var displayName = typeof type === "function" ? type.displayName || type.name || "Unknown" : type;
+            if (key) defineKeyPropWarningGetter(props, displayName);
+            if (ref) defineRefPropWarningGetter(props, displayName);
+        }
+        return ReactElement(type, key, ref, self, source, ReactCurrentOwner.current, props);
+    }
+    var ReactCurrentOwner$1 = ReactSharedInternals.ReactCurrentOwner;
+    var ReactDebugCurrentFrame$1 = ReactSharedInternals.ReactDebugCurrentFrame;
+    function setCurrentlyValidatingElement$1(element) {
+        if (element) {
+            var owner = element._owner;
+            var stack = describeUnknownElementTypeFrameInDEV(element.type, element._source, owner ? owner.type : null);
+            ReactDebugCurrentFrame$1.setExtraStackFrame(stack);
+        } else ReactDebugCurrentFrame$1.setExtraStackFrame(null);
+    }
+    var propTypesMisspellWarningShown;
+    propTypesMisspellWarningShown = false;
+    /**
+ * Verifies the object is a ReactElement.
+ * See https://reactjs.org/docs/react-api.html#isvalidelement
+ * @param {?object} object
+ * @return {boolean} True if `object` is a ReactElement.
+ * @final
+ */ function isValidElement(object) {
+        return typeof object === "object" && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+    }
+    function getDeclarationErrorAddendum() {
+        if (ReactCurrentOwner$1.current) {
+            var name = getComponentNameFromType(ReactCurrentOwner$1.current.type);
+            if (name) return "\n\nCheck the render method of `" + name + "`.";
+        }
+        return "";
+    }
+    function getSourceInfoErrorAddendum(source) {
+        if (source !== undefined) {
+            var fileName = source.fileName.replace(/^.*[\\\/]/, "");
+            var lineNumber = source.lineNumber;
+            return "\n\nCheck your code at " + fileName + ":" + lineNumber + ".";
+        }
+        return "";
+    }
+    /**
+ * Warn if there's no key explicitly set on dynamic arrays of children or
+ * object keys are not valid. This allows us to keep track of children between
+ * updates.
+ */ var ownerHasKeyUseWarning = {};
+    function getCurrentComponentErrorInfo(parentType) {
+        var info = getDeclarationErrorAddendum();
+        if (!info) {
+            var parentName = typeof parentType === "string" ? parentType : parentType.displayName || parentType.name;
+            if (parentName) info = "\n\nCheck the top-level render call using <" + parentName + ">.";
+        }
+        return info;
+    }
+    /**
+ * Warn if the element doesn't have an explicit key assigned to it.
+ * This element is in an array. The array could grow and shrink or be
+ * reordered. All children that haven't already been validated are required to
+ * have a "key" property assigned to it. Error statuses are cached so a warning
+ * will only be shown once.
+ *
+ * @internal
+ * @param {ReactElement} element Element that requires a key.
+ * @param {*} parentType element's parent's type.
+ */ function validateExplicitKey(element, parentType) {
+        if (!element._store || element._store.validated || element.key != null) return;
+        element._store.validated = true;
+        var currentComponentErrorInfo = getCurrentComponentErrorInfo(parentType);
+        if (ownerHasKeyUseWarning[currentComponentErrorInfo]) return;
+        ownerHasKeyUseWarning[currentComponentErrorInfo] = true; // Usually the current owner is the offender, but if it accepts children as a
+        // property, it may be the creator of the child that's responsible for
+        // assigning it a key.
+        var childOwner = "";
+        if (element && element._owner && element._owner !== ReactCurrentOwner$1.current) // Give the component that originally created this child.
+        childOwner = " It was passed a child from " + getComponentNameFromType(element._owner.type) + ".";
+        setCurrentlyValidatingElement$1(element);
+        error('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', currentComponentErrorInfo, childOwner);
+        setCurrentlyValidatingElement$1(null);
+    }
+    /**
+ * Ensure that every element either is passed in a static location, in an
+ * array with an explicit keys property defined, or in an object literal
+ * with valid key property.
+ *
+ * @internal
+ * @param {ReactNode} node Statically passed child of any type.
+ * @param {*} parentType node's parent's type.
+ */ function validateChildKeys(node, parentType) {
+        if (typeof node !== "object") return;
+        if (isArray(node)) for(var i = 0; i < node.length; i++){
+            var child = node[i];
+            if (isValidElement(child)) validateExplicitKey(child, parentType);
+        }
+        else if (isValidElement(node)) // This element was passed in a valid location.
+        {
+            if (node._store) node._store.validated = true;
+        } else if (node) {
+            var iteratorFn = getIteratorFn(node);
+            if (typeof iteratorFn === "function") // Entry iterators used to provide implicit keys,
+            // but now we print a separate warning for them later.
+            {
+                if (iteratorFn !== node.entries) {
+                    var iterator = iteratorFn.call(node);
+                    var step;
+                    while(!(step = iterator.next()).done)if (isValidElement(step.value)) validateExplicitKey(step.value, parentType);
+                }
+            }
+        }
+    }
+    /**
+ * Given an element, validate that its props follow the propTypes definition,
+ * provided by the type.
+ *
+ * @param {ReactElement} element
+ */ function validatePropTypes(element) {
+        var type = element.type;
+        if (type === null || type === undefined || typeof type === "string") return;
+        var propTypes;
+        if (typeof type === "function") propTypes = type.propTypes;
+        else if (typeof type === "object" && (type.$$typeof === REACT_FORWARD_REF_TYPE || // Note: Memo only checks outer props here.
+        // Inner props are checked in the reconciler.
+        type.$$typeof === REACT_MEMO_TYPE)) propTypes = type.propTypes;
+        else return;
+        if (propTypes) {
+            // Intentionally inside to avoid triggering lazy initializers:
+            var name = getComponentNameFromType(type);
+            checkPropTypes(propTypes, element.props, "prop", name, element);
+        } else if (type.PropTypes !== undefined && !propTypesMisspellWarningShown) {
+            propTypesMisspellWarningShown = true; // Intentionally inside to avoid triggering lazy initializers:
+            var _name = getComponentNameFromType(type);
+            error("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", _name || "Unknown");
+        }
+        if (typeof type.getDefaultProps === "function" && !type.getDefaultProps.isReactClassApproved) error("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
+    }
+    /**
+ * Given a fragment, validate that it can only be provided with fragment props
+ * @param {ReactElement} fragment
+ */ function validateFragmentProps(fragment) {
+        var keys = Object.keys(fragment.props);
+        for(var i = 0; i < keys.length; i++){
+            var key = keys[i];
+            if (key !== "children" && key !== "key") {
+                setCurrentlyValidatingElement$1(fragment);
+                error("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", key);
+                setCurrentlyValidatingElement$1(null);
+                break;
+            }
+        }
+        if (fragment.ref !== null) {
+            setCurrentlyValidatingElement$1(fragment);
+            error("Invalid attribute `ref` supplied to `React.Fragment`.");
+            setCurrentlyValidatingElement$1(null);
+        }
+    }
+    function jsxWithValidation(type, props, key, isStaticChildren, source, self) {
+        var validType = isValidElementType(type); // We warn in this case but don't throw. We expect the element creation to
+        // succeed and there will likely be errors in render.
+        if (!validType) {
+            var info = "";
+            if (type === undefined || typeof type === "object" && type !== null && Object.keys(type).length === 0) info += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.";
+            var sourceInfo = getSourceInfoErrorAddendum(source);
+            if (sourceInfo) info += sourceInfo;
+            else info += getDeclarationErrorAddendum();
+            var typeString;
+            if (type === null) typeString = "null";
+            else if (isArray(type)) typeString = "array";
+            else if (type !== undefined && type.$$typeof === REACT_ELEMENT_TYPE) {
+                typeString = "<" + (getComponentNameFromType(type.type) || "Unknown") + " />";
+                info = " Did you accidentally export a JSX literal instead of a component?";
+            } else typeString = typeof type;
+            error("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", typeString, info);
+        }
+        var element = jsxDEV(type, props, key, source, self); // The result can be nullish if a mock or a custom function is used.
+        // TODO: Drop this when these are no longer allowed as the type argument.
+        if (element == null) return element;
+         // Skip key warning if the type isn't valid since our key validation logic
+        // doesn't expect a non-string/function type and can throw confusing errors.
+        // We don't want exception behavior to differ between dev and prod.
+        // (Rendering will throw with a helpful message and as soon as the type is
+        // fixed, the key warnings will appear.)
+        if (validType) {
+            var children = props.children;
+            if (children !== undefined) {
+                if (isStaticChildren) {
+                    if (isArray(children)) {
+                        for(var i = 0; i < children.length; i++)validateChildKeys(children[i], type);
+                        if (Object.freeze) Object.freeze(children);
+                    } else error("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
+                } else validateChildKeys(children, type);
+            }
+        }
+        if (type === REACT_FRAGMENT_TYPE) validateFragmentProps(element);
+        else validatePropTypes(element);
+        return element;
+    } // These two functions exist to still get child warnings in dev
+    // even with the prod transform. This means that jsxDEV is purely
+    // opt-in behavior for better messages but that we won't stop
+    // giving you warnings if you use production apis.
+    function jsxWithValidationStatic(type, props, key) {
+        return jsxWithValidation(type, props, key, true);
+    }
+    function jsxWithValidationDynamic(type, props, key) {
+        return jsxWithValidation(type, props, key, false);
+    }
+    var jsx = jsxWithValidationDynamic; // we may want to special case jsxs internally to take advantage of static children.
+    // for now we can ship identical prod functions
+    var jsxs = jsxWithValidationStatic;
+    exports.Fragment = REACT_FRAGMENT_TYPE;
+    exports.jsx = jsx;
+    exports.jsxs = jsxs;
+})();
+
+},{"593632ccebda0d3a":"21dqq"}],"6J35F":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$4f14 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$4f14.prelude(module);
+
+try {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = require("7b33df7d9034a03e");
+var _RestaurantCard = _interopRequireDefault(require("a49e1492f907ab5d"));
+var _Shimmer = _interopRequireDefault(require("5a32134252fa1b9c"));
+var _reactRouterDom = require("b998562805b7a6de");
+var _helper = require("552243a1c49fea0a");
+var _useOnline = _interopRequireDefault(require("2e356d5b5fe719ba"));
+var _jsxRuntime = require("17dd142cd703e009");
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+// import { restaurantList } from "../config";
+const Body = ()=>{
+    // creating two copies of restaurants one for the whole UI other for the filtered UI
+    const [allRestaurants, setAllRestaurants] = (0, _react.useState)([]);
+    const [filteredRestaurants, setFilteredRestaurants] = (0, _react.useState)([]);
+    const [searchInput, setSearchInput] = (0, _react.useState)("");
+    (0, _react.useEffect)(()=>{
+        //API Call
+        getRestaurants();
+    }, []);
+    async function getRestaurants() {
+        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=31.3068925&lng=75.5793361&page_type=DESKTOP_WEB_LISTING");
+        const json = await data.json();
+        setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+        setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+    }
+    //using custom hook for offline msg
+    const isOnline = (0, _useOnline.default)();
+    if (!isOnline) return /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
+        children: "\uD83D\uDD34Uh-Oh!! Please Check Your Internet Connection...❗❗"
+    });
+    //Conditional Rendering
+    // if restaurants has no data or its length is 0 => render Shimmer UI
+    // if restaurants has data => render the normal UI
+    //avoid rendering a component (Early return)
+    if (!allRestaurants) return null;
+    return allRestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Shimmer.default, {}) : /*#__PURE__*/ (0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+        children: [
+            /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+                className: "flex p-2 m-2 bg-gray-200 shadow-xl",
+                children: [
+                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("input", {
+                        "data-testid": "search-input",
+                        type: "text",
+                        className: "placeholder:text-slate-400 block bg-white w-4/5 border border-slate-300 rounded-md p-3 m-2 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1",
+                        placeholder: "\uD83D\uDD0D   Search for anything...",
+                        name: "search",
+                        value: searchInput,
+                        onChange: (e)=>setSearchInput(e.target.value)
+                    }),
+                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
+                        "data-testid": "search-btn",
+                        className: "text-lg font-semibold border-2 bg-zinc-400 rounded-md p-3 m-2 w-36 shadow-sm focus:outline-none hover:bg-amber-200 text-neutral-700",
+                        onClick: ()=>{
+                            let data = (0, _helper.filterData)(searchInput, allRestaurants);
+                            setFilteredRestaurants(data);
+                        },
+                        children: "Search"
+                    })
+                ]
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+                className: "flex flex-wrap",
+                "data-testid": "res-list",
+                children: filteredRestaurants.map((restaurant)=>{
+                    return /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
+                        to: "/restaurant/" + restaurant.data.id,
+                        children: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_RestaurantCard.default, {
+                            name: restaurant.data.name,
+                            cuisines: restaurant.data.cuisines,
+                            cloudinaryImageId: restaurant.data.cloudinaryImageId,
+                            lastMileTravelString: restaurant.data.lastMileTravelString
+                        })
+                    }, restaurant.data.id);
+                })
+            })
+        ]
+    });
+};
+_c = Body;
+var _default = Body;
+exports.default = _default;
+var _c;
+$RefreshReg$(_c, "Body");
+
+  $parcel$ReactRefreshHelpers$4f14.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"7b33df7d9034a03e":"21dqq","a49e1492f907ab5d":"kZnAN","5a32134252fa1b9c":"c7s09","b998562805b7a6de":"9xmpe","552243a1c49fea0a":"lweWK","2e356d5b5fe719ba":"3QNXc","17dd142cd703e009":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kZnAN":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$bb0d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$bb0d.prelude(module);
+
+try {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _config = require("98d76c13bdad25fd");
+var _jsxRuntime = require("59c554fcabe62faf");
+const RestaurantCard = ({ name , cuisines , cloudinaryImageId , lastMileTravelString  })=>{
+    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+        className: "w-56 p-2 m-2 shadow-lg bg-amber-100 border-2 border-amber-200",
+        children: [
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("img", {
+                src: _config.IMG_CND_URL + cloudinaryImageId
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h3", {
+                className: "font-bold text-lg",
+                children: name
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h4", {
+                children: cuisines.join(", ")
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h5", {
+                children: lastMileTravelString
+            })
+        ]
+    });
+};
+_c = RestaurantCard;
+var _default = RestaurantCard;
+exports.default = _default;
+var _c;
+$RefreshReg$(_c, "RestaurantCard");
+
+  $parcel$ReactRefreshHelpers$bb0d.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"98d76c13bdad25fd":"jtCLN","59c554fcabe62faf":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jtCLN":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.restaurantList = exports.IMG_CND_URL = exports.FETCH_MENU_URL = void 0;
+const FETCH_MENU_URL = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9715987&lng=77.5945627&restaurantId=";
+exports.FETCH_MENU_URL = FETCH_MENU_URL;
+const IMG_CND_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
+exports.IMG_CND_URL = IMG_CND_URL;
+const restaurantList = [
+    {
+        type: "restaurant",
+        data: {
+            type: "F",
+            id: "588891",
+            name: "The Pizza Bunker",
+            uuid: "17a806bc-d406-4fb8-86fc-5e0a4c515a1c",
+            city: "47",
+            area: "New Amar Nagar",
+            totalRatingsString: "500+ ratings",
+            cloudinaryImageId: "wnteh4cpcctz7needphz",
+            cuisines: [
+                "Pizzas",
+                "Italian",
+                "Fast Food"
+            ],
+            tags: [],
+            costForTwo: 15000,
+            costForTwoString: "₹150 FOR TWO",
+            deliveryTime: 24,
+            minDeliveryTime: 24,
+            maxDeliveryTime: 24,
+            slaString: "24 MINS",
+            lastMileTravel: 0.800000011920929,
+            slugs: {
+                restaurant: "the-pizza-bunker-north_jalandhar-north_jalandhar",
+                city: "jalandhar"
+            },
+            cityState: "47",
+            address: "Shaheed babu labh singh nagar Gali no 10, near, Durga Mandir Rd, New Amar Nagar, Jalandhar, Punjab 144001, India",
+            locality: "Shaheed Babu Labh Singh Nagar",
+            parentId: 352272,
+            unserviceable: false,
+            veg: true,
+            select: false,
+            favorite: false,
+            tradeCampaignHeaders: [],
+            chain: [],
+            feeDetails: {
+                fees: [
+                    {
+                        name: "distance",
+                        fee: 1900,
+                        message: ""
+                    },
+                    {
+                        name: "time",
+                        fee: 0,
+                        message: ""
+                    },
+                    {
+                        name: "special",
+                        fee: 0,
+                        message: ""
+                    }
+                ],
+                totalFees: 1900,
+                message: "",
+                title: "Delivery Charge",
+                amount: "1900",
+                icon: ""
+            },
+            availability: {
+                opened: true,
+                nextOpenMessage: "",
+                nextCloseMessage: ""
+            },
+            longDistanceEnabled: 0,
+            rainMode: "NONE",
+            thirdPartyAddress: false,
+            thirdPartyVendor: "",
+            adTrackingID: "",
+            badges: {
+                imageBased: [],
+                textBased: [],
+                textExtendedBadges: []
+            },
+            lastMileTravelString: "0.8 kms",
+            hasSurge: false,
+            aggregatedDiscountInfoV3: {
+                header: "60% OFF",
+                subHeader: "UPTO ₹120",
+                discountTag: "",
+                headerTypeV2: 0
+            },
+            sla: {
+                restaurantId: "588891",
+                deliveryTime: 24,
+                minDeliveryTime: 24,
+                maxDeliveryTime: 24,
+                lastMileTravel: 0.800000011920929,
+                lastMileDistance: 0,
+                serviceability: "SERVICEABLE",
+                rainMode: "NONE",
+                longDistance: "NOT_LONG_DISTANCE",
+                preferentialService: false,
+                iconType: "EMPTY"
+            },
+            promoted: false,
+            avgRating: "4.1",
+            totalRatings: 500,
+            new: false
+        },
+        subtype: "basic"
+    },
+    {
+        type: "restaurant",
+        data: {
+            type: "F",
+            id: "112607",
+            name: "New Aar Kay Vaishno Dhaba (Kapurthala Road)",
+            uuid: "1dfaa9d0-3b54-410b-a1f0-1712e3c3171a",
+            city: "47",
+            area: "Basti Bawa Khel",
+            totalRatingsString: "10000+ ratings",
+            cloudinaryImageId: "hrjpqey3zgbkhvn0ajba",
+            cuisines: [
+                "North Indian",
+                "Chinese",
+                "Thalis"
+            ],
+            tags: [],
+            costForTwo: 25000,
+            costForTwoString: "₹250 FOR TWO",
+            deliveryTime: 25,
+            minDeliveryTime: 25,
+            maxDeliveryTime: 25,
+            slaString: "25 MINS",
+            lastMileTravel: 1.7000000476837158,
+            slugs: {
+                restaurant: "aar-kay-vaishno-dhaba-basti-bawa-khel-jalandhar_central",
+                city: "jalandhar"
+            },
+            cityState: "47",
+            address: "kapurthala road near surgical complex basti bawa khel",
+            locality: "Kapurthala Road",
+            parentId: 145670,
+            unserviceable: false,
+            veg: true,
+            select: false,
+            favorite: false,
+            tradeCampaignHeaders: [],
+            chain: [],
+            feeDetails: {
+                fees: [
+                    {
+                        name: "distance",
+                        fee: 1900,
+                        message: ""
+                    },
+                    {
+                        name: "time",
+                        fee: 0,
+                        message: ""
+                    },
+                    {
+                        name: "special",
+                        fee: 0,
+                        message: ""
+                    }
+                ],
+                totalFees: 1900,
+                message: "",
+                title: "Delivery Charge",
+                amount: "1900",
+                icon: ""
+            },
+            availability: {
+                opened: true,
+                nextOpenMessage: "",
+                nextCloseMessage: ""
+            },
+            longDistanceEnabled: 0,
+            rainMode: "NONE",
+            thirdPartyAddress: false,
+            thirdPartyVendor: "",
+            adTrackingID: "",
+            badges: {
+                imageBased: [],
+                textBased: [],
+                textExtendedBadges: []
+            },
+            lastMileTravelString: "1.7 kms",
+            hasSurge: false,
+            aggregatedDiscountInfoV3: {
+                header: "60% OFF",
+                subHeader: "UPTO ₹120",
+                discountTag: "",
+                headerTypeV2: 0
+            },
+            sla: {
+                restaurantId: "112607",
+                deliveryTime: 25,
+                minDeliveryTime: 25,
+                maxDeliveryTime: 25,
+                lastMileTravel: 1.7000000476837158,
+                lastMileDistance: 0,
+                serviceability: "SERVICEABLE",
+                rainMode: "NONE",
+                longDistance: "NOT_LONG_DISTANCE",
+                preferentialService: false,
+                iconType: "EMPTY"
+            },
+            promoted: false,
+            avgRating: "4.1",
+            totalRatings: 10000,
+            new: false
+        },
+        subtype: "basic"
+    },
+    {
+        type: "restaurant",
+        data: {
+            type: "F",
+            id: "347917",
+            name: "KFC",
+            uuid: "55717eec-669d-4b3e-b2f4-5a8d103360cb",
+            city: "47",
+            area: "Shastri Nagar",
+            totalRatingsString: "1000+ ratings",
+            cloudinaryImageId: "56c9ab92bd79745fd152a30fa2525426",
+            cuisines: [
+                "Burgers",
+                "Biryani",
+                "American",
+                "Snacks",
+                "Fast Food"
+            ],
+            tags: [],
+            costForTwo: 40000,
+            costForTwoString: "₹400 FOR TWO",
+            deliveryTime: 39,
+            minDeliveryTime: 39,
+            maxDeliveryTime: 39,
+            slaString: "39 MINS",
+            lastMileTravel: 5.900000095367432,
+            slugs: {
+                restaurant: "kfc-mkc-mall-south_jalandhar",
+                city: "jalandhar"
+            },
+            cityState: "47",
+            address: "KFC Restaurant, MKC mall shop no- 1 , new jawahar nagar jalandhar - 144001",
+            locality: "Mahavir Marg",
+            parentId: 547,
+            unserviceable: false,
+            veg: false,
+            select: false,
+            favorite: false,
+            tradeCampaignHeaders: [],
+            ribbon: [
+                {
+                    type: "PROMOTED"
+                }
+            ],
+            chain: [],
+            feeDetails: {
+                fees: [
+                    {
+                        name: "distance",
+                        fee: 2900,
+                        message: ""
+                    },
+                    {
+                        name: "time",
+                        fee: 0,
+                        message: ""
+                    },
+                    {
+                        name: "special",
+                        fee: 0,
+                        message: ""
+                    }
+                ],
+                totalFees: 2900,
+                message: "",
+                title: "Delivery Charge",
+                amount: "2900",
+                icon: ""
+            },
+            availability: {
+                opened: true,
+                nextOpenMessage: "",
+                nextCloseMessage: ""
+            },
+            longDistanceEnabled: 0,
+            rainMode: "NONE",
+            thirdPartyAddress: false,
+            thirdPartyVendor: "",
+            adTrackingID: "cid=7116663~p=4~eid=00000188-dc95-7bc8-04e9-40a8000f0475~srvts=1687327964104",
+            badges: {
+                imageBased: [],
+                textBased: [],
+                textExtendedBadges: []
+            },
+            lastMileTravelString: "5.9 kms",
+            hasSurge: false,
+            aggregatedDiscountInfoV3: {
+                header: "20% OFF",
+                subHeader: "UPTO ₹50",
+                discountTag: "",
+                headerTypeV2: 0
+            },
+            sla: {
+                restaurantId: "347917",
+                deliveryTime: 39,
+                minDeliveryTime: 39,
+                maxDeliveryTime: 39,
+                lastMileTravel: 5.900000095367432,
+                lastMileDistance: 0,
+                serviceability: "SERVICEABLE",
+                rainMode: "NONE",
+                longDistance: "NOT_LONG_DISTANCE",
+                preferentialService: false,
+                iconType: "EMPTY"
+            },
+            promoted: true,
+            avgRating: "4.2",
+            totalRatings: 1000,
+            new: false
+        },
+        subtype: "basic"
+    },
+    {
+        type: "restaurant",
+        data: {
+            type: "F",
+            id: "349175",
+            name: "Pizza Roberto",
+            uuid: "1c70f216-b943-4d2d-852f-88e66bdd2684",
+            city: "47",
+            area: "Adarsh Nagar",
+            totalRatingsString: "1000+ ratings",
+            cloudinaryImageId: "b5pzn1fayfuqklftrjfi",
+            cuisines: [
+                "Continental",
+                "Italian",
+                "Pizzas",
+                "American",
+                "Beverages",
+                "Chinese"
+            ],
+            tags: [],
+            costForTwo: 30000,
+            costForTwoString: "₹300 FOR TWO",
+            deliveryTime: 26,
+            minDeliveryTime: 26,
+            maxDeliveryTime: 26,
+            slaString: "26 MINS",
+            lastMileTravel: 0.8999999761581421,
+            slugs: {
+                restaurant: "pizza-roberto-north_jalandhar-north_jalandhar",
+                city: "jalandhar"
+            },
+            cityState: "47",
+            address: "Gali No. 10, Shaheed Babu Labh Singh Nagar, Jalandhar., Jalandhar-1 (P/S 1,2,3,4,5, Sub Division Jalandhar-1), Jalandhar, Punjab",
+            locality: "Babu Labh Singh Nagar",
+            parentId: 158916,
+            unserviceable: false,
+            veg: false,
+            select: false,
+            favorite: false,
+            tradeCampaignHeaders: [],
+            chain: [],
+            feeDetails: {
+                fees: [
+                    {
+                        name: "distance",
+                        fee: 1900,
+                        message: ""
+                    },
+                    {
+                        name: "time",
+                        fee: 0,
+                        message: ""
+                    },
+                    {
+                        name: "special",
+                        fee: 0,
+                        message: ""
+                    }
+                ],
+                totalFees: 1900,
+                message: "",
+                title: "Delivery Charge",
+                amount: "1900",
+                icon: ""
+            },
+            availability: {
+                opened: true,
+                nextOpenMessage: "",
+                nextCloseMessage: ""
+            },
+            longDistanceEnabled: 0,
+            rainMode: "NONE",
+            thirdPartyAddress: false,
+            thirdPartyVendor: "",
+            adTrackingID: "",
+            badges: {
+                imageBased: [],
+                textBased: [],
+                textExtendedBadges: []
+            },
+            lastMileTravelString: "0.8 kms",
+            hasSurge: false,
+            aggregatedDiscountInfoV3: {
+                header: "60% OFF",
+                subHeader: "UPTO ₹120",
+                discountTag: "",
+                headerTypeV2: 0
+            },
+            sla: {
+                restaurantId: "349175",
+                deliveryTime: 26,
+                minDeliveryTime: 26,
+                maxDeliveryTime: 26,
+                lastMileTravel: 0.8999999761581421,
+                lastMileDistance: 0,
+                serviceability: "SERVICEABLE",
+                rainMode: "NONE",
+                longDistance: "NOT_LONG_DISTANCE",
+                preferentialService: false,
+                iconType: "EMPTY"
+            },
+            promoted: false,
+            avgRating: "4.0",
+            totalRatings: 1000,
+            new: false
+        },
+        subtype: "basic"
+    },
+    {
+        type: "restaurant",
+        data: {
+            type: "F",
+            id: "98907",
+            name: "Maddi Refreshments",
+            uuid: "ad3ef067-50d3-494f-9e45-136408887ed3",
+            city: "47",
+            area: "Burlton Park",
+            totalRatingsString: "10000+ ratings",
+            cloudinaryImageId: "eabespjc5tudmnjedl5b",
+            cuisines: [
+                "Snacks",
+                "North Indian"
+            ],
+            tags: [],
+            costForTwo: 20000,
+            costForTwoString: "₹200 FOR TWO",
+            deliveryTime: 26,
+            minDeliveryTime: 26,
+            maxDeliveryTime: 26,
+            slaString: "26 MINS",
+            lastMileTravel: 2.0999999046325684,
+            slugs: {
+                restaurant: "maddi-refreshments-shastri-nagar-jalandhar_central",
+                city: "jalandhar"
+            },
+            cityState: "47",
+            address: "Shop 3, Main Road, Kabir Nagar, Shastri Nagar, Jalandhar",
+            locality: "Kabir Nagar",
+            parentId: 128425,
+            unserviceable: false,
+            veg: true,
+            select: false,
+            favorite: false,
+            tradeCampaignHeaders: [],
+            chain: [],
+            feeDetails: {
+                fees: [
+                    {
+                        name: "distance",
+                        fee: 1900,
+                        message: ""
+                    },
+                    {
+                        name: "time",
+                        fee: 0,
+                        message: ""
+                    },
+                    {
+                        name: "special",
+                        fee: 0,
+                        message: ""
+                    }
+                ],
+                totalFees: 1900,
+                message: "",
+                title: "Delivery Charge",
+                amount: "1900",
+                icon: ""
+            },
+            availability: {
+                opened: true,
+                nextOpenMessage: "",
+                nextCloseMessage: ""
+            },
+            longDistanceEnabled: 0,
+            rainMode: "NONE",
+            thirdPartyAddress: false,
+            thirdPartyVendor: "",
+            adTrackingID: "",
+            badges: {
+                imageBased: [],
+                textBased: [],
+                textExtendedBadges: []
+            },
+            lastMileTravelString: "2 kms",
+            hasSurge: false,
+            aggregatedDiscountInfoV3: {
+                header: "20% OFF",
+                subHeader: "UPTO ₹50",
+                discountTag: "",
+                headerTypeV2: 0
+            },
+            sla: {
+                restaurantId: "98907",
+                deliveryTime: 26,
+                minDeliveryTime: 26,
+                maxDeliveryTime: 26,
+                lastMileTravel: 2.0999999046325684,
+                lastMileDistance: 0,
+                serviceability: "SERVICEABLE",
+                rainMode: "NONE",
+                longDistance: "NOT_LONG_DISTANCE",
+                preferentialService: false,
+                iconType: "EMPTY"
+            },
+            promoted: false,
+            avgRating: "4.5",
+            totalRatings: 10000,
+            new: false
+        },
+        subtype: "basic"
+    },
+    {
+        type: "restaurant",
+        data: {
+            type: "F",
+            id: "283810",
+            name: "Yummy Delicious Till Last Bite",
+            uuid: "5ba943fb-b9d1-4996-8aa6-6a5f769b6960",
+            city: "47",
+            area: "Model Town",
+            totalRatingsString: "10000+ ratings",
+            cloudinaryImageId: "wwgslew60sfsdtfy2ijz",
+            cuisines: [
+                "Chinese",
+                "Continental",
+                "Italian"
+            ],
+            tags: [],
+            costForTwo: 30000,
+            costForTwoString: "₹300 FOR TWO",
+            deliveryTime: 44,
+            minDeliveryTime: 44,
+            maxDeliveryTime: 44,
+            slaString: "44 MINS",
+            lastMileTravel: 6,
+            slugs: {
+                restaurant: "yummy-delicious-till-last-bite-jalandhar_central-jalandhar_central",
+                city: "jalandhar"
+            },
+            cityState: "47",
+            address: "Shop No. 6, G.T.B. Opp. Ghai Hospital, GTB Nagar, Jalandhar, Punjab",
+            locality: "Guru Teg Bahadur Nagar",
+            parentId: 228634,
+            unserviceable: false,
+            veg: false,
+            select: false,
+            favorite: false,
+            tradeCampaignHeaders: [],
+            ribbon: [
+                {
+                    type: "PROMOTED"
+                }
+            ],
+            chain: [],
+            feeDetails: {
+                fees: [
+                    {
+                        name: "distance",
+                        fee: 4200,
+                        message: ""
+                    },
+                    {
+                        name: "time",
+                        fee: 0,
+                        message: ""
+                    },
+                    {
+                        name: "special",
+                        fee: 0,
+                        message: ""
+                    }
+                ],
+                totalFees: 4200,
+                message: "",
+                title: "Delivery Charge",
+                amount: "4200",
+                icon: ""
+            },
+            availability: {
+                opened: true,
+                nextOpenMessage: "",
+                nextCloseMessage: ""
+            },
+            longDistanceEnabled: 0,
+            rainMode: "NONE",
+            thirdPartyAddress: false,
+            thirdPartyVendor: "",
+            adTrackingID: "cid=7131316~p=7~eid=00000188-dc95-7bc8-04e9-40a9000f0754~srvts=1687327964104",
+            badges: {
+                imageBased: [],
+                textBased: [],
+                textExtendedBadges: []
+            },
+            lastMileTravelString: "6 kms",
+            hasSurge: false,
+            aggregatedDiscountInfoV3: {
+                header: "₹175 OFF",
+                subHeader: "ABOVE ₹400",
+                discountTag: "FLAT DEAL",
+                headerTypeV2: 0
+            },
+            sla: {
+                restaurantId: "283810",
+                deliveryTime: 44,
+                minDeliveryTime: 44,
+                maxDeliveryTime: 44,
+                lastMileTravel: 6,
+                lastMileDistance: 0,
+                serviceability: "SERVICEABLE",
+                rainMode: "NONE",
+                longDistance: "NOT_LONG_DISTANCE",
+                preferentialService: false,
+                iconType: "EMPTY"
+            },
+            promoted: true,
+            avgRating: "4.2",
+            totalRatings: 10000,
+            new: false
+        },
+        subtype: "basic"
+    },
+    {
+        type: "restaurant",
+        data: {
+            type: "F",
+            id: "382596",
+            name: "The fusion bite",
+            uuid: "589dc65f-7260-47cf-9239-86cc162426dc",
+            city: "47",
+            area: "Adarsh Nagar",
+            totalRatingsString: "500+ ratings",
+            cloudinaryImageId: "fx1ctjkuumq2wnkqigot",
+            cuisines: [
+                "Pizzas",
+                "Italian-American",
+                "Chinese",
+                "Beverages",
+                "Snacks"
+            ],
+            tags: [],
+            costForTwo: 15000,
+            costForTwoString: "₹150 FOR TWO",
+            deliveryTime: 28,
+            minDeliveryTime: 28,
+            maxDeliveryTime: 28,
+            slaString: "28 MINS",
+            lastMileTravel: 0.8999999761581421,
+            slugs: {
+                restaurant: "the-fusion-bite-north_jalandhar-north_jalandhar",
+                city: "jalandhar"
+            },
+            cityState: "47",
+            address: "Gali No. 10, Shaheed Babu Labh Singh Nagar, Jalandhar., Jalandhar-1 (P/S 1,2,3,4,5, Sub Division Jalandhar-1), Jalandhar, , Punjab, 144001",
+            locality: "Shaheed Babu Labh Singh Nagar",
+            parentId: 257498,
+            unserviceable: false,
+            veg: false,
+            select: false,
+            favorite: false,
+            tradeCampaignHeaders: [],
+            chain: [],
+            feeDetails: {
+                fees: [
+                    {
+                        name: "distance",
+                        fee: 1900,
+                        message: ""
+                    },
+                    {
+                        name: "time",
+                        fee: 0,
+                        message: ""
+                    },
+                    {
+                        name: "special",
+                        fee: 0,
+                        message: ""
+                    }
+                ],
+                totalFees: 1900,
+                message: "",
+                title: "Delivery Charge",
+                amount: "1900",
+                icon: ""
+            },
+            availability: {
+                opened: true,
+                nextOpenMessage: "",
+                nextCloseMessage: ""
+            },
+            longDistanceEnabled: 0,
+            rainMode: "NONE",
+            thirdPartyAddress: false,
+            thirdPartyVendor: "",
+            adTrackingID: "",
+            badges: {
+                imageBased: [],
+                textBased: [],
+                textExtendedBadges: []
+            },
+            lastMileTravelString: "0.8 kms",
+            hasSurge: false,
+            aggregatedDiscountInfoV3: {
+                header: "60% OFF",
+                subHeader: "UPTO ₹120",
+                discountTag: "",
+                headerTypeV2: 0
+            },
+            sla: {
+                restaurantId: "382596",
+                deliveryTime: 28,
+                minDeliveryTime: 28,
+                maxDeliveryTime: 28,
+                lastMileTravel: 0.8999999761581421,
+                lastMileDistance: 0,
+                serviceability: "SERVICEABLE",
+                rainMode: "NONE",
+                longDistance: "NOT_LONG_DISTANCE",
+                preferentialService: false,
+                iconType: "EMPTY"
+            },
+            promoted: false,
+            avgRating: "4.2",
+            totalRatings: 500,
+            new: false
+        },
+        subtype: "basic"
+    },
+    {
+        type: "restaurant",
+        data: {
+            type: "F",
+            id: "263164",
+            name: "Hari Burger",
+            uuid: "083aa264-1b3e-4f14-aa17-0f578631b1ab",
+            city: "47",
+            area: "North_Jalandhar",
+            totalRatingsString: "10000+ ratings",
+            cloudinaryImageId: "ynarnd0haqjsbgrzeasx",
+            cuisines: [
+                "Burgers",
+                "Chinese",
+                "Pizzas",
+                "Pastas",
+                "Italian-American"
+            ],
+            tags: [],
+            costForTwo: 15000,
+            costForTwoString: "₹150 FOR TWO",
+            deliveryTime: 33,
+            minDeliveryTime: 33,
+            maxDeliveryTime: 33,
+            slaString: "33 MINS",
+            lastMileTravel: 2.9000000953674316,
+            slugs: {
+                restaurant: "hari-burger-jalandhar_central-jalandhar_central",
+                city: "jalandhar"
+            },
+            cityState: "47",
+            address: "8 Dilbag Nagar, Jalandhar,144001",
+            locality: "Dilbagh Nagar",
+            parentId: 21810,
+            unserviceable: false,
+            veg: true,
+            select: false,
+            favorite: false,
+            tradeCampaignHeaders: [],
+            chain: [],
+            feeDetails: {
+                fees: [
+                    {
+                        name: "distance",
+                        fee: 1900,
+                        message: ""
+                    },
+                    {
+                        name: "time",
+                        fee: 0,
+                        message: ""
+                    },
+                    {
+                        name: "special",
+                        fee: 0,
+                        message: ""
+                    }
+                ],
+                totalFees: 1900,
+                message: "",
+                title: "Delivery Charge",
+                amount: "1900",
+                icon: ""
+            },
+            availability: {
+                opened: true,
+                nextOpenMessage: "",
+                nextCloseMessage: ""
+            },
+            longDistanceEnabled: 0,
+            rainMode: "NONE",
+            thirdPartyAddress: false,
+            thirdPartyVendor: "",
+            adTrackingID: "",
+            badges: {
+                imageBased: [],
+                textBased: [],
+                textExtendedBadges: []
+            },
+            lastMileTravelString: "2.9 kms",
+            hasSurge: false,
+            aggregatedDiscountInfoV3: {
+                header: "60% OFF",
+                subHeader: "UPTO ₹120",
+                discountTag: "",
+                headerTypeV2: 0
+            },
+            sla: {
+                restaurantId: "263164",
+                deliveryTime: 33,
+                minDeliveryTime: 33,
+                maxDeliveryTime: 33,
+                lastMileTravel: 2.9000000953674316,
+                lastMileDistance: 0,
+                serviceability: "SERVICEABLE",
+                rainMode: "NONE",
+                longDistance: "NOT_LONG_DISTANCE",
+                preferentialService: false,
+                iconType: "EMPTY"
+            },
+            promoted: false,
+            avgRating: "4.1",
+            totalRatings: 10000,
+            new: false
+        },
+        subtype: "basic"
+    },
+    {
+        type: "restaurant",
+        data: {
+            type: "F",
+            id: "664191",
+            name: " Kanha Sweets (Amritsar Waale)",
+            uuid: "8cb44ab4-b35d-4ca2-897c-deb7c64f3230",
+            city: "47",
+            area: "Urban Estate",
+            totalRatingsString: "100+ ratings",
+            cloudinaryImageId: "690ec62bf8cab8de783622ac0b98cdb3",
+            cuisines: [
+                "Sweets",
+                "Snacks"
+            ],
+            tags: [],
+            costForTwo: 20000,
+            costForTwoString: "₹200 FOR TWO",
+            deliveryTime: 33,
+            minDeliveryTime: 33,
+            maxDeliveryTime: 33,
+            slaString: "33 MINS",
+            lastMileTravel: 7.800000190734863,
+            slugs: {
+                restaurant: "kanha-sweets-south_jalandhar-south_jalandhar",
+                city: "jalandhar"
+            },
+            cityState: "47",
+            address: "Kanha Sweets , Police Station 1, Jalandhar-1 (P/S 1,2,3,4,5, Sub Division Jalandhar-1), Jalandhar, Punjab, 144022",
+            locality: "Phase 2",
+            parentId: 114617,
+            unserviceable: false,
+            veg: false,
+            select: false,
+            favorite: false,
+            tradeCampaignHeaders: [],
+            ribbon: [
+                {
+                    type: "PROMOTED"
+                }
+            ],
+            chain: [],
+            feeDetails: {
+                fees: [
+                    {
+                        name: "distance",
+                        fee: 4200,
+                        message: ""
+                    },
+                    {
+                        name: "time",
+                        fee: 0,
+                        message: ""
+                    },
+                    {
+                        name: "special",
+                        fee: 0,
+                        message: ""
+                    }
+                ],
+                totalFees: 4200,
+                message: "",
+                title: "Delivery Charge",
+                amount: "4200",
+                icon: ""
+            },
+            availability: {
+                opened: true,
+                nextOpenMessage: "",
+                nextCloseMessage: ""
+            },
+            longDistanceEnabled: 0,
+            rainMode: "NONE",
+            thirdPartyAddress: false,
+            thirdPartyVendor: "",
+            adTrackingID: "cid=7022465~p=10~eid=00000188-dc95-7bc8-04e9-40aa000f0a13~srvts=1687327964104",
+            badges: {
+                imageBased: [],
+                textBased: [],
+                textExtendedBadges: []
+            },
+            lastMileTravelString: "7.8 kms",
+            hasSurge: false,
+            sla: {
+                restaurantId: "664191",
+                deliveryTime: 33,
+                minDeliveryTime: 33,
+                maxDeliveryTime: 33,
+                lastMileTravel: 7.800000190734863,
+                lastMileDistance: 0,
+                serviceability: "SERVICEABLE",
+                rainMode: "NONE",
+                longDistance: "NOT_LONG_DISTANCE",
+                preferentialService: false,
+                iconType: "EMPTY"
+            },
+            promoted: true,
+            avgRating: "4.1",
+            totalRatings: 100,
+            new: false
+        },
+        subtype: "basic"
+    },
+    {
+        type: "restaurant",
+        data: {
+            type: "F",
+            id: "285860",
+            name: "Nanak Vegetarian Dhaba",
+            uuid: "f672e7a5-dc87-4e0e-8d05-11038cd3166d",
+            city: "47",
+            area: "Harnam Daspura",
+            totalRatingsString: "10000+ ratings",
+            cloudinaryImageId: "usllk61gnicqmykbiyrb",
+            cuisines: [
+                "North Indian",
+                "South Indian"
+            ],
+            tags: [],
+            costForTwo: 30000,
+            costForTwoString: "₹300 FOR TWO",
+            deliveryTime: 38,
+            minDeliveryTime: 38,
+            maxDeliveryTime: 38,
+            slaString: "38 MINS",
+            lastMileTravel: 3,
+            slugs: {
+                restaurant: "nanak-veg-dhaba-jalandhar_central-jalandhar_central",
+                city: "jalandhar"
+            },
+            cityState: "47",
+            address: "46, Kapurthala Road, Near Patel Chowk, Transport Nagar, Harnam Daspura, Jalandhar, Punjab , India",
+            locality: "Transport Nagar",
+            parentId: 143799,
+            unserviceable: false,
+            veg: true,
+            select: false,
+            favorite: false,
+            tradeCampaignHeaders: [],
+            chain: [],
+            feeDetails: {
+                fees: [
+                    {
+                        name: "distance",
+                        fee: 1900,
+                        message: ""
+                    },
+                    {
+                        name: "time",
+                        fee: 0,
+                        message: ""
+                    },
+                    {
+                        name: "special",
+                        fee: 0,
+                        message: ""
+                    }
+                ],
+                totalFees: 1900,
+                message: "",
+                title: "Delivery Charge",
+                amount: "1900",
+                icon: ""
+            },
+            availability: {
+                opened: true,
+                nextOpenMessage: "",
+                nextCloseMessage: ""
+            },
+            longDistanceEnabled: 0,
+            rainMode: "NONE",
+            thirdPartyAddress: false,
+            thirdPartyVendor: "",
+            adTrackingID: "",
+            badges: {
+                imageBased: [],
+                textBased: [],
+                textExtendedBadges: []
+            },
+            lastMileTravelString: "3 kms",
+            hasSurge: false,
+            aggregatedDiscountInfoV3: {
+                header: "60% OFF",
+                subHeader: "UPTO ₹120",
+                discountTag: "",
+                headerTypeV2: 0
+            },
+            sla: {
+                restaurantId: "285860",
+                deliveryTime: 38,
+                minDeliveryTime: 38,
+                maxDeliveryTime: 38,
+                lastMileTravel: 3,
+                lastMileDistance: 0,
+                serviceability: "SERVICEABLE",
+                rainMode: "NONE",
+                longDistance: "NOT_LONG_DISTANCE",
+                preferentialService: false,
+                iconType: "EMPTY"
+            },
+            promoted: false,
+            avgRating: "4.1",
+            totalRatings: 10000,
+            new: false
+        },
+        subtype: "basic"
+    }
+];
+exports.restaurantList = restaurantList;
+
+},{}],"c7s09":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5bd8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$5bd8.prelude(module);
+
+try {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _jsxRuntime = require("a96fa84903aa88b8");
+const Shimmer = ()=>{
+    return /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+        className: "restaurant-list",
+        "data-testid": "shimmer",
+        children: Array(15).fill("").map((e, index)=>/*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+                className: "shimmer-card"
+            }, index))
+    });
+};
+_c = Shimmer;
+var _default = Shimmer;
+exports.default = _default;
+var _c;
+$RefreshReg$(_c, "Shimmer");
+
+  $parcel$ReactRefreshHelpers$5bd8.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"a96fa84903aa88b8":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lweWK":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.filterData = void 0;
+const filterData = (searchInput, restaurants)=>{
+    const filteredData = restaurants.filter((res)=>res.data.name.toLowerCase().includes(searchInput.toLowerCase()));
+    return filteredData;
+};
+exports.filterData = filterData;
+
+},{}],"eUZ6J":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$fbbd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$fbbd.prelude(module);
+
+try {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _jsxRuntime = require("ffd379b0155f250b");
+const Footer = ()=>{
+    return /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+        children: /*#__PURE__*/ (0, _jsxRuntime.jsx)("h6", {
+            className: "font-thin text-sm",
+            children: "This site is developed by Varsha - varsha03prajapati@gmail.com"
+        })
+    });
+};
+_c = Footer;
+var _default = Footer;
+exports.default = _default;
+var _c;
+$RefreshReg$(_c, "Footer");
+
+  $parcel$ReactRefreshHelpers$fbbd.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"ffd379b0155f250b":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"66EYZ":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$84fc = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$84fc.prelude(module);
+
+try {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _jsxRuntime = require("9b8591930f3c53d5");
+const Contact = ()=>{
+    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
+                children: "Contact Us At"
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h4", {
+                children: "Below given links and number."
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h6", {
+                children: "Thanks for visiting!"
+            })
+        ]
+    });
+};
+_c = Contact;
+var _default = Contact;
+exports.default = _default;
+var _c;
+$RefreshReg$(_c, "Contact");
+
+  $parcel$ReactRefreshHelpers$84fc.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"9b8591930f3c53d5":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iQH4s":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$24a5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$24a5.prelude(module);
+
+try {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _reactRouterDom = require("8acdca91aa31f488");
+var _jsxRuntime = require("acf7d39bbe90eab1");
+const Error = ()=>{
+    const err = (0, _reactRouterDom.useRouteError)();
+    console.log(err);
+    //using destructuring
+    // const {status, statusText} = err;
+    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
+                children: "Oops!! Something went wrong..."
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h2", {
+                children: err.status + " : " + err.statusText
+            })
+        ]
+    });
+};
+_c = Error;
+var _default = Error;
+exports.default = _default;
+var _c;
+$RefreshReg$(_c, "Error");
+
+  $parcel$ReactRefreshHelpers$24a5.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"8acdca91aa31f488":"9xmpe","acf7d39bbe90eab1":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7pgwL":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$2fbe = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$2fbe.prelude(module);
+
+try {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = require("dc3336e921321bd8");
+var _reactRouterDom = require("f1701e37c16a77e0");
+var _config = require("40546810567455c7");
+var _Shimmer = _interopRequireDefault(require("82f9cf1c124dd57e"));
+var _useRestaurant = _interopRequireDefault(require("2d3bf8cdf43cd0e3"));
+var _reactRedux = require("437a7bedcf60451b");
+var _cartSlice = require("b6d34ca629d1e137");
+var _jsxRuntime = require("f03999969e52a7fa");
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+const RestaurantMenu = ()=>{
+    const { id  } = (0, _reactRouterDom.useParams)();
+    const restaurant = (0, _useRestaurant.default)(id);
+    const dispatch = (0, _reactRedux.useDispatch)();
+    const handleCart = (item)=>{
+        dispatch((0, _cartSlice.addItem)(item));
+    };
+    return !restaurant ? /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Shimmer.default, {}) : /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+        className: "flex",
+        children: [
+            /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+                className: "p-2 m-2",
+                children: [
+                    /*#__PURE__*/ (0, _jsxRuntime.jsxs)("h1", {
+                        children: [
+                            "Restaurant id: ",
+                            id
+                        ]
+                    }),
+                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("h3", {
+                        className: "font-bold text-xl",
+                        children: restaurant?.cards[0]?.card?.card?.info?.name
+                    }),
+                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("img", {
+                        className: "border-2 border-amber-200 p-2 m-2 bg-amber-50",
+                        src: _config.IMG_CND_URL + restaurant?.cards[0]?.card?.card?.info?.cloudinaryImageId
+                    }),
+                    /*#__PURE__*/ (0, _jsxRuntime.jsxs)("h4", {
+                        children: [
+                            "Area: ",
+                            restaurant?.cards[0]?.card?.card?.info?.areaName
+                        ]
+                    }),
+                    /*#__PURE__*/ (0, _jsxRuntime.jsxs)("h4", {
+                        children: [
+                            "City: ",
+                            restaurant?.cards[0]?.card?.card?.info?.city
+                        ]
+                    }),
+                    /*#__PURE__*/ (0, _jsxRuntime.jsxs)("h4", {
+                        children: [
+                            "Cost For Two:",
+                            " ",
+                            restaurant?.cards[0]?.card?.card?.info?.costForTwoMessage
+                        ]
+                    })
+                ]
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+                className: "m-10",
+                children: [
+                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
+                        className: "p-2 m-2 font-bold text-3xl",
+                        children: "Menu"
+                    }),
+                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("ul", {
+                        "data-testid": "menu",
+                        children: restaurant?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card?.itemCards.map((itemCard)=>/*#__PURE__*/ (0, _jsxRuntime.jsxs)("li", {
+                                children: [
+                                    itemCard?.card?.info?.name,
+                                    " -",
+                                    " ",
+                                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
+                                        "data-testid": "addBtn",
+                                        className: "bg-amber-300 font-semibold p-1 m-3 w-44 border-4 rounded-lg border-amber-100",
+                                        onClick: ()=>handleCart(itemCard?.card?.info?.name),
+                                        children: "Add"
+                                    })
+                                ]
+                            }, itemCard?.card?.info?.id))
+                    })
+                ]
+            })
+        ]
+    });
+};
+_c = RestaurantMenu;
+var _default = RestaurantMenu;
+exports.default = _default;
+var _c;
+$RefreshReg$(_c, "RestaurantMenu");
+
+  $parcel$ReactRefreshHelpers$2fbe.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"dc3336e921321bd8":"21dqq","f1701e37c16a77e0":"9xmpe","40546810567455c7":"jtCLN","82f9cf1c124dd57e":"c7s09","2d3bf8cdf43cd0e3":"aAKpu","437a7bedcf60451b":"bdVon","b6d34ca629d1e137":"frMfM","f03999969e52a7fa":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aAKpu":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$f7bb = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$f7bb.prelude(module);
+
+try {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = require("5a23aacc0b2319ac");
+var _config = require("344cb43b3532d077");
+const useRestaurant = (id)=>{
+    const [restaurant, setRestaurant] = (0, _react.useState)(null);
+    (0, _react.useEffect)(()=>{
+        getRestaurantInfo();
+    }, []);
+    async function getRestaurantInfo() {
+        const data = await fetch(_config.FETCH_MENU_URL + id);
+        const json = await data.json();
+        console.log(json.data);
+        setRestaurant(json.data);
+    }
+    return restaurant;
+};
+var _default = useRestaurant;
+exports.default = _default;
+
+  $parcel$ReactRefreshHelpers$f7bb.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"5a23aacc0b2319ac":"21dqq","344cb43b3532d077":"jtCLN","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"frMfM":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.removeItem = exports.default = exports.clearItem = exports.addItem = void 0;
+var _toolkit = require("86bdabd63b9b14b0");
 const cartSlice = (0, _toolkit.createSlice)({
     name: "cart",
     initialState: {
@@ -37022,9 +36782,13 @@ const cartSlice = (0, _toolkit.createSlice)({
     }
 });
 const { addItem , removeItem , clearItem  } = cartSlice.actions;
-exports.default = cartSlice.reducer;
+exports.clearItem = clearItem;
+exports.removeItem = removeItem;
+exports.addItem = addItem;
+var _default = cartSlice.reducer;
+exports.default = _default;
 
-},{"@reduxjs/toolkit":"lL1Ef","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lL1Ef":[function(require,module,exports) {
+},{"86bdabd63b9b14b0":"lL1Ef"}],"lL1Ef":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "EnhancerArray", ()=>EnhancerArray);
@@ -40905,12 +40669,19 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$0dcd.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-class Profile extends (0, _reactDefault.default).Component {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("3254551cd726ca92"));
+var _jsxRuntime = require("789067e34624f95a");
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+class Profile extends _react.default.Component {
     constructor(props){
         super(props);
         //create states
@@ -40945,71 +40716,60 @@ class Profile extends (0, _reactDefault.default).Component {
     }
     render() {
         console.log("Child-Render" + this.props.name);
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
             children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                /*#__PURE__*/ (0, _jsxRuntime.jsx)("img", {
                     src: this.state.userInfo.avatar_url
-                }, void 0, false, {
-                    fileName: "src/Components/ProfileClass.js",
-                    lineNumber: 38,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                }),
+                /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
                     children: "This is Profile Class Component."
-                }, void 0, false, {
-                    fileName: "src/Components/ProfileClass.js",
-                    lineNumber: 39,
-                    columnNumber: 13
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                }),
+                /*#__PURE__*/ (0, _jsxRuntime.jsxs)("h2", {
                     children: [
                         "Name: ",
                         this.state.userInfo.name
                     ]
-                }, void 0, true, {
-                    fileName: "src/Components/ProfileClass.js",
-                    lineNumber: 40,
-                    columnNumber: 13
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                }),
+                /*#__PURE__*/ (0, _jsxRuntime.jsxs)("h2", {
                     children: [
                         "Location: ",
                         this.state.userInfo.location
                     ]
-                }, void 0, true, {
-                    fileName: "src/Components/ProfileClass.js",
-                    lineNumber: 41,
-                    columnNumber: 13
-                }, this)
+                })
             ]
-        }, void 0, true, {
-            fileName: "src/Components/ProfileClass.js",
-            lineNumber: 37,
-            columnNumber: 12
-        }, this);
+        });
     }
 }
-exports.default = Profile;
+var _default = Profile;
+exports.default = _default;
 
   $parcel$ReactRefreshHelpers$0dcd.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"csQGs":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _toolkit = require("@reduxjs/toolkit");
-var _cartSlice = require("./cartSlice");
-var _cartSliceDefault = parcelHelpers.interopDefault(_cartSlice);
+},{"3254551cd726ca92":"21dqq","789067e34624f95a":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"csQGs":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _toolkit = require("26af62f8ec549b51");
+var _cartSlice = _interopRequireDefault(require("447bd83edc3da789"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
 const store = (0, _toolkit.configureStore)({
     reducer: {
-        cart: (0, _cartSliceDefault.default)
+        cart: _cartSlice.default
     }
 });
-exports.default = store;
+var _default = store;
+exports.default = _default;
 
-},{"@reduxjs/toolkit":"lL1Ef","./cartSlice":"frMfM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"Yn6sE":[function(require,module,exports) {
+},{"26af62f8ec549b51":"lL1Ef","447bd83edc3da789":"frMfM"}],"Yn6sE":[function(require,module,exports) {
 module.exports = require("5ce6a0f16367bb1d")(require("b82f10e43bf97a1d").getBundleURL("aXMci") + "About.3f2e41a3.js" + "?" + Date.now()).catch((err)=>{
     delete module.bundle.cache[module.id];
     throw err;

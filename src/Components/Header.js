@@ -3,13 +3,15 @@ import { Link } from "react-router-dom";
 import Logo from '../assests/img/foodvilla.png';
 import { useContext } from "react";
 import UserContext from "./utils/UserContext";
-import { useSelector } from "react-redux/es/hooks/useSelector";
+// import { useSelector } from "react-redux/es/hooks/useSelector";
+import { useSelector } from "react-redux";
 import useOnline from "./utils/useOnline";
 
 const Title = () => {
     return (
       <a href="/">
         <img
+          data-testid="logo"
           className="h-28 p-2"
           alt="logo"
           src={Logo}
@@ -33,15 +35,15 @@ const Title = () => {
         <Title />
         <div className="nav-items">
           <ul className="flex py-10">
-            <li className="px-3 text-lg"><Link to="/">Home</Link></li>
-            <li className="px-3 text-lg"><Link to="/about">About Us</Link></li>
-            <li className="px-3 text-lg"><Link to="/contact">Contact</Link></li>
-            <li className="px-3 text-lg"><Link to="/instamart">Instamart</Link></li>
-            <li className="px-3 text-lg"><Link to="/cart">Cart ({cartItems.length})</Link></li>
+          <Link to="/"><li className="px-3 text-lg">Home</li></Link>
+          <Link to="/about"><li className="px-3 text-lg">About Us</li></Link>
+          <Link to="/contact"><li className="px-3 text-lg">Contact</li></Link>
+          <Link to="/instamart"><li className="px-3 text-lg">Instamart</li></Link>
+            <Link to="/cart"><li data-testid="cart" className="px-3 text-lg">Cart ({cartItems.length})</li></Link>
           </ul>
         </div>
         <div>
-          <h1>{isOnline? "Online✅" : "Offline🔴"}</h1>
+          <h1 data-testid="online-status">{isOnline? "Online✅" : "Offline🔴"}</h1>
         </div>
         <span>
           {user.name} - {user.email}

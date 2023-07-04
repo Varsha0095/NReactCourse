@@ -601,17 +601,22 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$06db.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _profileClass = require("./ProfileClass");
-var _profileClassDefault = parcelHelpers.interopDefault(_profileClass);
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _ProfileClass = _interopRequireDefault(require("bb67bd7be1f7e862"));
+var _react = _interopRequireDefault(require("bf700f53e967ae08"));
+var _UserContext = _interopRequireDefault(require("bd4ebfb318f58848"));
+var _jsxRuntime = require("23d856fb707d9eab");
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
 // import Profile from "./Profile"; 
 // import { Outlet } from "react-router-dom";
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _userContext = require("./utils/UserContext");
-var _userContextDefault = parcelHelpers.interopDefault(_userContext);
 // const About = () => {
 //     return(
 //         <>
@@ -620,7 +625,7 @@ var _userContextDefault = parcelHelpers.interopDefault(_userContext);
 //         </>
 //     )
 // }
-class About extends (0, _reactDefault.default).Component {
+class About extends _react.default.Component {
     constructor(props){
         super(props);
     // console.log("Parent- Constructor")
@@ -631,50 +636,35 @@ class About extends (0, _reactDefault.default).Component {
     }
     render() {
         // console.log("Parent-Render")
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        return /*#__PURE__*/ (0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
             children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userContextDefault.default).Consumer, {
-                    children: ({ user  })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                /*#__PURE__*/ (0, _jsxRuntime.jsx)(_UserContext.default.Consumer, {
+                    children: ({ user  })=>/*#__PURE__*/ (0, _jsxRuntime.jsxs)("h4", {
                             children: [
                                 user.name,
                                 " - ",
                                 user.email
                             ]
-                        }, void 0, true, {
-                            fileName: "src/Components/About.js",
-                            lineNumber: 32,
-                            columnNumber: 15
-                        }, this)
-                }, void 0, false, {
-                    fileName: "src/Components/About.js",
-                    lineNumber: 29,
-                    columnNumber: 13
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        })
+                }),
+                /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
                     children: "This is our About Page."
-                }, void 0, false, {
-                    fileName: "src/Components/About.js",
-                    lineNumber: 34,
-                    columnNumber: 12
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileClassDefault.default), {
+                }),
+                /*#__PURE__*/ (0, _jsxRuntime.jsx)(_ProfileClass.default, {
                     name: "first-child"
-                }, void 0, false, {
-                    fileName: "src/Components/About.js",
-                    lineNumber: 35,
-                    columnNumber: 12
-                }, this)
+                })
             ]
-        }, void 0, true);
+        });
     }
 }
-exports.default = About;
+var _default = About;
+exports.default = _default;
 
   $parcel$ReactRefreshHelpers$06db.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./ProfileClass":"5mE2z","react":"21dqq","./utils/UserContext":"62dPy","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["6ORaG","1xC6H"], null, "parcelRequire09df")
+},{"bb67bd7be1f7e862":"5mE2z","bf700f53e967ae08":"21dqq","bd4ebfb318f58848":"62dPy","23d856fb707d9eab":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["6ORaG","1xC6H"], null, "parcelRequire09df")
 
 //# sourceMappingURL=About.3f2e41a3.js.map

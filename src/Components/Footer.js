@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
       <div>
-        <h4>Footer</h4>
+        <h6 className="font-thin text-sm">This site is developed by Varsha - varsha03prajapati@gmail.com</h6>
       </div>
     );
   };

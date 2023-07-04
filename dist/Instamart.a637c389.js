@@ -601,100 +601,65 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$2186.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _s = $RefreshSig$();
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = require("34783ae9e28b9d12");
+var _jsxRuntime = require("aaa43c710729c234");
 const Section = ({ title , description , isVisible , setIsVisible  })=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
         className: "p-2 m-2 border border-black",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
                 className: "font-bold text-xl",
                 children: title
-            }, void 0, false, {
-                fileName: "src/Components/Instamart.js",
-                lineNumber: 9,
-                columnNumber: 7
-            }, undefined),
-            isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+            }),
+            isVisible ? /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
                 className: "border-2 rounded-md border-amber-100 font-semibold w-20 text-amber-100 bg-blue-950",
                 onClick: ()=>setIsVisible(false),
                 children: "Hide"
-            }, void 0, false, {
-                fileName: "src/Components/Instamart.js",
-                lineNumber: 10,
-                columnNumber: 20
-            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+            }) : /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
                 className: "border-2 rounded-md border-blue-950 font-semibold w-20 text-blue-950 bg-amber-100",
                 onClick: ()=>setIsVisible(true),
                 children: "Show"
-            }, void 0, false, {
-                fileName: "src/Components/Instamart.js",
-                lineNumber: 12,
-                columnNumber: 21
-            }, undefined),
-            isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+            }),
+            isVisible && /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
                 children: description
-            }, void 0, false, {
-                fileName: "src/Components/Instamart.js",
-                lineNumber: 15,
-                columnNumber: 21
-            }, undefined)
+            })
         ]
-    }, void 0, true, {
-        fileName: "src/Components/Instamart.js",
-        lineNumber: 8,
-        columnNumber: 10
-    }, undefined);
+    });
 };
 _c = Section;
 const Instamart = ()=>{
-    _s();
     const [visibility, setVisibility] = (0, _react.useState)("about");
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)(Section, {
                 title: "About Instamart",
                 description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                 isVisible: visibility === "about",
                 setIsVisible: ()=>setVisibility("about")
-            }, void 0, false, {
-                fileName: "src/Components/Instamart.js",
-                lineNumber: 21,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)(Section, {
                 title: "Team Instamart",
                 description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                 isVisible: visibility === "team",
                 setIsVisible: ()=>setVisibility("team")
-            }, void 0, false, {
-                fileName: "src/Components/Instamart.js",
-                lineNumber: 22,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)(Section, {
                 title: "Careers",
                 description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                 isVisible: visibility === "careers",
                 setIsVisible: ()=>setVisibility("careers")
-            }, void 0, false, {
-                fileName: "src/Components/Instamart.js",
-                lineNumber: 23,
-                columnNumber: 7
-            }, undefined)
+            })
         ]
-    }, void 0, true, {
-        fileName: "src/Components/Instamart.js",
-        lineNumber: 20,
-        columnNumber: 10
-    }, undefined);
+    });
 };
-_s(Instamart, "bNcVfxeERHjhH7NSZSZTfE3YSrk=");
 _c1 = Instamart;
-exports.default = Instamart;
+var _default = Instamart;
+exports.default = _default;
 var _c, _c1;
 $RefreshReg$(_c, "Section");
 $RefreshReg$(_c1, "Instamart");
@@ -704,6 +669,6 @@ $RefreshReg$(_c1, "Instamart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["lf7xr","1xC6H"], null, "parcelRequire09df")
+},{"34783ae9e28b9d12":"21dqq","aaa43c710729c234":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["lf7xr","1xC6H"], null, "parcelRequire09df")
 
 //# sourceMappingURL=Instamart.a637c389.js.map
